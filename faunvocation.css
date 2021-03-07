@@ -1,0 +1,244 @@
+.faunvocation {
+  margin:25px auto;
+  overflow: hidden;
+  position:relative;
+  width:625px;
+  height:500px;
+  background:#ebebeb;
+  border:1px solid #ebebeb;
+  box-shadow:3px 3px 0px #e3e3e3;
+  border-radius:25px;
+  font-family: poppins;
+  font-weight:400;
+  font-size:14px;
+  line-height:22px;
+  color:#6b6b6b;
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+  text-align:justify;
+}
+
+/* TABS */
+
+.fauntab {
+  float:left;
+}
+
+.fauntab label {
+  position:absolute;
+  top:155px;
+  left:65px;
+  width:6px;
+  height:6px;
+  border:3px solid #fbfbfb;
+  border-radius:100%;
+  background:#e3e3e3;
+  z-index:3;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-duration: .7s;
+  -webkit-transition-duration: .7s;
+}
+
+.fauntab [type=radio] {
+  display: none;
+}
+
+[type=radio]:checked ~ label {
+  background:#d3d3d3;
+}
+
+[type=radio]:checked ~ label ~ .faun-content {
+  z-index: 2;
+  opacity:1;
+}
+
+/* CONTENT */
+
+.faun-content {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:625px;
+  height:500px;
+  background:#fbfbfb;
+  z-index:1;
+  opacity:0;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-duration: .7s;
+  -webkit-transition-duration: .7s;
+}
+
+.tab-border {
+  height:500px;
+  width:1px;
+  background:#ebebeb;
+  position:absolute;
+  top:0px;
+  left:70px;
+}
+
+.tab-icon {
+  position:absolute;
+  top:30px;
+  left:34px;
+  padding:20px 0px;
+  font-size:75px;
+  width:75px;
+  height:75px;
+  background:#fbfbfb;
+  z-index:1;
+  color:var(--main);
+}
+
+.tab-icon span {
+  opacity:0.75;
+}
+
+.faun-app {
+  position:absolute;
+  right:150px;
+  top:0px;
+  background:#ebebeb;
+  padding:10px 15px 10px 20px;
+  border-radius:0px 0px 0px 20px;
+  text-transform:uppercase;
+  font-weight:700;
+  font-size:12px;
+  line-height:20px;
+  opacity:0.9;
+}
+
+.faun-app a {
+  text-decoration:none;
+  color:#fbfbfb;
+  text-shadow: -1px 0 #bbb, 0 1px #bbb, 1px 0 #bbb, 0 -1px #bbb;
+  opacity:0.95;
+}
+
+.faun-name {
+  position:absolute;
+  left:75px;
+  bottom:10px;
+  width:245px;
+  text-align:right;
+  text-transform:uppercase;
+  font-weight:700;
+  font-style:italic;
+  font-size:35px;
+  line-height:25px;
+  opacity:0.75;
+  color:var(--main);
+}
+
+.faun-name span {
+  display:block;
+  font-size:23px;
+  opacity:.5;
+  color:#6b6b6b;
+  font-weight:400;
+}
+
+.faun-text {
+  position:absolute;
+  top:0px;
+  left:140px;
+  height:245px;
+  width:285px;
+  margin:52px 0px;
+  overflow:hidden;
+  opacity:0.85;
+  text-transform: lowercase;
+
+}
+
+.faun-text a {
+  font-weight:700;
+  border-bottom:2px solid var(--main);
+}
+
+.faun-text b {
+  color:var(--accent);
+  font-weight:700;
+}
+
+.faun-hash {
+  position:absolute;
+  height:90px;
+  padding:0px 25px;
+  width:185px;
+  top:323px;
+  left:75px;
+  text-transform:uppercase;
+  font-weight:700;
+  opacity:0.4;
+  font-size:12px;
+  font-style:italic;
+  overflow:hidden;
+  text-align:left;
+}
+
+.faun-hash hash {
+  border-bottom:2px solid var(--main);
+  margin:0px 5px 0px 0px;
+}
+
+.faun-hash hash:before {
+  content:'#';
+  color:#3b3b3b;
+}
+
+.faun-hover {
+  width:150px;
+  height:400px;
+  position:absolute;
+  right:0px;
+  top:0px;
+  background-color:var(--main);
+  background-blend-mode: luminosity;
+  opacity:0.75;
+  background-position:center;
+}
+
+.faun-ideas {
+  background:#ebebeb;
+  position:absolute;
+  bottom:0px;
+  right:0px;
+  height:103px;
+  padding:25px 30px;
+  width:250px;
+  border-radius:25px 0px 0px 0px;
+  font-size:12px;
+  line-height:18px;
+  text-transform: lowercase;
+}
+
+.faun-ideas a {
+  color:var(--accent);
+  border-bottom:2px solid var(--main);
+}
+
+.faun-ideas b {
+  font-weight:700;
+  color:var(--accent);
+}
+
+.faun-ideas:before {
+  content:'thread wants';
+  display:block;
+  position:absolute;
+  top:-7.5px;
+  right:12.5px;
+  z-index:;
+  font-size:25px;
+  font-style:italic;
+  text-transform:uppercase;
+  font-weight:700;
+  color:#fbfbfb;
+  opacity:.95;
+  text-shadow: -1px 0 #cbcbcb, 0 1px #cbcbcb, 1px 0 #cbcbcb, 0 -1px #cbcbcb;
+}
+
+/* CHARACTERS */
+#default { --main: #333; --accent: #999; }
