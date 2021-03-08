@@ -958,3 +958,294 @@ HIGH
 /*****
 POST TEMPLATES 
 *****/
+
+@import "//dl.dropbox.com/s/6523jl7nh6hietx/high.css";
+@import "//dl.dropbox.com/s/9s289mbhxpdhb3l/starry.css";
+
+.begonia-wrapper{ 
+   --background: #f5f5f5;
+    --shadow: #d8d8d8;
+    --shadow2: #e6e6e6;
+    --black: #212121;
+  width: 420px;
+  background: var(--background);
+  min-height: 200px;
+  box-shadow: 2px 2px 2px 2px var(--shadow2);
+  border: 1.25px solid var(--shadow2);
+  border-radius: 15px;
+  margin: 30px 0px;
+position: relative;
+-webkit-text-size-adjust: none;
+line-height: 0px;
+display: block;
+  font-family: 'Spartan', sans-serif;
+   clear: both;
+  overflow: hidden;
+} 
+
+.begonia-wrapper b { 
+  color: var(--main);
+} 
+
+.begonia-wrapper a { 
+color: var(--accent);
+text-decoration: none;
+text-transform:uppercase;
+font-weight: 700;
+} 
+
+.begonia-top { 
+  height: 120px;
+
+} 
+
+.bgrid-wrap { 
+    position: relative; 
+    top: 30px;
+  left: -5px;
+  display: inline-flex;
+} 
+
+.begonia-grid {
+  height: 90px;
+  width:280px;
+  background-size: 40px 30px;
+  background-position: px 0px;
+  background-image:
+    linear-gradient(to right, var(--background) 2px, transparent 2px),
+    linear-gradient(to bottom, var(--background) 2px, transparent 2px);
+  opacity: 0.2;
+background-color: var(--main);
+  position:relative;
+  left: ;
+}
+
+.begonia-grid2 {
+  height: 60px;
+  width:40px;
+  background-size: 40px 30px;
+  background-image:
+    linear-gradient(to right, var(--background) 2px, transparent 2px),
+    linear-gradient(to bottom, var(--background) 2px, transparent 2px);
+  opacity: 0.4;
+  position: relative; 
+  top: 30px;
+  left: -25px;
+  background-color: var(--main);
+   clear: both;
+}
+
+.begonia-grid3 {
+  height: 30px;
+  width:80px;
+  background-size: 40px 30px;
+  background-image:
+  linear-gradient(to right, var(--background) 2px, transparent 2px),
+  linear-gradient(to bottom, var(--background) 2px, transparent 2px);
+  opacity: 0.5;
+  position: relative; 
+  top: 60px;
+  left: -25px;
+  background-color: var(--accent);
+
+}
+.begonia-circle {
+height: 70px;
+width: 70px;
+border-radius: 100%;
+  position: relative; 
+  top: 10px;
+  left: -320px;
+  background-color: var(--accent);
+  opacity: 0.4;
+   clear: both;
+}
+
+.begonia-icon { 
+  font-size:67px;
+  color: var(--main);
+  position: absolute; 
+  top: 40px;
+  left:50px;
+  text-shadow: 2px 2px var(--background);
+height: 74px;
+   z-index: 3;
+line-height: 0px;
+padding: 0px;
+display: inline;
+} 
+
+
+.begonia-icon::before { 
+  content: var(--uni);
+  font-family: 'high', 'starry';
+  position: relative; 
+  top: 35px;
+} 
+
+
+.begonia-dates { 
+ font-size:24px;
+ line-height: 26px;
+ position: relative; 
+ display: block;
+ color: var(--shadow);
+ text-align: left;
+ font-weight: 500;
+height: 80px;
+left:130px;
+top:-55px;
+width: 110px;
+z-index: 1;
+text-transform: uppercase;
+} 
+
+.b-year { 
+  font-size: 23px;
+  position: relative; 
+  left: 11px;
+  color: var(--shadow);
+} 
+
+.begonia-body { 
+  font: 13.75px 'Roboto', sans-serif;
+  text-align: justify;
+  line-height: 24px;
+  color: var(--black);
+  padding:60px;
+  position: relative;
+  z-index: 2;
+} 
+
+.begonia-bottom{ 
+  height:80px;
+  font: 10px 'Spartan', Sans-Serif;
+  color: var(--black);
+} 
+
+
+.b-bottomgrid { 
+  height: 100%;
+  width: 430px;
+  background-size:50px 30px;
+  background-position: -5px 0px;
+  background-image:
+    linear-gradient(to right, var(--background) 2px, transparent 2px),
+    linear-gradient(to bottom, var(--background) 2px, transparent 2px);
+  opacity: 0.1;
+background-color: var(--main);
+  position:relative;
+   clear: both;
+} 
+
+.begonia-tag { 
+  position: absolute; 
+  bottom: 30px;
+  right: 20px;
+  text-align: right;
+  padding: 0px 10px;
+  z-index: 3;
+  
+} 
+
+#character { 
+ --main: #767793; 
+  --accent:#9e7d6f;
+} 
+
+#alec { 
+  --main: #9e6679; 
+--accent: #8a9295;
+--uni: '\69';
+  } 
+
+
+#darius { 
+--main: #b86837; 
+--accent: #2e676e;
+--uni: '\66';
+  } 
+
+
+#dom { 
+--main: #5E6E82; 
+--accent: #a1888a;
+--uni: '\64';
+} 
+
+  #leon { 
+--main: #8f3d41; 
+--accent: #738895;
+ --uni:'\34'; 
+} 
+
+#marko { 
+--main: #D28158;
+--accent: #adcac5;
+--uni:'\33'; 
+} 
+
+
+#oli { 
+ --accent: #de7868; 
+--main: #a48dad;
+  --uni:'\6f'; 
+} 
+
+#oli .begonia-icon::before { 
+  font-size: 84px;
+} 
+
+  
+ #paris { 
+--main: #723c54;
+--accent: #a5a3b8;
+--uni:'\31'; 
+} 
+
+#paris .begonia-icon::before { 
+} 
+
+
+#pip { 
+  --main: #729889;
+  --accent: #bfa0a0; 
+  --uni:'\63'; 
+} 
+
+ #seema { 
+--main: #ac416a;
+--accent: #dab774;
+  --uni:'\37'; 
+} 
+
+
+#wick{ 
+--main: #808ea1;
+--accent: #c3b69d;
+  --uni:'\61'; 
+} 
+
+#wick .begonia-icon::before { 
+  font-size: 70px;
+} 
+
+
+ #yusuf { 
+ --main: #b13f2c; 
+--accent: #e2a671;
+  --uni:'\38'; 
+} 
+
+ #high { 
+  --main: #767793; 
+  --accent:#9e7d6f;
+  --uni:'\6a'; 
+} 
+
+
+#romy {
+--main: #d16481;
+--accent: #84b3b0;
+--uni:'\6d';
+} 
