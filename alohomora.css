@@ -691,134 +691,6 @@ background:#e3e3e3;
 #ve { --accent:#e4cb8c; --bold:#dab863; }
 #wd { --accent:#b0c3d2; --bold:#90aabf; }
 
-/*** TEENAGE BLUE ***/
-
-.teenage-blue {
-  position:relative;
-  margin:25px auto;
-  width:400px;
-  background:#fbfbfb;
-  border:1px solid #d9d9d9;
-  box-shadow:3px 3px 0px #e3e3e3;
-  font-family: poppins;
-  font-weight:400;
-  font-size:13px;
-  line-height:21px;
-  text-align:justify;
-  color:#6b6b6b;
-  border-radius:5px;
-  overflow:hidden;
-}
-
-.blue-top {
-  position:relative;
-  height:175px;
-}
-
-.blue-icon {
-  width:100px;
-  height:100px;
-  border-radius:100%;
-  position:absolute;
-  top:30px;
-  right:20px;
-  z-index:1;
-  background-color: #fbfbfb;
-  border:2px solid #fbfbfb;
-  opacity:1;
-}
-
-.blue-icon img {
-  width:100px;
-  height:100px;
-  border-radius:100%;
-  position:relative;
-  z-index:2;
-}
-
-.blue-icon:before {
-  content:'';
-  z-index:1;
-  display:block;
-  background:var(--main);
-  position:absolute;
-  width:100px;
-  height:100px;
-  top:-15px;
-  right:-30px;
-  border-radius:100% 75%;
-}
-
-.blue-icon:after {
-  content:'';
-  z-index:0;
-  display:block;
-  border:3px solid var(--accent);
-  position:absolute;
-  top:30px;
-  right:-15px;
-  height:65px;
-  width:55px;
-  border-radius:75% 25% 45% 25%;
-  transform:rotate(-15deg);
-}
-
-.blue-fonti {
-  position:relative;
-  top:45px;
-  width:60px;
-  height:75px;
-  display:block;
-  margin:0px auto;
-  font-size:11.5px;
-}
-
-.blue-fonti span {
-  display:block;
-  height:60px;
-  width:60px;
-  font-size:60px;
-  padding-bottom:5px;
-  color:var(--main);
-  text-align:center;
-}
-
-.blue-fonti b {
-  color:var(--accent);
-  margin-right:2px;
-}
-
-.blue-body {
-  padding:0px 75px 75px;
-}
-
-.blue-body a { color:var(--accent); font-weight:400; }
-
-.blue-body b {
-  font-weight:700;
-  color:var(--accent);
-}
-
-.blue-body i {
-  color:var(--main);
-}
-
-.blue-tag {
-  padding-top:25px;
-  font-size:11.5px;
-}
-
-.blue-tag a { 
-  text-transform:uppercase;
-  font-weight:700;
-  font-size:12px;
-}
-
-.blue-tag a:before {
-  content:'#';
-  color:var(--main);
-  margin-right:1px; 
-
   /*** BEACH DAZE ***/
   
   .beach-daze {
@@ -949,3 +821,131 @@ background:#e3e3e3;
 }
 
 #default { --main: #333; --accent: #666; }
+
+/*** TEENAGE BLUE ***/
+
+.teenage-blue {
+  position:relative;
+  margin:25px auto;
+  width:400px;
+  background:#fbfbfb;
+  border:1px solid #d9d9d9;
+  box-shadow:3px 3px 0px #e3e3e3;
+  font-family: poppins;
+  font-weight:400;
+  font-size:13px;
+  line-height:21px;
+  text-align:justify;
+  color:#6b6b6b;
+  border-radius:5px;
+  overflow:hidden;
+}
+
+.blue-top {
+  position:relative;
+  height:175px;
+}
+
+.blue-icon {
+  width:100px;
+  height:100px;
+  border-radius:100%;
+  position:absolute;
+  top:30px;
+  right:20px;
+  z-index:1;
+  background-color: #fbfbfb;
+  border:2px solid #fbfbfb;
+  opacity:1;
+}
+
+.blue-icon img {
+  width:100px;
+  height:100px;
+  border-radius:100%;
+  position:relative;
+  z-index:2;
+}
+
+.blue-icon:before {
+  content:'';
+  z-index:1;
+  display:block;
+  background:var(--main);
+  position:absolute;
+  width:100px;
+  height:100px;
+  top:-15px;
+  right:-30px;
+  border-radius:100% 75%;
+}
+
+.blue-icon:after {
+  content:'';
+  z-index:0;
+  display:block;
+  border:3px solid var(--accent);
+  position:absolute;
+  top:30px;
+  right:-15px;
+  height:65px;
+  width:55px;
+  border-radius:75% 25% 45% 25%;
+  transform:rotate(-15deg);
+}
+
+.blue-fonti {
+  position:relative;
+  top:45px;
+  width:60px;
+  height:75px;
+  display:block;
+  margin:0px auto;
+  font-size:11.5px;
+}
+
+.blue-fonti span {
+  display:block;
+  height:60px;
+  width:60px;
+  font-size:60px;
+  padding-bottom:5px;
+  color:var(--main);
+  text-align:center;
+}
+
+.blue-fonti b {
+  color:var(--accent);
+  margin-right:2px;
+}
+
+.blue-body {
+  padding:0px 75px 75px;
+}
+
+.blue-body a { color:var(--accent); font-weight:400; }
+
+.blue-body b {
+  font-weight:700;
+  color:var(--accent);
+}
+
+.blue-body i {
+  color:var(--main);
+}
+
+.blue-tag {
+  padding-top:25px;
+  font-size:11.5px;
+}
+
+.blue-tag a { 
+  text-transform:uppercase;
+  font-weight:700;
+  font-size:12px;
+}
+
+.blue-tag a:before {
+  content:'#';
+  color:var(--main);
+  margin-right:1px; 
