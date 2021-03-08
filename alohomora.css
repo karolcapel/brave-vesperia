@@ -818,3 +818,134 @@ background:#e3e3e3;
   content:'#';
   color:var(--main);
   margin-right:1px; 
+
+  /*** BEACH DAZE ***/
+  
+  .beach-daze {
+  margin:25px auto;
+  position:relative;
+  border:1px solid #e6e6e6;
+  border-radius:25px;
+  width:425px;
+  background: #fbfbfb;
+  box-shadow:3px 3px 0px #e6e6e6;
+  overflow: hidden;
+  font-family: poppins;
+  font-weight:400;
+  font-size:14px;
+  line-height:22px;
+  text-align:justify;
+  color:#6b6b6b;
+  z-index:1;
+}
+
+.daze-top {
+  height:70px;
+  padding:50px 60px 0px 60px; 
+}
+
+.beach-date {
+  text-transform:uppercase;
+  text-align:right;
+  opacity:0.35;
+  padding-top:10px;
+}
+
+.beach-date b {
+  margin-right:2px;
+  font-weight:700;
+  border-bottom:2px solid var(--main);
+}
+
+.beach-icon {
+  position:relative;
+  height:40px;
+  width:40px;
+  padding:15px;
+  border-radius:100%;
+  background:var(--accent);
+  color:#fbfbfb;
+  font-size:40px;
+  text-align:center;
+  display:block;
+}
+
+.beach-icon:before {
+  content:'';
+  z-index:-1;
+  display:block;
+  position: absolute;
+  left:-30px;
+  top:-50px;
+  width:65px;
+  height:90px;
+  background:repeating-linear-gradient(45deg,
+  var(--main),
+  var(--main) 3px,
+  transparent 0px,
+  transparent 5px);
+  opacity:0.75;
+}
+
+.beach-icon:after {
+  content:'';
+  z-index:-2;
+  display:block;
+  position: absolute;
+  right:-5px;
+  bottom:-5px;
+  width:80px;
+  height:80px;
+  background:var(--accent);
+  opacity:0.25;
+  border-radius:100%;
+}
+
+.beach-body {
+  padding:45px 60px 45px 60px;
+  text-shadow:-1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+
+.beach-body a { color:var(--accent); font-weight:400; }
+
+.beach-body b {
+  font-weight:700;
+  color:var(--accent);
+}
+
+.beach-body i {
+  border-bottom:2px solid var(--main);
+}
+
+.daze-tag {
+  position:relative;
+  background:var(--main);
+  padding:35px 60px;
+  color:#fbfbfb;
+  font-size:13px;
+  line-height:21px;
+}
+
+.daze-tag a {
+  font-weight:700;
+  text-transform: uppercase;
+  border-bottom:2px solid var(--accent);
+  color:#fbfbfb;
+}
+
+.daze-tag:before {
+  content:'';
+  display:block;
+  position: absolute;
+  right:30px;
+  top:-15px;
+  width:45px;
+  height:30px;
+  background:repeating-linear-gradient(-45deg,
+  var(--accent),
+  var(--accent) 3px,
+  transparent 0px,
+  transparent 5px);
+}
+
+#default { --main: #333; --accent: #666; }
