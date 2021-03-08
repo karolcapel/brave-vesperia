@@ -1,3 +1,8 @@
+@import "//dl.dropbox.com/s/6523jl7nh6hietx/high.css";
+@import "//dl.dropbox.com/s/9s289mbhxpdhb3l/starry.css";
+@import "//christieclee.github.io/highalo/high/high.css";
+@import "//christieclee.github.io/highalo/starry/starry.css";
+
 /********************
 PANDORA 
 ********************/
@@ -958,11 +963,6 @@ HIGH
 /*****
 POST TEMPLATES 
 *****/
-
-@import "//dl.dropbox.com/s/6523jl7nh6hietx/high.css";
-@import "//dl.dropbox.com/s/9s289mbhxpdhb3l/starry.css";
-@import "//christieclee.github.io/highalo/high/high.css";
-@import "//christieclee.github.io/highalo/starry/starry.css";
 
 .begonia-wrapper{ 
    --background: #f5f5f5;
