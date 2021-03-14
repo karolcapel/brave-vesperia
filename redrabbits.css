@@ -1,0 +1,145 @@
+.red-rabbits {
+  position:relative;
+  margin:50px auto;
+  background:#f3f3f3;
+  border:2px solid #d6d6d6;
+  width:400px;
+  color:#737373;
+  overflow:hidden;
+  border-radius:10px;
+  font-family: nunito;
+  font-weight:400;
+  text-shadow:-1px 0 #f3f3f3, 0 1px #f3f3f3, 1px 0 #f3f3f3, 0 -1px #f3f3f3;
+  font-size:15px;
+  line-height:25px;
+  box-shadow:5px 5px 3px #e3e3e3;
+}
+
+.rabbit-top {
+  width:401px;
+  height:125px;
+  background:#eaeaea;
+  clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
+  margin-bottom:40px;
+}
+
+.rabbit-top date {
+  position:absolute;
+  right:35px;
+  top:82px;
+  display:block;
+  transform:rotate(-5deg);
+  text-transform:uppercase;
+  color:rgba(115, 115, 115, 0.5);
+}
+
+.rabbit-top date b {
+  font-weight:900;
+  color:var(--main);
+}
+
+.rabbits-gif {
+  display:block;
+  z-index:1;
+  position:absolute;
+  top:35px;
+  left:35px;
+  width:50px;
+  height:100px;
+  border-radius:5px;
+  background-image:url('http://placehold.it/50x100');
+  background-size:cover;
+  background-position:center;
+  background-color:var(--main);
+  background-blend-mode:luminosity;
+}
+
+
+.red-rabbits span:after {
+  content:'';
+  z-index:-1;
+  position:absolute;
+  right:50px;
+  top:-25px;
+  display:block;
+  height:50px;
+  width:50px;
+  border-radius:100%;
+  border:2px solid #f3f3f3;
+}
+
+.red-rabbits span {
+  z-index:0;
+  position:absolute;
+  text-align:center;
+  left:65px;
+  top:70px;
+  padding:30px;
+  font-size:35px;
+  border-radius:100%;
+  line-height:35px;
+  height:35px;
+  width:35px;
+  background:var(--accent);
+  color:#f3f3f3;
+  text-shadow: none;
+  opacity:0.75;
+}
+
+.rabbits-body {
+  padding:25px 50px 30px;
+  text-align:justify;
+}
+
+.rabbits-body i {
+  border-bottom:2px solid var(--main);
+}
+
+.rabbits-body b { 
+  color:var(--accent);
+  font-weight:900;
+}
+
+.rabbits-tag {
+  position:relative;
+  padding:50px 50px 30px;
+    background:#eaeaea;
+    clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%);
+  font-size:12px;
+  line-height:18px;
+  overflow:hidden;
+}
+
+.rabbits-tag:before {
+  content:'';
+  display:block;
+  position:absolute;
+  bottom:-10px;
+  right:35px;
+  width:50px;
+  height:75px;
+  background:var(--accent);
+  opacity:0.25;
+  border-radius:5px;
+}
+
+.rabbits-tag tag {
+  position:relative;
+  z-index:2;
+}
+
+.rabbits-tag a {
+  color:var(--main);
+  font-weight:900;
+  text-transform:uppercase;
+  font-size:13px;
+}
+
+/* CHARACTER */
+#attilie-rr {  --main: #bdcbe6; --accent: #b0b4cc; }
+
+#attilie-rr .rabbits-gif {
+  background-image:url('https://i.postimg.cc/TwStZjk0/city-flood.gif');
+}
