@@ -164,6 +164,7 @@ display: none;
   border-bottom:2px solid var(--main);
   text-transform:lowercase;
   opacity:0.75;
+  color:#434343;
 }
 
 .sheez-pw {
