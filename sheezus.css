@@ -36,9 +36,9 @@
 display: none;
 }
 
-[type=radio]:checked ~ label { background:#f3f33; width:25px; right:-10px; border-right:10px solid var(--main); }
+.sheeztab [type=radio]:checked ~ label { background:#f3f33; width:25px; right:-10px; border-right:10px solid var(--main); }
 
-[type=radio]:checked ~ label ~ .sheez-content { z-index: 6; opacity:1; }
+.sheeztab [type=radio]:checked ~ label ~ .sheez-content { z-index: 6; opacity:1; }
 
 
 /* CONTENT */ 
