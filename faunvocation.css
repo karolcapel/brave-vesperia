@@ -43,11 +43,11 @@
   display: none;
 }
 
-[type=radio]:checked ~ label {
+.fauntab [type=radio]:checked ~ label {
   background:#d3d3d3;
 }
 
-[type=radio]:checked ~ label ~ .faun-content {
+.fauntab [type=radio]:checked ~ label ~ .faun-content {
   z-index: 2;
   opacity:1;
 }
