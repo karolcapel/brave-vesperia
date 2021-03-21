@@ -1,0 +1,148 @@
+
+.pan-wanted {
+  position:relative;
+  margin:25px auto;
+  padding:25px;
+  border:1px solid #d3d3d3;
+  background:rgba(211, 211, 211, 0.5);
+  width:500px;
+  font-family: nunito;
+  font-size:15px;
+  line-height:22px;
+  color:#494949;
+  font-weight:400;
+  text-shadow:-1px 0 #f9f9f9, 0 1px #f9f9f9, 1px 0 #f9f9f9, 0 -1px #f9f9f9;
+}
+
+.want-bod {
+  background:#e9e9e9;
+  padding:0px 25px 25px 25px;
+  border:1px solid #d3d3d3;
+}
+
+.want-bod b { 
+  color:var(--accent);
+  font-weight:900;
+}
+
+.want-opentxt, .want-closetxt {
+  width:450px;
+  padding:25px 0px 0px;
+}
+
+.want-opentxt h1, .want-closetxt h1 {
+  font-weight:900;
+  font-size:25px;
+  text-transform:uppercase;
+  color:var(--main);
+  font-style:italic;
+  margin:0px;
+  line-height:30px;
+}
+
+.want-closetxt h1 {
+ color:#b3b3b3; 
+}
+
+.want-opentxt span1, .want-closetxt span1 {
+  position:relative;
+  display:block;
+  border-left:5px solid #d3d3d3;
+  margin:25px 25px 0px;
+  padding-left:10px;
+}
+
+.wtitle-open, .wtitle-closed {
+  height:150px;
+  width:400px;
+  background-size:cover;
+  background-position:center;
+  background-color:var(--main);
+  border:25px solid #dcdcdc;
+  text-align:center;
+  color:#e9e9e9;
+  font-weight:900;
+  font-size:30px;
+  line-height:30px;
+  text-transform:uppercase;
+  position:relative;
+  text-shadow:-1px 0 var(--main), 0 1px var(--main), 1px 0 var(--main), 0 -1px var(--main);
+  margin-top:25px;
+}
+
+.wgif-open, .wgif-closed {
+  content:'';
+  position:absolute;
+  left:0px; 
+  top:0px;
+  display:block;
+  height:150px;
+  width:400px;
+  background-image:url('http://placehold.it/400x150');
+  background-blend-mode:luminosity;
+  background-color:var(--main);
+  opacity:0.25;
+  z-index:1;
+}
+
+.wtitle-closed {
+  background-color:#d9d9d9;
+}
+
+.wgif-closed {
+  background-color:#d9d9d9;
+}
+
+.wtitle-open span, .wtitle-closed span {
+  position:relative;
+  z-index:2;
+  top:52px;
+}
+
+.toggle-open, .toggle-closed {
+  background:rgba(211, 211, 211, 0.5);
+  border:1px solid #d3d3d3;
+  border-radius:25px;
+  width:50px;
+  height:25px;
+  position:relative;
+  margin:0px auto;
+  top:54px;
+  z-index:2;
+}
+
+.toggle-open:before, .toggle-closed:before {
+  content:'';
+  position:absolute;
+  left:0px;
+  top:0px;
+  display:block;
+  border-radius:100%;
+  width:25px;
+  height:25px;
+  background:#e9e9e9;
+}
+
+.toggle-closed {
+  background:var(--main);
+}
+
+.toggle-closed:before {
+  content:'';
+  left:25px;
+}
+
+/* IDS */
+
+#pandora { --main:#b7a0b6; --accent:#abc1c1;}
+#attilie {  --main: #bdcbe6; --accent: #b0b4cc; }
+#elijah {  --main: #bfc496; --accent: #c49b97; }
+#fizzy {  --main: #e4ad85; --accent: #88b4a6; }
+#jay {  --main: #e4cf98; --accent: #98c7cc; }
+#knives {  --main: #c68c92; --accent: #7a7f8e; }
+#olga {  --main: #dfbfc1; --accent: #a99ba7;  }
+#otello {  --main: #898690; --accent: #c39786;  }
+#peter {  --main: #b5c3c7; --accent: #b4a0a9;  }
+#sabrina {  --main: #d69293; --accent: #9d7e79;  }
+#tilly { --main: #9b94b9; --accent: #c8a4b7; }
+#wesley { --main: #b1c4d2; --accent: #ceae9b; }
