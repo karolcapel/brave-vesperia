@@ -20,6 +20,11 @@
   border:1px solid #d3d3d3;
 }
 
+.want-bod a {
+  color:var(--main);
+  font-weight:900;
+}
+
 .want-bod b { 
   color:var(--accent);
   font-weight:900;
