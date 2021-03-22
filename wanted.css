@@ -30,6 +30,11 @@
   font-weight:900;
 }
 
+.want-bod strong {
+  font-weight:900;
+  font-style:italic;
+}
+
 .want-opentxt, .want-closetxt {
   width:450px;
   padding:25px 0px 0px;
