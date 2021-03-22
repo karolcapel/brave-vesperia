@@ -33,6 +33,7 @@
 .want-bod strong {
   font-weight:900;
   font-style:italic;
+  font-size:18px;
 }
 
 .want-opentxt, .want-closetxt {
