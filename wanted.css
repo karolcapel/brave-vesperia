@@ -76,7 +76,6 @@
 }
 
 .wgif-open, .wgif-closed {
-  content:'';
   position:absolute;
   left:0px; 
   top:0px;
@@ -85,6 +84,8 @@
   width:400px;
   background-image:url('http://placehold.it/400x150');
   background-blend-mode:luminosity;
+  background-position:center;
+  background-size:cover;
   background-color:var(--main);
   opacity:0.25;
   z-index:1;
