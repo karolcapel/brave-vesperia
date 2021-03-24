@@ -113,6 +113,17 @@
   font-weight:900;
 }
 
+.rabbits-body a { 
+  color:var(--main);
+}
+
+.rabbits-body hr {
+  height:1px;
+  background:#e3e3e3;
+  margin:15px 0px;
+  border: none;
+}
+
 .rabbits-tag {
   position:relative;
   padding:50px 50px 30px;
