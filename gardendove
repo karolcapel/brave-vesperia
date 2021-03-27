@@ -1,0 +1,188 @@
+.garden-dove {
+  position:relative;
+  margin:35px auto;
+  background:#f3f3f3;
+  width:425px;
+  border:1px solid #d9d9d9;
+  box-shadow:3px 3px 5px #d3d3d3;
+  overflow:hidden;
+  font-family: nunito;
+  font-size:15px;
+  line-height:22px;
+  color:#595959;
+  font-weight:400;
+  text-align:justify;
+  border-radius:5px;
+}
+
+.dove-top {
+  height:150px;
+  background:#e3e3e3;
+  position:relative;
+  overflow:hidden;
+}
+
+.dove-top:before {
+  content:'';
+  display:block;
+  position:absolute;
+  width:0px;
+  height:150px;
+  border-top:150px solid var(--main);
+  border-right:150px solid transparent;
+  opacity:0.75;
+}
+
+.dove-top date {
+  position:absolute;
+  line-height:25px;
+  height:25px;
+  font-size:12px;
+  top:30px;
+  left:139px;
+  width:80px;
+  text-align:center;
+  text-transform:uppercase;
+  text-shadow:-1px 0 #f3f3f3, 0 1px #f3f3f3, 1px 0 #f3f3f3, 0 -1px #f3f3f3;
+  transform:rotate(-45deg);
+}
+
+.dove-top date b {
+  font-weight:900;
+  display:inline-block;
+  margin-right:2px;
+  color:var(--accent);
+}
+
+.dove-icon {
+  border:2px solid #f3f3f3;
+  width:75px;
+  height:75px;
+  position:relative;
+  margin:0px auto;
+  z-index:3;
+  top:35px;
+  transform:rotate(45deg);
+  box-shadow:0px 0px 1px 1px #a3a3a3;
+}
+
+.dove-icon span {
+  display:block;
+  font-size:50px;
+  transform:rotate(-45deg);
+  margin:12.5px;
+  color:#f3f3f3;
+  text-shadow:-1px 0 #a3a3a3, 0 1px #a3a3a3, 1px 0 #a3a3a3, 0 -1px #a3a3a3;
+}
+
+.dove-gif {
+  width:100%;
+  height:150px;
+  position:absolute;
+  top:0px;
+  right:0px;
+  overflow:hidden;
+ }
+
+.dove-gif:before {
+  content:'';
+  display:block;
+  z-index:1;
+  position:absolute;
+  top:0px;
+  left:0px;
+  height:150px;
+  width:425px;
+  background-color:#e3e3e3;
+  background-image:url('http://placehold.it/425x150');
+  background-blend-mode:luminosity;
+  opacity:0.25;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  overflow:hidden;
+}
+
+.dove-gif:after {
+  content:'';
+  position:absolute;
+  right:0px;
+  z-index:2;
+  display:block;
+  border-bottom:150px solid var(--accent);
+  border-left:150px solid transparent;
+  opacity:0.75;
+}
+
+.dove-body {
+  background:#f3f3f3;
+  padding:50px;
+}
+
+.dove-body:before {
+  content:'';
+  position:relative;
+  margin:-50px -50px 50px;
+  display:block;
+  height:5px;
+  background:linear-gradient(to right, var(--main), var(--accent));
+}
+
+.dove-body:after {
+  content:'';
+  position:relative;
+  margin:50px -50px -50px;
+  display:block;
+  height:5px;
+  background:linear-gradient(to right, var(--accent), var(--main));
+}
+
+.dove-body b {
+  color:var(--accent);
+  font-weight:900;
+}
+
+.dove-body a {
+  color:var(--main);
+}
+
+.dove-body i {
+  border-bottom:2px solid var(--main);
+  color:#a3a3a3;
+}
+
+.dove-tail {
+  position:relative;
+  background:#e3e3e3;
+  padding:40px 50px;
+  line-height:15px;
+  font-size:12px;
+  text-shadow:-1px 0 #f3f3f3, 0 1px #f3f3f3, 1px 0 #f3f3f3, 0 -1px #f3f3f3;
+  text-align:left;
+  overflow:hidden;
+}
+
+.dove-tail span {
+  position:relative;
+}
+
+.dove-tail span:before {
+  content:'';
+  display:block;
+  height:18px;
+  width:18px;
+  border:2px solid var(--accent);
+  transform:rotate(-45deg);
+  opacity:0.5;
+  position:absolute;
+  left:-13px;
+  top:-3px;
+}
+
+.dove-tail a {
+  position:relative;
+  color:var(--main);
+  font-weight:900;
+  text-transform:uppercase;
+  z-index:1;
+}
