@@ -17,7 +17,7 @@
 
 .dove-top {
   height:150px;
-  background:#eaeaea;
+  background:#e6e6e6;
   position:relative;
   overflow:hidden;
 }
@@ -94,7 +94,7 @@
   left:0px;
   height:150px;
   width:425px;
-  background-color:#eaeaea;
+  background-color:#e6e6e6;
   background-image:url('http://placehold.it/425x150');
   background-blend-mode:luminosity;
   opacity:0.25;
@@ -154,7 +154,7 @@
 
 .dove-tail {
   position:relative;
-  background:#eaeaea;
+  background:#e6e6e6;
   padding:40px 50px;
   line-height:15px;
   font-size:12px;
