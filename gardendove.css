@@ -30,7 +30,7 @@
   height:150px;
   border-top:150px solid var(--main);
   border-right:150px solid transparent;
-  opacity:0.75;
+  opacity:0.65;
 }
 
 .dove-top date {
@@ -112,7 +112,7 @@
   display:block;
   border-bottom:150px solid var(--accent);
   border-left:150px solid transparent;
-  opacity:0.75;
+  opacity:0.65;
 }
 
 .dove-body {
