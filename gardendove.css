@@ -45,6 +45,7 @@
   text-transform:uppercase;
   text-shadow:-1px 0 #f3f3f3, 0 1px #f3f3f3, 1px 0 #f3f3f3, 0 -1px #f3f3f3;
   transform:rotate(-45deg);
+  z-index:3;
 }
 
 .dove-top date b {
