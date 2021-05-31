@@ -167,6 +167,8 @@ left:0px;
 .ophelia-text a {
   font-weight:900;
   border-bottom:2px solid var(--main);
+  color:#535353;
+  text-transform:lowercase;
 }
 
 .ophelia-plots {
