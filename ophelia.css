@@ -1,0 +1,275 @@
+/* WRAP */
+
+.ophelia {
+  font-family: nunito;
+  position:relative;
+  margin:25px auto;
+  width:600px;
+  height:675px;
+  background:#e3e3e3;
+  border:1px solid #d9d9d9;
+  color:#535353;
+  font-weight:400;
+  overflow:hidden;
+}
+
+/* TABS */
+
+.oph-tabs { float:left; }
+
+.oph-tabs label {
+background: #f3f3f3;
+height:8px;
+width:8px;
+position: relative;
+left: 50px;
+top:25px;
+border-radius:100%;
+z-index:5;
+display:block;
+margin-right:20px;
+border:2px solid #f3f3f3;
+opacity: 0.5;
+}
+
+.oph-tabs [type=radio] {
+display: none;
+}
+
+.oph-tabs [type=radio]:checked ~ label {
+z-index: 5;
+background:var(--accent);
+opacity: 0.75;
+}
+
+.oph-tabs [type=radio]:checked ~ label ~ .ophelia-content {
+z-index: 4;
+opacity:1;
+top:0px;
+left:0px;
+}
+
+/* CONTENT */
+
+.ophelia-content {
+  height:675px;
+  width:600px;
+  background:#f3f3f3;
+  position:absolute;
+  top:0px;
+  left:0px;
+  opacity:0;
+  transition-timing-function: ease-in-out;
+  transition-duration:.5s;
+}
+
+.ophelia-name {
+  width:600px;
+  height:225px;
+  background:var(--main);
+}
+
+.ophelia-name:before {
+  content:'';
+  display:block;
+  width:600px;
+  height:225px;
+  position:absolute;
+  z-index:0;
+  opacity:0.075;
+  background-color:var(--main);
+  background-size:100%;
+  text-shadow:2px 2px 0px var(--accent);
+  background-blend-mode:luminosity;
+}
+
+.ophelia-name h1 {
+  display:block;
+  position:relative;
+  z-index:2;
+  margin:0px;
+  font-size:35px;
+  text-transform:uppercase;
+  padding:60px 50px 0px 50px;
+  color:#f3f3f3;
+  font-weight:900;
+  line-height:35px;
+}
+
+.ophelia-name h1:after {
+  content:'.';
+}
+
+.ophelia-name h2 {
+  font-size:12px;
+  color:#f3f3f3;
+  padding:0px 50px;
+  line-height:5px;
+  opacity:0.75;
+  text-transform:uppercase;
+  font-weight:700;
+  font-style:italic;
+}
+
+.ophelia-hover {
+  width:200px;
+  height:350px;
+  position:absolute;
+  right:50px;
+  top:175px;
+  background-position:center;
+  background-color:var(--accent);
+  background-blend-mode:luminosity;
+}
+
+.ophelia-icon {
+  position:absolute;
+  display:block;
+  width:350px;
+  top:185px;
+  height:100px;
+  z-index:2;
+  text-align:center;
+}
+
+.ophelia-icon a {
+  display:block;
+  margin:0px auto;
+  position:relative;
+  font-size:40px;
+  background:var(--accent);
+  width:40px;
+  height:40px;
+  padding:15px;
+  line-height:50px;
+  border-radius:100%;
+  color:#f3f3f3;
+  text-decoration: none;
+}
+
+.ophelia-text {
+  position:absolute;
+  left:50px;
+  top:264px;
+  width:250px;
+  height:360px;
+  text-align:justify;
+  font-size:16px;
+  line-height:24px;
+  border-bottom:1px solid #d3d3d3;
+}
+
+.ophelia-text b {
+  color:var(--accent);
+  font-weight:900;
+}
+
+.ophelia-text a {
+  font-weight:900;
+  border-bottom:2px solid var(--main);
+}
+
+.ophelia-plots {
+  position:absolute;
+  bottom:0px;
+  right:0px;
+  padding:25px;
+  background:#e3e3e3;
+  width:225px;
+  height:125px;
+  border-radius:25px 0px 0px 0px;
+  font-size:14px;
+  line-height:18px;
+  text-align:justify;
+}
+
+.ophelia-plots b {
+  color:var(--accent);
+  font-weight:900;
+}
+
+.ophelia-plots:before {
+  content:'ideas';
+  text-transform:uppercase;
+  position:absolute;
+  top:-8px;
+  right:25px;
+  font-size:40px;
+  font-weight:900;
+  color:var(--main);
+  text-shadow:2px 2px 0px #f3f3f3;
+  font-style:italic;
+}
+
+/* CHARACTERS */ 
+
+#pandora { --main:#b7a0b6; --accent:#abc1c1;}
+#attilie {  --main: #bdcbe6; --accent: #b0b4cc; }
+#eurydice {  --main: #a5aec7; --accent: #cca2a7; }
+#fizzy {  --main: #e4ad85; --accent: #88b4a6; }
+#jay {  --main: #e4cf98; --accent: #98c7cc; }
+#knives {  --main: #c68c92; --accent: #7a7f8e; }
+#olga {  --main: #dfbfc1; --accent: #a99ba7;  }
+#otello {  --main: #898690; --accent: #c39786;  }
+#peter {  --main: #b5c3c7; --accent: #b4a0a9;  }
+#rory { --main:#999; --accent: #666; }
+#sabrina {  --main: #d69293; --accent: #9d7e79;  }
+#tilly { --main: #9b94b9; --accent: #c8a4b7; }
+#tisiphone {  --main: #988fb0; --accent: #bc898b; }
+#wesley { --main: #b1c4d2; --accent: #ceae9b; }
+
+#pandora .ophelia-name:before {
+    background-image:url('https://i.postimg.cc/Dybr4Lkh/sommer-tag.jpg');
+}
+
+#attilie .ophelia-name:before {
+    background-image:url('https://i.postimg.cc/Y9Zynqf6/attie-tag.jpg');
+}
+
+#eurydice .ophelia-name:before {
+    background-image:url('https://i.postimg.cc/T3p52C3x/eury-plot.jpg');
+}
+
+#fizzy .ophelia-name:before {
+    background-image:url('https://i.postimg.cc/0x4Z6z6J/eli-tag.jpg');
+}
+
+#jay .ophelia-name:before {
+    background-image:url('https://i.postimg.cc/fwVYMTVd/jay-plot.jpg');
+}
+
+#knives .ophelia-name:before {
+    background-image:url('https://i.postimg.cc/wTf96DVF/knives-tag.jpg');
+}
+
+#olga .ophelia-name:before {
+    background-image:url('https://i.postimg.cc/76kkB9HP/olga-tag.jpg');
+}
+
+#otello .ophelia-name:before {
+    background-image:url('https://i.postimg.cc/ZK0560tF/otello-plot.jpg');
+}
+
+#peter .ophelia-name:before {
+    background-image:url('https://i.postimg.cc/rFmLYKk4/donny-tag.jpg');
+}
+
+#rory .ophelia-name:before {
+    background-image:url('https://i.postimg.cc/43GG2xM0/rory-plot.jpg');
+}
+
+#sabrina .ophelia-name:before {
+    background-image:url('https://i.postimg.cc/cJG1qmKX/sabrina-plot.jpg');
+}
+
+#tilly .ophelia-name:before {
+    background-image:url('https://i.postimg.cc/268H8LTF/tilly-tag.jpg');
+}
+
+#tisiphone .ophelia-name:before {
+    background-image:url('https://i.postimg.cc/C5hd34QW/tisiphone-plot.jpg');
+}
+
+#wesley .ophelia-name:before {
+    background-image:url('https://i.postimg.cc/Kjjx7pVv/wes-plot.jpg');
+}
