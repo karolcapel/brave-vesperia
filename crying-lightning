@@ -1,0 +1,113 @@
+.crying-lightning {
+  background:#fcfcfc;
+  position:relative;
+  margin:25px auto;
+  padding:50px 50px 40px 50px;
+  width:325px;
+  border:25px solid #dcdcdc;
+  border:25px solid rgba(220, 220, 220, 0.25);
+  border-radius:50px;
+  font-family: nunito;
+  color:#5c5c5c;
+  font-size:15px;
+  line-height:26px;
+  text-align:justify;
+  overflow:hidden;
+  box-shadow:2px 2px 0px #ececec;
+}
+
+.lightning-half {
+  position:relative;
+  height:70px;
+  width:200px;
+  display:block;
+  margin:0px auto;
+}
+
+.lightning-half:before {
+  content:'';
+  position:absolute;
+  top:-175px;
+  left:0px;
+  display:block;
+  height:200px;
+  width:200px;
+  border-radius:100%;
+  background: linear-gradient(to bottom right, var(--main), var(--accent), #fcfcfc);
+  overflow:hidden;
+}
+
+.lightning-half:after {
+  content:'';
+  position:absolute;
+  top:-105px;
+  left:-30px;
+  display:block;
+  height:100px;
+  width:100px;
+  border-radius:100%;
+  background: linear-gradient(to bottom left, var(--main), var(--main), #fcfcfc);
+  opacity:0.75;
+}
+
+.lightning-half span {
+  font-size:35px;
+  background:#e9e9e9;
+  background: linear-gradient(to bottom right, var(--main), rgba(252, 252, 252, 0.5));
+  padding:15px;
+  border-radius:100%;
+  position:relative;
+  margin-left:135px;
+  margin-top:-25px;
+  color:var(--accent);
+  text-shadow:1px 1px 0px #fcfcfc;
+}
+
+.lightning-body {
+border-left:1px solid rgba(220, 220, 220, 0.75);
+border-right:1px solid rgba(220, 220, 220, 0.75);
+padding-left:25px;
+padding-right:25px;
+margin-left:-25px;
+margin-right:-25px;
+}
+
+.lightning-body a { 
+  color:var(--main);
+  font-weight:900;
+}
+
+.lightning-body b { 
+  font-weight:900;
+  color:var(--accent);
+}
+
+.lightning-body i { 
+  border-bottom:2px solid var(--main);
+  color:#9c9c9c;
+}
+
+.lightning-tag {
+  padding:25px 0px 0px 0px;
+  display:block;
+  margin-left:-25px;
+  margin-right:-25px;
+  font-size:12px;
+  line-height:12px
+  margin-top:25px;
+  text-align:left;
+}
+
+.lightning-tag a {
+   background: linear-gradient(to bottom right, var(--main), var(--accent));
+   border:4px solid rgba(252, 252, 252, 0.5);
+   border-radius:50px;
+   padding:4px 10px;
+   font-size:10px;
+   line-height:16px;
+   color:#fcfcfc!important;
+   text-transform:uppercase;
+   font-weight:900;
+   margin:3px;
+   display:inline-block;
+}
