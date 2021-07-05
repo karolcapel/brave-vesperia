@@ -1,0 +1,134 @@
+.static-buzz {
+  position:relative;
+  margin:25px auto;
+  width:400px;
+  background:#fcfcfc;
+  border:25px solid #dcdcdc;
+  border:25px solid rgba(220, 220, 220, 0.25);
+  overflow:hidden;
+  border-radius:25px;
+  font-family: nunito;
+  font-size:15px;
+  line-height:24px;
+  color:#5c5c5c;
+  box-shadow:1px 1px 2px #dcdcdc;
+}
+
+.static-top {
+  height:100px;
+  width:400px;
+}
+
+.static-top:before {
+  content:'';
+  display:block;
+  background: var(--main);
+  position:absolute;
+  left:0px;
+  right:0px;
+  top:0px;
+  height:100;
+}
+
+.static-circle {
+  content:'';
+  display:block;
+  position:relative;
+  top:25px;
+  margin:auto;
+  width:125px;
+  height:125px;
+  background: linear-gradient(to bottom right, var(--main), var(--accent));
+  border-radius:100%;
+  overflow:hidden;
+  border:3px solid #fcfcfc;
+}
+
+.static-circle:after {
+  content:'';
+  display:block;
+  position:absolute;
+  top:-50px;
+  margin:auto;
+  width:150px;
+  height:125px;
+  background: linear-gradient(to bottom, var(--accent), var(--accent), rgba(252, 252, 252, 0.5));
+  border-radius:200%;
+  transform:rotate(30deg);
+}
+
+.static-circle span {
+  position:absolute;
+  top:0px;
+  left:0px;
+  font-size:55px;
+  width:55px;
+  height:55px;
+  padding:40px 35px;
+  line-height:125px;
+  text-align:center;
+  display:block;
+  color:#fcfcfc;
+  text-shadow:1px 1px 0px var(--accent);
+  z-index:4;
+}
+
+.static-body {
+  padding:75px 50px 30px;
+  text-align:justify;
+}
+
+.static-body a {
+  color:var(--main);
+  font-weight:700;
+}
+
+.static-body b {
+  font-weight:900;
+  color:var(--accent);
+}
+
+.static-body i {
+  color:#8c8c8c;
+  border-bottom:2px solid var(--main);
+}
+
+.static-body notes {
+  display:block;
+  border-left:1px solid #dcdcdc;
+  padding-left:10px;
+  font-size:12px;
+  margin-top:15px;
+  min-width:0px;
+}
+
+.static-tag {
+  display:flex;
+  flex-wrap:wrap;
+  
+  font-size:12px;
+  line-height:12px;
+  margin-top:25px;
+  margin-left:-15px;
+}
+
+.static-tag a {
+   background: linear-gradient(to bottom right, var(--main), var(--accent));
+   border:4px solid rgba(252, 252, 252, 0.5);
+   border-radius:50px;
+   padding:4px 10px;
+   font-size:10px;
+   line-height:16px;
+   color:#fcfcfc!important;
+   text-transform:uppercase;
+   font-weight:900;
+   margin:3px;
+   display:inline-block;
+}
+
+.static-tag note {
+  display:inline-block;
+  height:30px;
+  margin:3px;
+  line-height:30px;
+}
