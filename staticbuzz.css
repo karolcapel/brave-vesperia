@@ -102,34 +102,6 @@
   min-width:0px;
 }
 
-.static-battle {
-  text-align:center;
-}
-
-.static-battle pkmn {
-  position:relative;
-  margin:0px -10px 25px;
-}
-
-.static-battle hp {
-  height:5px;
-  min-width:25px;
-  background:#e9e9e9;
-  border-radius:25px;
-  padding:2px 6px;
-  font-size:10px;
-  line-height:10px;
-  position:relative;
-  margin:0px auto;
-  top:65px;
-  font-weight:700;
-}
-
-.static-battle num {
-  position:relative;
-  z-index:2;
-}
-
 .static-tag {
   display:flex;
   flex-wrap:wrap;
@@ -159,4 +131,53 @@
   height:30px;
   margin:3px;
   line-height:30px;
+}
+
+.static-battle {
+  text-align:center;
+  border-top:1px solid #ececec;
+  margin:25px -50px 0px;
+  padding:5px 25px 25px;
+  position:relative;
+}
+
+.static-battle:before {
+  content:'\ec17';
+  position:absolute;
+  top:-25px;
+  right:25px;
+  color:#ececec;
+  font-size:50px;
+  line-height:50px;
+  font-family:cappuccicons;
+  transform:rotate(25deg);
+  z-index:0;
+  background:#fcfcfc;
+  border-radius:100%;
+}
+
+.static-battle pkmn {
+  position:relative;
+  margin:0px -10px 0px;
+  text-align:center;
+  z-index:2;
+}
+
+.static-battle hp {
+  height:5px;
+  min-width:25px;
+  background:#e9e9e9;
+  border-radius:25px;
+  padding:2px 6px;
+  font-size:10px;
+  line-height:10px;
+  position:relative;
+  margin:0px auto;
+  top:65px;
+  font-weight:700;
+}
+
+.static-battle num {
+  position:relative;
+  z-index:2;
 }
