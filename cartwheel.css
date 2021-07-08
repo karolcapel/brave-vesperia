@@ -474,7 +474,7 @@ background:transparent;
 .active-thread, .complete-thread {
   display:inline-block;
   background:#ececec;
-  padding:20px;
+  padding:15px;
   border-radius:20px;
   border:1px solid #dcdcdc;
   flex-grow:3;
