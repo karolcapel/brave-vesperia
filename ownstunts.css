@@ -148,6 +148,7 @@ transition-duration:.5s;
   font-weight:700;
   border-bottom:2px solid var(--main);
   text-transform:lowercase;
+  color:#5c5c5c;
 }
 
 .abt-txt b {
