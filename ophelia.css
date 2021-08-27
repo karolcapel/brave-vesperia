@@ -219,6 +219,7 @@ left:0px;
 #tilly { --main: #9b94b9; --accent: #c8a4b7; }
 #tisiphone {  --main: #988fb0; --accent: #bc898b; }
 #wesley { --main: #b1c4d2; --accent: #ceae9b; }
+#yseult { --main: #ddafa7; --accent: #a49ca9; }
 
 #pandora .ophelia-name:before {
     background-image:url('https://i.postimg.cc/Dybr4Lkh/sommer-tag.jpg');
@@ -274,4 +275,8 @@ left:0px;
 
 #wesley .ophelia-name:before {
     background-image:url('https://i.postimg.cc/Kjjx7pVv/wes-plot.jpg');
+}
+
+#yseult .ophelia-name:before {
+    background-image:url('https://i.postimg.cc/cHTzR2Ts/yseult-plot.jpg');
 }
