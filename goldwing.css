@@ -30,8 +30,8 @@
 
 #gw-toggle input { display: none; }
 
-#gw-toggle input:checked+label ~ .goldwing-content { left:-625; }
-#gw-toggle input:checked+label ~ .gw-timeline { left:0; }
+#gw-toggle input:checked+label ~ .goldwing-content { left:-625px; }
+#gw-toggle input:checked+label ~ .gw-timeline { left:0px; }
 #gw-toggle input:checked+label ~ .goldwing-frame { width:150px; height:150px; }
 #gw-toggle input:checked+label ~ .goldwing-frame:before { width:200px; height:200px; background-size:90%; }
 #gw-toggle input:checked+label ~ .gw-relations { bottom:0px; transition-delay:.5s; }
