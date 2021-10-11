@@ -662,7 +662,7 @@
   font-weight:900;
   color:var(--one);
   font-size:15px;
-  float:left;
+  display:inline-block;
 }
 
 .thread-c tag:before {
