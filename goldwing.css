@@ -650,7 +650,6 @@
 }
 
 .thread-o tag, .thread-c tag {
-  display:inline-block;
   font-size:12px;
   line-height:12px;
   font-weight:400;
