@@ -658,7 +658,9 @@
 
 .thread-o tag:before, .thread-c tag:before {
   content:'#';
-  margin-right:1px;
+  margin-right:2px;
+  top:2px;
+  position:relative;
   font-weight:900;
   color:var(--one);
   font-size:15px;
