@@ -357,6 +357,7 @@
   position:relative;
   margin:30px;
   font-size:14px;
+  line-height:18px;
   text-align:justify;
   text-shadow:-1px 0 #f9f9f9, 0 1px #f9f9f9, 1px 0 #f9f9f9, 0 -1px #f9f9f9;
 }
@@ -817,10 +818,10 @@
   z-index:2;
   position:absolute;
   display:block;
-  width:100%;
+  width:40px;
   text-align:center;
   top:275px;
-  left:34px;
+  left:325px;
 }
 
 #gw-toggle #CHAR-grels+label span {
