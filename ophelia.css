@@ -210,6 +210,7 @@ left:0px;
 #eurydice {  --main: #a5aec7; --accent: #cca2a7; }
 #fizzy {  --main: #e4ad85; --accent: #88b4a6; }
 #jay {  --main: #e4cf98; --accent: #98c7cc; }
+#kit { --main: #95bcbe; --accent: #82848a; }
 #knives {  --main: #c68c92; --accent: #7a7f8e; }
 #olga {  --main: #dfbfc1; --accent: #a99ba7;  }
 #otello {  --main: #898690; --accent: #c39786;  }
@@ -239,6 +240,10 @@ left:0px;
 
 #jay .ophelia-name:before {
     background-image:url('https://i.postimg.cc/fwVYMTVd/jay-plot.jpg');
+}
+
+#kit .ophelia-name:before {
+    background-image:url('https://i.postimg.cc/k4gMxQN1/kitplot.jpg');
 }
 
 #knives .ophelia-name:before {
