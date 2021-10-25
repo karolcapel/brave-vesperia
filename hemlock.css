@@ -48,16 +48,18 @@
   height:75px;
   width:274px;
   align-items:center;
-  font-weight:700;
-  text-transform:uppercase;
+  font-weight:400;
   flex-wrap:wrap;
   line-height:15px;
+  font-size:12.5px;
+  text-transform:lowercase;
 }
 
 .hemlock-tag mon {
   display:block;
   width:100%;
   align-items:stretch;
+  font-size:12.5px;
 }
 
 .hemlock-tag mon b {
@@ -67,13 +69,21 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-right:2px;
+  text-transform:uppercase;
+  font-size:15px;
+}
+
+.hemlock-tag strong {
+  font-weight:700;
+  text-transform:uppercase;
+  font-size:15px;
 }
 
 .hemlock-tag a {
   font-weight:400;
   line-height:15px;
   color:#737373;
-  font-size:12.5px;
+  text-transform:uppercase;
 }
 
 .hemlock-tag a:before {
@@ -81,6 +91,7 @@
   color:var(--accent);
   margin-right:2px;
   font-weight:700;
+
 }
 
 .hemlock-body {
