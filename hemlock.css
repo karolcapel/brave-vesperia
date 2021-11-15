@@ -117,3 +117,10 @@
   border-bottom:2px solid var(--main);
   font-weight:700;
 }
+
+.hemlock-body hr {
+height:1px; 
+border:none;
+margin:25px 75px;
+background:#e3e3e3; 
+}
