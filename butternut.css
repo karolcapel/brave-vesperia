@@ -1,0 +1,10 @@
+.butternut-post:before {
+content:'\a1';
+font-family: starry;
+position:absolute;
+bottom:0px;
+right:0px;
+font-size:50px;
+line-height:50px;
+color:var(--light);
+}
