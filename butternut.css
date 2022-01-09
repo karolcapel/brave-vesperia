@@ -1,5 +1,67 @@
 @import "//christieclee.github.io/highalo/starry/starry.css";
 
+.butternut-wrap {
+  position:relative;
+  margin:50px auto;
+  width:500px;
+}
+
+.butternut-post {
+  position:relative;
+  z-index:1;
+  width:398px;
+  border:1px solid var(--light);
+  background:#f3f3f3;
+  padding:50px;
+  font-family: nunito;
+  font-weight:400;
+  color:var(--dark);
+  text-align:justify;
+  font-size:14.5px;
+  line-height:23px;
+}
+
+.butternut-post b {
+  font-weight:900;
+  color:var(--group2);
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+
+.butternut-post i {
+  font-weight:700;
+  color:var(--dark-rgb);
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+
+.butternut-post u { 
+  text-decoration: none;
+  font-weight:700;
+  border-bottom:2px solid var(--group1); 
+}
+
+.butternut-post a {
+  opacity:0.85;
+  font-weight:900;
+  color:var(--group1);
+  text-transform: uppercase;
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+  font-size:11px;
+  margin:0px 2px;
+}
+
+.butternut-post a:before {
+  content:'#';
+  color:var(--group2);
+  margin-right:1px;
+}
+
+.butternut-post hr {
+height:1px;
+background:var(--light);
+border:none;
+margin:25px 0px;
+}
+
 .butternut-post:before {
 content:'\a1';
 font-family: starry;
