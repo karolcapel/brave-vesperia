@@ -12,6 +12,7 @@
   font-size:15px;
   line-height:24px;
   z-index:1;
+  text-shadow: -1px 0 #f3f3f3, 0 1px #f3f3f3, 1px 0 #f3f3f3, 0 -1px #f3f3f3;
 }
 
 .kyoto a {
@@ -112,6 +113,7 @@
   font-size:50px;
   line-height:100%;
   color:rgba(var(--accent), 0.5);
+  font-weight:400;
 }
 
 .kyoto-tag a.user-tagged {
