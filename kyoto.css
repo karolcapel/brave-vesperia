@@ -1,0 +1,139 @@
+.kyoto {
+  position:relative;
+  margin:25px auto;
+  width:450px;
+  background:#f9f9f9;
+  border:1px solid #dbdbdb;
+  overflow:hidden;
+  background:#f3f3f3;
+  font-family: nunito; 
+  font-weight:400;
+  color:#797979;
+  font-size:15px;
+  line-height:24px;
+  z-index:1;
+}
+
+.kyoto a {
+  color:rgba(var(--accent));
+}
+
+.kyoto span.dice-roll {
+  border:0px!important;
+  background:rgba(var(--accent), 0.1);
+  padding:4px 8px;
+  display:inline-block;
+  font-size:13.5;
+  color:rgba(var(--accent), 0.75);
+}
+
+.kyoto span.dice-roll b {
+  font-weight:700;
+  color:rgba(var(--accent), 0.75);
+}
+
+.kyoto-date {
+  padding:50px 50px 0px 50px;
+  text-align:right;
+}
+
+.kyoto-date date {
+  background:rgba(var(--main), 0.1);
+  padding:4px 8px;
+  color:rgba(var(--main), 0.5);
+  font-size:13.5;
+  position:relative;
+  z-index:1;
+  display:inline-block;
+}
+
+.kyoto-date b {
+  font-weight:700;
+  margin-right:2px;
+}
+
+.kyoto-body {
+  padding:30px 50px 50px 50px;
+  text-align:justify;
+}
+
+.kyoto-body b {
+  font-weight:900;
+     background: -webkit-linear-gradient(rgba(var(--accent), 0.5), rgba(var(--accent)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.kyoto-body i {
+   background: -webkit-linear-gradient(rgba(var(--main)), rgba(var(--accent)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.kyoto-body u {
+  text-decoration:none;
+  font-weight:700;
+  border-bottom:2px solid rgba(var(--main), 0.5);
+}
+
+.kyoto-tag {
+  padding:50px;
+  background:rgba(var(--main), 0.1);
+  font-size:13.5px;
+  display:flex;
+  flex-wrap:wrap;
+  align-content:flex-start;
+  gap:5px;
+  position:relative;
+  z-index:1;
+}
+
+.kyoto-tag:before {
+  content:'';
+  background:rgba(var(--main), 0.1);
+  height:100%;
+  display:block;
+  position:absolute;
+  top:0px;
+  right:0px;
+  width:150px;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  text-align:center;
+  z-index:0; 
+}
+
+.kyoto-tag:after {
+  content:var(--unicode);
+  font-family:pandora-box;
+  display:flex;
+  align-items:center;
+  height:100%;
+  position:absolute;
+  top:0px;
+  right:0px;
+  width:125px;
+  justify-content:center;
+  font-size:50px;
+  line-height:50px;
+   background: -webkit-linear-gradient(rgba(var(--accent),0.75), rgba(var(--accent),0.5), rgba(var(--main),0.25));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.kyoto-tag a.user-tagged {
+  font-weight:700;
+  text-transform:uppercase;
+  padding:4px 8px;
+  background-color:#f3f3f3;
+  position:relative;
+  z-index:1;
+  color:rgba(var(--main), 0.65);
+}
+
+.kyoto-tag note {
+  display: inline-block;
+  padding:4px 8px;
+  color:rgba(var(--main));
+  background:rgba(var(--main), 0.1);
+  z-index:1;
+}
