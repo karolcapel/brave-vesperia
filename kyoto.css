@@ -75,8 +75,7 @@
 }
 
 .kyoto-tag {
-  padding:50px;
-  padding-right:150px;
+  padding:50px 150px 50px 50px;
   background:rgba(var(--main), 0.1);
   font-size:13.5px;
   display:flex;
