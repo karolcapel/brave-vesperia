@@ -1,4 +1,4 @@
-/* PANDORA'S UNICODES */
+/* UNICODES & COLORS */
 
 #donny { 
   --main:  151, 171, 177;
@@ -20,7 +20,7 @@
 
 #olga {
  --main: 212, 146, 152;
- --accent: 203, 123, 130;
+ --accent: 212, 147, 153;
  --unicode: '\e009'; 
 }
 
