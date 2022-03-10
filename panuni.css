@@ -1,13 +1,60 @@
 /* PANDORA'S UNICODES */
 
-#donny { --unicode: '\e900'; }
-#jay { --unicode: '\e007'; }
-#kit { --unicode: '\e103'; }
-#olga { --unicode: '\e009'; }
-#otello { --unicode: '\e102'; }
-#tilly { --unicode: '\e002'; }
-#uri { --unicode: '\e104'; }
-#wes { --unicode: '\e901'; }
-#yseult { --unicode: '\e00d'; }
+#donny { 
+  --main:  151, 171, 177;
+  --accent: 122, 147, 155;
+  --unicode: '\e900'; 
+}
+
+#jay { 
+ --main: 138, 208, 213;
+ --accent: 124, 201, 208;
+ --unicode: '\e007'; 
+}
+
+#kit {
+ --main: 120, 179, 190;
+ --accent: 117, 177, 188;
+ --unicode: '\e103'; 
+}
+
+#olga {
+ --main: 212, 146, 152;
+ --accent: 203, 123, 130;
+ --unicode: '\e009'; 
+}
+
+#otello {
+ --main: 195, 151, 134;
+ --accent: 185, 135, 115;
+ --unicode: '\e102'; 
+}
+
+#tilly {
+ --main: 155, 148, 185;
+ --accent: 138, 130, 174;
+ --unicode: '\e002'; 
+}
+
+#uri {
+ --main: 125, 143, 179;
+ --accent: 123, 141, 178;
+ --unicode: '\e104'; 
+}
+
+#wes {
+ --main: 149, 175, 194;
+ --accent: 142, 170, 190;
+ --unicode: '\e901'; 
+}
+
+#yseult {
+  --main: 178, 145, 161; 
+  --accent: 174, 141, 157;
+ --unicode: '\e00d'; 
+}
+
+/* INTERIM */
+
 #attie { --unicode: '\e000'; }
 #jonesy { --unicode: '\e003'; }
