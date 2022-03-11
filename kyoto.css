@@ -118,6 +118,23 @@
   -webkit-font-smoothing: antialiased;
 }
 
+#sonny.kyoto-tag:after {
+  content:var(--unicode);
+  font-family:'starry';
+  display:flex;
+  align-items:center;
+  height:100%;
+  position:absolute;
+  top:0px;
+  right:0px;
+  width:125px;
+  justify-content:center;
+  font-size:55px;
+  line-height:100%;
+  color:rgba(var(--accent), 0.5);
+  font-weight:normal!important;
+}
+
 .kyoto-tag a.user-tagged {
   font-weight:700;
   text-transform:uppercase;
