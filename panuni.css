@@ -1,4 +1,4 @@
-/* UNICODES & COLORS */
+/* PAN'S UNICODES & COLORS */
 
 #donny { 
   --main:  151, 171, 177;
@@ -58,3 +58,64 @@
 
 #attie { --unicode: '\e000'; }
 #jonesy { --unicode: '\e003'; }
+
+/* SONNY'S UNICODES & COLORS */
+#connie {  
+ --main:  117, 117, 147;
+ --accent: 110, 110, 132;
+ --unicode: '\a79'; 
+}
+
+#darcy {  
+ --main: 153, 55, 55;
+ --accent: 146,68,68;
+ --unicode: '\a135'; 
+}
+
+#eden {  
+ --main: 114,127,93;
+ --accent: 104,113,89;
+ --unicode: '\a127'; 
+}
+
+#jericho {  
+ --main: 168,152,154;
+ --accent: 156,137,139;
+ --unicode: '\a25'; 
+}
+
+#joel {  
+ --main: 124,153,181;
+ --accent: 108,140,171;
+ --unicode: '\a38'; 
+}
+
+#lune {  
+ --main: 163,178,224;
+ --accent: 155,171,221;
+ --unicode: '\a46'; 
+}
+
+#milou {  
+ --main: 157,186,126;
+ --accent: 144,176,109;
+ --unicode: '\a113'; 
+}
+
+#prosper {  
+ --main: 182,143,173;
+ --accent: 171,126,160;
+ --unicode: '\a93'; 
+}
+
+#tamsen {  
+ --main: 160,147,178;
+ --accent: 146,130,166;
+ --unicode: '\a123'; 
+}
+
+#teo {  
+ --main: 192,122,82;
+ --accent: 172,112,79;
+ --unicode: '\a72'; 
+}
