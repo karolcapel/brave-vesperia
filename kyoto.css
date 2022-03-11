@@ -118,7 +118,7 @@
   -webkit-font-smoothing: antialiased;
 }
 
-#sonny .kyoto-tag:after {
+#sonny.kyoto-tag:after {
   content:var(--unicode);
   font-family:'starry';
   display:flex;
@@ -133,7 +133,6 @@
   line-height:100%;
   color:rgba(var(--accent), 0.5);
   font-weight:normal!important;
-  -webkit-font-smoothing: antialiased;
 }
 
 .kyoto-tag a.user-tagged {
