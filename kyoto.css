@@ -115,6 +115,7 @@
   line-height:100%;
   color:rgba(var(--accent), 0.5);
   font-weight:400;
+  -webkit-font-smoothing: antialiased;
 }
 
 .kyoto-tag a.user-tagged {
