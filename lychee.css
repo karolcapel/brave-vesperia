@@ -133,7 +133,7 @@
 
 .ly-body {
   padding:50px;
-  background:linear-gradient(to bottom, #f3f3f3, rgba(var(--clr), 0.15));
+  background:linear-gradient(to bottom, #f3f3f3, 90%, rgba(var(--clr), 0.15));
 }
 
 .ly-body b {
