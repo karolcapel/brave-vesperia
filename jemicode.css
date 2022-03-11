@@ -1,0 +1,26 @@
+/* JEM'S COLORS & UNICODES */
+
+#mars {
+  --unicode:'\a129';
+  --clr: 146, 202, 167;
+}
+
+#ambr {
+  --unicode:'\a131';
+  --clr: 215, 146, 151;
+}
+
+#ltna {
+  --unicode:'\a46';
+  --clr: 169,183,222;
+}
+
+#cain {
+  --unicode:'\a92';
+  --clr:150, 199, 193;
+}
+
+#oliv {
+  --unicode:'\a71';
+  --clr:228, 163, 146;
+}
