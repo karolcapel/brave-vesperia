@@ -1,5 +1,11 @@
 /* PAN'S UNICODES & COLORS */
 
+#aimee {
+ --main: 191, 135, 201;
+ --accent: 176, 129, 185;
+ --unicode: '\e00e'; 
+}
+
 #donny { 
   --main:  151, 171, 177;
   --accent: 122, 147, 155;
