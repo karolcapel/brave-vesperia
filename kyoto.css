@@ -74,6 +74,13 @@
   border-bottom:2px solid rgba(var(--main), 0.5);
 }
 
+.kyoto-body hr {
+height:1px; 
+border:none;
+background:rgba(var(--main), .25); 
+margin:25px;
+}
+
 .kyoto-tag {
   padding:50px 150px 50px 50px;
   background:rgba(var(--main), 0.1);
