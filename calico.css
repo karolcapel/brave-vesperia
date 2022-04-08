@@ -125,6 +125,7 @@ display: none;
 }
 
 .calico-blurb a {
+  text-transform:lowercase;
   font-weight:700;
   border-bottom:2px solid rgba(var(--main), .35);
 }
@@ -160,7 +161,6 @@ display: none;
 }
 
 .calico-wants a {
-  text-transform:lowercase;
   color:#f3f3f3;
   background:rgba(var(--accent), 0.75);
 }
