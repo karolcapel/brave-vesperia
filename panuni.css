@@ -1,5 +1,11 @@
 /* PAN'S UNICODES & COLORS */
 
+#pandora {
+ --main: 207,147,161;
+ --accent: 199,129,146;
+ --unicode: '\e008'; 
+}
+
 #aimee {
  --main: 191, 135, 201;
  --accent: 176, 129, 185;
