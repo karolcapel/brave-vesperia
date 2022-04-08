@@ -160,6 +160,7 @@ display: none;
 }
 
 .calico-wants a {
+  text-transform:lowercase;
   color:#f3f3f3;
   background:rgba(var(--accent), 0.75);
 }
