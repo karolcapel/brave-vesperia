@@ -18,6 +18,12 @@
   --unicode: '\e900'; 
 }
 
+#elowen {
+ --main: 177,108,110;
+ --accent: 168,91,94;
+ --unicode: '\e00a'; 
+}
+
 #jay { 
  --main: 115, 192, 218;
  --accent: 111, 190, 217;
