@@ -253,6 +253,10 @@ display: none;
   background-image:url('https://i.postimg.cc/J4qwc6CS/a032.png');
 }
 
+#elowen.calitab [type=radio]:checked ~ label {
+  background-image:url('https://i.postimg.cc/7Yv0rcvn/a010.png');
+}
+
 #jay.calitab [type=radio]:checked ~ label {
   background-image:url('https://i.postimg.cc/bJ4PCHm6/a016.png');
 }
