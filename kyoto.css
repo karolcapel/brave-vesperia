@@ -172,10 +172,10 @@ margin:25px;
 .txtmsg {
 display:block;
 text-align:right;
-color:var(--white);
 margin:15px 30px;
 font-size:13.5px;
 line-height:21px;
+color:#797979;
 }
 
 .txtmsg text {
@@ -186,6 +186,7 @@ padding:10px 15px;
 margin:5px 0px;
 text-align:left;
 position:relative;
+color:#797979;
 }
 
 .txtmsg text:after {
