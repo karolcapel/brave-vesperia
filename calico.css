@@ -261,6 +261,10 @@ display: none;
   background-image:url('https://i.postimg.cc/bJ4PCHm6/a016.png');
 }
 
+#jonesy.calitab [type=radio]:checked ~ label {
+  background-image:url('https://i.postimg.cc/QxKFtWpL/a013b.png');
+}
+
 #kit.calitab [type=radio]:checked ~ label {
   background-image:url('https://i.postimg.cc/d05PXHyF/a005.png');
 }
