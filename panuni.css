@@ -30,6 +30,12 @@
  --unicode: '\e007'; 
 }
 
+#jonesy { 
+  --main: 170,110,128; 
+  --accent: 161,94,114;
+ --unicode: '\e003'; 
+}
+
 #kit {
  --main: 120, 179, 190;
  --accent: 117, 177, 188;
@@ -81,7 +87,6 @@
 /* INTERIM */
 
 #attie { --unicode: '\e000'; }
-#jonesy { --unicode: '\e003'; }
 
 /* SONNY'S UNICODES & COLORS */
 #connie {  
