@@ -121,6 +121,10 @@
   font-weight:900;
 }
 
+.glow-btl #fnt {
+  filter:grayscale(100%);
+}
+
 .glow-tag {
   position:relative;
   margin:50px -50px -75px -75px;
