@@ -22,7 +22,7 @@
 .glow-top b {   
   font-family:playfair display;
   font-weight:900; 
-  color:rgba(var(--clr), 0.65);
+  color:rgba(var(--color), 0.65);
 }
 
 .glow-top:before {
@@ -32,11 +32,11 @@
   font-size:50px;
   top:55px;
   left:35px;
-  color:rgba(var(--clr));
+  color:rgba(var(--color));
 }
 
 .glow-body {
-  border-left:1px solid rgba(var(--clr), 0.25);
+  border-left:1px solid rgba(var(--color), 0.25);
   padding-left:25px;
   margin-left:-25px;
   margin-top:25px;
@@ -45,11 +45,11 @@
 
 .glow-body a {
   text-decoration: none;
-  color:rgba(var(--clr), 0.85);
+  color:rgba(var(--color), 0.85);
 }
 
 .glow-body b { 
-  color:rgba(var(--clr), 0.85);
+  color:rgba(var(--color), 0.85);
   font-weight:900;
 }
 
@@ -59,33 +59,33 @@
 
 .glow-body u {
   text-decoration:none;
-  border-bottom:2px solid rgba(var(--clr), 0.5);
+  border-bottom:2px solid rgba(var(--color), 0.5);
   font-weight:700;
 }
 
 .glow-body span.dice-roll {
   border:0px!important;
   display:inline-block;
-  background:rgba(var(--clr), 0.1);
+  background:rgba(var(--color), 0.1);
   padding:5px 10px;
   font-size:13.5px;
-  color:rgba(var(--clr), 0.65);
+  color:rgba(var(--color), 0.65);
 }
 
 .glow-body span.dice-roll b {
   font-weight:900;
   font-family:playfair display;
   text-transform:uppercase;
-  color:rgba(var(--clr), .75);
+  color:rgba(var(--color), .75);
 }
 
 .glow-btl {
   margin-top:25px;
   margin-left:-25px;
   margin-right:-50px;
-  border-left:1px solid rgba(var(--clr), 0.25);
+  border-left:1px solid rgba(var(--color), 0.25);
   padding-left:5px;
-  background:rgba(var(--clr), 0.1);
+  background:rgba(var(--color), 0.1);
   display:flex;
   flex-wrap:no-wrap;
   align-content:flex-start;
@@ -105,14 +105,14 @@
   top:55px; 
   margin:auto;
   z-index:2;
-  background:rgba(var(--clr), 0.2);
+  background:rgba(var(--color), 0.2);
   width:50%;
   padding:4px;
   z-index:2;
   display:block;
   font-size:10px;
   text-align:center;
-  color:rgba(var(--clr));
+  color:rgba(var(--color));
   border-radius:5px 5px 0px 0px;
   height:11px;
   line-height:11px;
@@ -124,20 +124,20 @@
   position:relative;
   margin:50px -50px -75px -75px;
   padding:45px 50px;
-  background:rgba(var(--clr), 0.65);
+  background:rgba(var(--color), 0.65);
   color:#f6e6e6;
   font-weight:700;
   font-size:14px;
-  text-shadow: -1px 0 rgba(var(--clr), 0.5), 0 1px rgba(var(--clr), 0.5), 1px 0 rgba(var(--clr), 0.5), 0 -1px rgba(var(--clr), 0.5);
+  text-shadow: -1px 0 rgba(var(--color), 0.5), 0 1px rgba(var(--color), 0.5), 1px 0 rgba(var(--color), 0.5), 0 -1px rgba(var(--color), 0.5);
 }
 
 .glow-tag a {
-  color:rgba(var(--clr));
+  color:rgba(var(--color));
   text-shadow: none;
 }
 
 .glow-tag a.user-tagged {
-  background:rgba(var(--clr));
+  background:rgba(var(--color));
   padding:2px 8px;
   border-radius:5px;
   display:inline-block;
@@ -150,5 +150,5 @@
 }
 
 #knives { 
-  --clr: 219,123,117;
+  --color: 219,123,117;
 }
