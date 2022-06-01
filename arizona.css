@@ -1,0 +1,231 @@
+.arizona {
+  position:relative;
+  margin:10px auto;
+  width:625px;
+  height:500px;
+  background:#f6f6f6;
+  border:1px solid #e6e6e6;
+  font-family: nunito;
+  font-weight: 400;
+  overflow:hidden;
+  color:#5e5e5e;
+  font-size:15px;
+  line-height:24px;
+  text-shadow: -1px 0 #f6f6f6, 0 1px #f6f6f6, 1px 0 #f6f6f6, 0 -1px #f6f6f6;
+  z-index:0;
+}
+
+.ari-content {
+  position:absolute;
+  width:625px;
+  height:500px;
+  top:-451px;
+  right:-625px;
+  background:#f6f6f6;
+  transition: all ease-in-out  0.4s; 
+  -webkit-transition: all ease-in-out  0.4s; 
+  -moz-transition: all ease-in-out  0.4s; 
+  -o-transition:  all ease-in-out  0.4s; 
+  transition-delay: 0.4s;
+  overflow:hidden;
+  z-index:6;
+}
+
+.ari-content:before {
+  content:'';
+  display:block;
+  position:absolute;
+  right:0px;
+  top:-25px;
+  width:100px;
+  height:550px;
+  background:rgba(var(--clr), 0.15);
+  border-radius:200% 0% 0% 200%;
+}
+
+.ari-content:after {
+  content:'';
+  display:block;
+  width:625px;
+  height:50px;
+  background:linear-gradient(to right, rgba(var(--clr), 0.75), rgba(var(--clr)));
+  position:absolute;
+  bottom:0px;
+  opacity:1;
+}
+
+.ari-tab {
+  position:absolute;
+  height:50px;
+  width:625px;
+  line-height:48px;
+  top:451px;
+  display:flex;
+}
+
+.ari-tab label {
+  width:50px;
+  height:50px;
+  color:#f6f6f6;
+  font-size:35px;
+  text-shadow:none!important;
+  opacity:0.75;
+  text-align:center;
+  font-weight:300;
+  z-index:10;
+  position:relative;
+  left:64px;
+  transform:rotate(45deg);
+  transition: all ease-in-out  0.4s; 
+  -webkit-transition: all ease-in-out  0.4s; 
+  -moz-transition: all ease-in-out  0.4s; 
+  -o-transition:  all ease-in-out  0.4s; 
+  border-radius:100%;
+}
+
+.ari-tab [type=radio]:checked ~ label {
+  height:50px;
+  width:50px;
+  background:rgba(var(--clr));
+  padding:0px;
+  position:absolute;
+  border-radius:100%;
+  left:64px;
+  z-index:10;
+  transform:rotate(90deg);
+  margin-left:0px!important;
+}
+
+.ari-tab [type=radio] {
+display: none;
+}
+
+.ari-tab [type=radio]:checked ~ label ~ .ari-content {
+z-index: 6;
+  top:-451px;
+  right:0px;
+  transition: all ease-in-out  0.4s; 
+  -webkit-transition: all ease-in-out  0.4s; 
+  -moz-transition: all ease-in-out  0.4s; 
+  -o-transition:  all ease-in-out  0.4s; 
+  opacity: 1;
+}
+
+.arizona a {
+  text-decoration: none;
+  font-weight:700;
+  background:linear-gradient(to bottom right, rgba(var(--clr), 0.65), rgba(var(--clr)));
+  color:#f6f6f6;
+  padding:4px 6px;
+  border-radius:4px;
+  display:inline-block;
+  font-size:11px;
+  text-transform:uppercase;
+  line-height:11px;
+  text-shadow:none!important;
+}
+
+.ari-img {
+  width:100px;
+  height:100px;
+  background-size:cover;
+  border-radius:100%!important;
+  position:absolute;
+  top:25px;
+  left:25px;
+  border:12.5px solid #e6e6e6;
+  background-color:rgba(var(--clr), 0.85);
+  background-blend-mode:luminosity;
+  image-rendering: pixelated;
+}
+
+.ari-dtl {
+  position:absolute;
+  top:70px;
+  left:145px;
+  width:400px;
+  height:24px;
+  line-height:30px;
+  display:flex;
+  gap:10px;
+  font-size:11px;
+  font-weight:700;
+}
+
+.ari-dtl dtl {
+  display:inline-block;
+  border-bottom:2px solid rgba(var(--clr), 0.5);
+  text-transform:uppercase;
+  color:#9e9e9e;
+}
+
+.ari-dtl a {
+  position:relative;
+  top:3.5px;
+  height:13px;
+  line-height:14px;
+}
+
+.ari-name {
+  position:absolute;
+  top:112.5px;
+  left:112.5px;
+  font-family:playfair display;
+  font-size:40px;
+  line-height:35px;
+  font-weight:900;
+  text-transform:uppercase;
+}
+
+.ari-blurb {
+  position:absolute;
+  top:215px;
+  left:87.5px;
+  padding-left:25px;
+  width:475px;
+  height:210px;
+  padding-bottom:25px;
+  border-left:2px solid rgba(var(--clr), 0.25);
+  line-height:24px;
+}
+
+.ari-blurb b { 
+  color:rgba(var(--clr), 0.85)!important;
+  font-weight:900;
+}
+
+.ari-blurb i {
+  color:#858585;
+}
+
+.ari-blurb u {
+  text-decoration:none;
+  border-bottom:2px solid rgba(var(--clr), 0.5);
+  font-weight:700;
+}
+
+/* CHARACTER */ 
+
+#pan { 
+  --clr: 209,147,183;
+}
+
+#pan .ari-img {
+  background-image:url('https://i.postimg.cc/4y2bj6B3/a005c.png');
+}
+
+#knives { 
+  --clr: 219,123,117;
+}
+
+#knives .ari-img {
+  background-image:url('https://i.postimg.cc/vTxMZkBF/a002c.png');
+}
+
+#empty { 
+  --clr: 174,174,174;
+}
+
+#empty .ari-img {
+  background-image:url('https://i.postimg.cc/3NNtDMp1/b062.png');
+}
