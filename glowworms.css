@@ -146,4 +146,9 @@
   font-size:11.5px;
   text-transform:uppercase;
   text-shadow:none;
+  color:#f6f6f6;
+}
+
+#knives { 
+  --clr: 219,123,117;
 }
