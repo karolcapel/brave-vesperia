@@ -207,12 +207,12 @@ z-index: 6;
 /* CHARACTER */ 
 
 #pan { 
-  --clr: 209,147,183;
+  --clr: 148,197,177;
 }
 
 #pan .ari-img {
-  background-image:url('https://i.postimg.cc/XYhpFCGB/a001c.png');
-}
+  background-image:url('https://i.postimg.cc/65jRL85C/a012b.png');
+  }
 
 #knives { 
   --clr: 219,123,117;
