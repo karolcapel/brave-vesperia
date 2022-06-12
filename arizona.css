@@ -214,6 +214,14 @@ z-index: 6;
   background-image:url('https://i.postimg.cc/65jRL85C/a012b.png');
   }
 
+#kit { 
+  --clr: 120, 179, 190;
+}
+
+#kit .ari-img {
+  background-image:url('https://i.postimg.cc/152mFKMS/a014b.png');
+}
+
 #knives { 
   --clr: 219,123,117;
 }
