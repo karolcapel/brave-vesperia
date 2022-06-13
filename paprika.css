@@ -153,6 +153,29 @@
   color:rgba(var(--clr));
 }
 
+.thrd-o tag, .thrd-c tag {
+  display:inline-block;
+  position:relative;
+  top:2.5px;
+  opacity:0.85;
+}
+
+.thrd-o tag:before, .thrd-c tag:before {
+  content:'+';
+  color:rgba(var(--clr));
+  margin-right:0px;
+  position:relative;
+  display:inline-block;
+  font-size:12px;
+  font-weight:900;
+  top:-5px;
+}
+
+.thrd-c tag:before {
+  color:#5e5e5e;
+  opacity:0.85;
+}
+
 .thrd-o where, .thrd-c where {
   background:linear-gradient(to bottom right, rgba(var(--clr), 0.5), rgba(var(--clr)));
   color:#f6f6f6;
