@@ -214,6 +214,15 @@ z-index: 6;
   background-image:url('https://i.postimg.cc/65jRL85C/a012b.png');
   }
 
+#donny {
+ --clr: 216, 173, 81;
+}
+
+#donny .ari-img {
+  background-image:url('https://i.postimg.cc/JzbdTmwp/a014.png');
+}
+
+
 #kit { 
    --clr: 150,195,205;
 }
