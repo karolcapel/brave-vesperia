@@ -1,0 +1,112 @@
+.pkmn-card {
+  position:relative;
+  background: -webkit-linear-gradient(rgba(var(--lightg),0.75), rgba(var(--darkg),0.5));
+  border:5px solid #f6f6f6;
+  box-shadow:4px 4px 5px #e6e6e6;
+  margin:25px auto;
+  height:450px;
+  width:325px;
+  font-family: nunito;
+  font-weight:400;
+  overflow:hidden;
+}
+
+.pkmn-card:before, .pkmn-card:after {
+  content:'';
+  background:rgba(var(--darkg), 0.6);
+  height:100px;
+  display:block;
+  position:absolute;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  clip-path: polygon(0 35%, 100% 0%, 100% 100%, 0% 100%);
+  z-index:4;
+}
+
+.pkmn-card:after {
+  z-index:3;
+  background:rgba(var(--lightg));
+}
+
+.train-name {
+  position:absolute;
+  display:block;
+  text-align:right;
+  padding:0px 25px 25px 0px;
+  bottom:0px;
+  right:0px;
+  font-size:16px;
+  line-height:20px;
+  color:#f6f6f6;
+  z-index:5;
+  font-weight:900;
+  text-shadow:   -1px 0 rgba(var(--darkg), 0.75), 
+  0 1px rgba(var(--darkg), 0.75), 
+  1px 0 rgba(var(--darkg), 0.75), 
+  0 -1px rgba(var(--darkg), 0.75);
+  text-transform:uppercase;
+}
+
+.train-name span {
+  display:block;
+  font-weight:400;
+  color:rgba(246, 246, 246, 0.85);
+}
+
+.train-img {
+  background-size:100%;
+  background-repeat:no-repeat;
+  width:300px;
+  height:400px;
+  filter:grayscale(100%);
+  -webkit-filter:grayscale(100%);
+  position:relative;
+  top:-10px;
+  left:-25px;
+  opacity:0.95;
+}
+
+.pkmn-list {
+  position:absolute;
+  top:25px;
+  right:0px;
+  background:rgba(246, 246, 246, 0.5);
+  box-shadow:1px 1px 5px rgba(var(--darkg), 0.25);
+  display:block;
+  width:70px;
+  height:300px;
+  border-radius:10px 0px 0px 10px;
+  z-index:5;
+}
+
+.pkmn-list pkmn {
+  display:block;
+  position:relative;
+  margin-right:-24px;
+  margin-top:-8px;
+}
+
+.pkmn-list pkmn:before {
+  content:'';
+  position:absolute;
+  top:16px;
+  left:25px;
+  display:block;
+  background-color:rgba(var(--lightg), 0.5);
+  width:35px;
+  height:35px;
+  border-radius:100%;
+  z-index:-1;
+}
+
+.pkmn-card i {
+  position:absolute;
+  color:rgba(246, 246, 246, 0.6);
+  bottom:32px;
+  left:-10px;
+  font-size:75px;
+  line-height:75px;
+  z-index:5;
+  transform:rotate(-7deg);
+}
