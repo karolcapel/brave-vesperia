@@ -83,8 +83,9 @@
 .pkmn-list pkmn {
   display:block;
   position:relative;
-  margin-right:-24px;
-  margin-top:-8px;
+  margin-right:-24px!important;
+  margin-top:0px!important;
+  margin-bottom:-10px;
 }
 
 .pkmn-list pkmn:before {
