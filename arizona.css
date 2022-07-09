@@ -239,6 +239,16 @@ z-index: 6;
   background-image:url('https://i.postimg.cc/vTxMZkBF/a002c.png');
 }
 
+#rita { 
+  --clr: 189,102,125;
+}
+
+#rita .ari-img {
+  background-image:url('https://i.postimg.cc/y6L3DPMb/a016c.png');
+}
+
+/* DEFAULT */
+
 #empty { 
   --clr: 174,174,174;
 }
