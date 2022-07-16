@@ -64,6 +64,14 @@
   font-weight:700;
 }
 
+.glow-body hr {
+height:1px;
+border:none;
+margin:25px 0px 25px 50%;
+background:#e6e6e6;
+position:relative;
+}
+
 .glow-body span.dice-roll {
   border:0px!important;
   display:inline-block;
