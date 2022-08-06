@@ -54,6 +54,12 @@
  --unicode: '\e102'; 
 }
 
+#rory { 
+ --main: 147,156,185;
+ --accent: 132,142,175;
+ --unicode: '\e00b'; 
+}
+
 #tilly {
  --main: 155, 148, 185;
  --accent: 138, 130, 174;
