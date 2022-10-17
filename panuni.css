@@ -161,6 +161,12 @@
  --unicode: '\a123'; 
 }
 
+#thomasin {  
+ --main:  201,154,160;
+ --accent: 183,121,129;
+ --unicode: '\e904'; 
+}
+
 #teo {  
  --main: 192,122,82;
  --accent: 172,112,79;
