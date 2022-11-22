@@ -57,6 +57,20 @@
   -webkit-font-smoothing: antialiased;
 }
 
+#sonny.waltz-icon:after {
+  content:var(--unicode);
+  font-family:'starry';
+  display:block;
+  width:40px;
+  height:40px;
+  font-size:40px;
+  line-height:76px;
+  color:rgba(var(--main), 0.75);
+  position:relative;
+  margin:0px auto;
+  -webkit-font-smoothing: antialiased;
+}
+
 .waltz-body {
   position:relative;
   padding:40px 50px 0px 37.5px;
