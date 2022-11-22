@@ -64,6 +64,10 @@
   margin:27.5px 0px 37.5px 37.5px;
 }
 
+.waltz-body a {
+  color:rgba(var(--main), 0.75);
+}
+
 .waltz-body b {
   color:rgba(var(--main), 0.75);
   font-weight:900;
@@ -87,12 +91,20 @@
   color:#696969;
 }
 
-.waltz-tag a {
+.waltz-tag a { 
+  font-weight:700;
+  text-transform:none;
+  text-decoration:none;
+  color:#696969;
+  border-bottom:2px solid rgba(var(--main), 0.6);
+}
+
+.waltz-tag a.user-tagged {
   text-transform:uppercase;
   font-weight:900;
   font-size:12px;
   line-height:12px;
-  color:rgba(var(--main), 0.85);
+  color:rgba(var(--main), 0.75);
 }
 
 .waltz-date {
