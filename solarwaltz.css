@@ -97,6 +97,13 @@
   border-bottom:2px solid rgba(var(--main), 0.6);
 }
 
+.waltz-body hr {
+height:1px; 
+border:none;
+background:rgba(var(--main), .25); 
+margin:25px;
+}
+
 .waltz-tag {
   text-align:right;
   padding-top:50px;
