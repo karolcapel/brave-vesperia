@@ -269,6 +269,10 @@ display: none;
   background-image:url('https://i.postimg.cc/d05PXHyF/a005.png');
 }
 
+#mercie.calitab [type=radio]:checked ~ label {
+  background-image:url('https://i.postimg.cc/FKjvsq5H/a004b.png');
+}
+
 #olga.calitab [type=radio]:checked ~ label {
   background-image:url('https://i.postimg.cc/jdXfCfzP/b009.png');
 }
