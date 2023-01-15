@@ -1,3 +1,7 @@
 .sybk-welc {
   --unicode: '\e90d'; 
 }
+
+.sybk-bulletin {
+  --unicode: '\e907'; 
+}
