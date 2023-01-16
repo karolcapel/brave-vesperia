@@ -5,3 +5,11 @@
 .sybk-bulletin {
   --unicode: '\e907'; 
 }
+
+.log-title:before {
+  --unicode: '\e901'; 
+}
+  
+.serv-title:before {
+  --unicode: '\e900'; 
+}
