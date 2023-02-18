@@ -1,0 +1,112 @@
+.hearten {
+  width:425px;
+  padding:25px;
+  background:#f9f9f9;
+  margin:25px auto;
+  border:1px solid #d9d9d9;
+  font-family: nunito; 
+  font-weight:400;
+  font-size:15px;
+  color:#595959;
+  line-height:24px;
+}
+
+.hearten-body {
+  border:2px solid rgba(var(--main), 0.25);
+  border-bottom:none;
+  padding:100px 50px 50px;
+  position:relative;
+}
+
+.hearten-body a {
+  color:rgba(var(--main), 0.9);
+}
+
+.hearten-body b {
+  font-weight:900;
+  color:rgba(var(--main), 0.9);
+}
+
+.hearten-body i {
+  opacity:0.75;
+}
+
+.hearten-body u {
+  text-decoration:none;
+  font-weight:700;
+  border-bottom:2px solid rgba(var(--main), 0.5);
+}
+
+.hearten-body hr {
+  border:none;
+  height:2px;
+  background:rgba(var(--main), 0.25);
+  margin:25px 0px;
+}
+
+.hearten-body span.dice-roll {
+  display:inline-block;
+  font-size:11px;
+  font-weight:700;
+  line-height:11px;
+  padding:12px;
+  background:linear-gradient(to top left, rgba(var(--main)), rgba(var(--main), 0.65));
+  color:#f9f9f9;
+  text-transform:uppercase;
+}
+
+.hearten-btm {
+  margin:0px -25px -25px;
+  padding:0px 25px 25px;
+  background:rgba(var(--main), 0.25);
+}
+
+.hearten-tag {
+  position:relative;
+  padding:25px;
+  border:2px solid #f9f9f9;
+  border-top:0px;
+  display:flex;
+  justify-content:flex-start;
+  flex-wrap:no-wrap;
+}
+
+.hearten-tag:before {
+  content:var(--unicode);
+  display:inline-block;
+  position: absolute;
+  right:25px;
+  font-family: pandora-box;
+  height:54px;
+  width:54px;
+  background: -webkit-linear-gradient(rgba(var(--main), 0.65), rgba(var(--main)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size:54px;
+  line-height:54px;
+  text-align:center;
+    -webkit-font-smoothing: antialiased;
+}
+
+.hearten-tag a.user-tagged {
+  background:linear-gradient(to bottom right, rgba(var(--main)), rgba(var(--main), 0.65));
+  padding:15px;
+  position:relative;
+  left:-53px;
+  color:#f9f9f9;
+  font-weight:900;
+  text-transform:uppercase;
+  font-size:11px;
+}
+
+.hearten-date {
+  background:linear-gradient(to top left, rgba(var(--main)), rgba(var(--main), 0.65));
+  padding:15px;
+  position:absolute;
+  top:25px;
+  right:-28px;
+  color:#f9f9f9;
+  font-weight:900;
+  text-transform:uppercase;
+  font-size:11px;
+}
