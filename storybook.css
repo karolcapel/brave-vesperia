@@ -13,3 +13,7 @@
 .serv-title:before {
   --unicode: '\a83'; 
 }
+
+.dev-want:before {
+  --unicode: '\a127'; 
+}
