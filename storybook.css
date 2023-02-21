@@ -17,3 +17,27 @@
 .dev-want:before {
   --unicode: '\a127'; 
 }
+
+#sybk-gryffindor.regb-roster:before {
+    --unicode: '\a105'; 
+}
+
+#sybk-hufflepuff.regb-roster:before {
+    --unicode: '\a106'; 
+}
+
+#sybk-ravenclaw.regb-roster:before {
+    --unicode: '\a107'; 
+}
+
+#sybk-slytherin.regb-roster:before {
+    --unicode: '\a108'; 
+}
+
+#sybk-faculty.regb-roster:before {
+    --unicode: '\a104'; 
+}
+
+#sybk-civilian.regb-roster:before {
+    --unicode: '\a109'; 
+}
