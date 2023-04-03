@@ -479,6 +479,7 @@
   overflow-y:auto;
   overflow-x:hidden;
   border-bottom:25px solid rgba(var(--main), 0);
+  line-height:15px;
 }
 
 .ht-timeline::-webkit-scrollbar {
