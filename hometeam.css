@@ -544,7 +544,7 @@
   border-radius:15px;
   height:25px;
   line-height:25px;
-  color:rgba(var(--white));
+  color:rgba(var(--light));
   font-weight:300;
   background:rgba(var(--main), 0.75);
   background:linear-gradient(to bottom right, rgba(var(--main), 0.85), rgba(var(--main), 0.5));
@@ -722,7 +722,7 @@
   display:inline-flex;
   line-height:21px;
   height:25px;
-  color:rgba(var(--white));
+  color:rgba(var(--light));
   font-weight:300;
   background:rgba(var(--main), 0.25);
   text-shadow:1px 1px 0px rgba(var(--main));
