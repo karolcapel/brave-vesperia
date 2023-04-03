@@ -654,6 +654,18 @@
   text-shadow:none;
 }
 
+.thread-o tag:before, .thread-c tag:before {
+  content:'#';
+  margin-right:2px;
+  color:rgba(var(--main));
+  text-shadow:none;
+  font-weight:700;
+}
+
+.thread-c tag:before {
+  color:rgba(var(--font), 0.5);
+}
+
 /* RELATIONSHIPS */
 
 .ht-ships {
