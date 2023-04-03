@@ -1,5 +1,11 @@
 /* PAN'S UNICODES & COLORS */
 
+#default {
+ --main: 171,171,171;
+ --accent: 187,187,187;
+ --unicode: '\a80'; 
+}
+
 #pandora {
  --main: 207,147,161;
  --accent: 199,129,146;
