@@ -1,7 +1,7 @@
 .home-team {
   overflow:hidden;
   position:relative;
-  margin:25px auto;
+  margin:0px auto;
   width:650px;
   height:600px;
   background:rgba(var(--light));
