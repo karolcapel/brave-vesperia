@@ -51,6 +51,10 @@
   text-shadow:-1px 0 rgba(var(--main), 0.5), 0 1px rgba(var(--main), 0.5), 1px 0 rgba(var(--main), 0.5), 0 -1px rgba(var(--main), 0.5);
 }
 
+#sonnet .tourist-season:after {
+  font-family:starry!important;
+}
+
 .ts-date {
   text-transform:lowercase;
   font-weight:300;
