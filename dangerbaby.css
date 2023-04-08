@@ -1,0 +1,286 @@
+.danger-baby {
+  width:650px;
+  height:475px;
+  border-radius:30px;
+  background:rgba(var(--light));
+  position:relative;
+  border:1px solid rgba(var(--dark), 0.75);
+  margin:25px auto;
+  overflow:hidden;
+  font-family:quicksand;
+  font-weight:300;
+  text-transform:lowercase;
+  color:rgba(var(--font), 0.85);
+  text-shadow:-1px 0 rgba(var(--main), 0.5), 0 1px rgba(var(--main), 0.5), 1px 0 rgba(var(--main), 0.5), 0 -1px rgba(var(--main), 0.5);
+
+  
+--light:249,249,249;
+--mid: 233,233,233;
+--dark:217,217,217;
+--font:68,68,68;
+}
+
+/* TABS */
+
+.db-tablock {
+  position:absolute;
+  display:block;
+  left:250px;
+  width:400px;
+  height:25px;
+  line-height:25px;
+  padding:25px;
+  border-bottom:1px solid rgba(var(--dark), 0.5);
+}
+
+.dbtab {
+  float:left;
+}
+
+.dbtab label {
+  z-index:10;
+  position:absolute;
+  left:275px;
+  top:25px;
+  display:block;
+  border-radius:5px;
+  height:25px;
+  width:25px;
+  background:rgba(var(--main));
+  background:linear-gradient(to bottom right, rgba(var(--main), 0.75), rgba(var(--main), 0.35));
+  transition-timing-function: ease-in-out;
+  transition-duration:.5s;
+}
+
+.dbtab [type=radio] {
+display: none;
+}
+
+.dbtab [type=radio]:checked ~ label {
+  height:37.5px;
+}
+
+.dbtab [type=radio]:checked ~ label ~ .db-content { 
+opacity:1;
+z-index:2;
+  }
+
+/* CHARACTER CONTENT */ 
+
+.db-content {
+  width:650px;
+  height:475px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  background:rgba(var(--main), 0.15);
+  z-index:1;
+  opacity:0;
+  transition-timing-function: ease-in-out;
+  transition-duration:.5s;
+}
+
+.db-left {
+  position:absolute;
+  top:0px;
+  left:0px;
+  height:475px;
+  width:250px;
+  background:rgba(var(--main), .3);
+  border-radius: 0px 30px 30px 0px;
+  overflow:hidden;
+  z-index:1;
+}
+
+.db-app {
+  position:absolute;
+  top:12.5px;
+  right:12.5px;
+  display:block;
+  width:50px;
+  height:50px;
+  background:rgba(var(--main));
+  background:linear-gradient(to bottom right, rgba(var(--main), 0.75), rgba(var(--main), 0.35));
+  border-radius:15px;
+  cursor:crosshair;
+}
+
+.db-app:before, #sonnet .db-app:before {
+  content:var(--unicode);
+  font-family:pandora-box;
+  font-size:30px;
+  color:rgba(var(--light), 0.85);
+  -webkit-font-smoothing: antialiased;
+  margin:10px;
+  line-height:30px;
+  display:block;
+  text-shadow:-1px 0 rgba(var(--main), 0.75), 0 1px rgba(var(--main), 0.75), 1px 0 rgba(var(--main), 0.75), 0 -1px rgba(var(--main), 0.75);
+}
+
+#sonnet .db-app:before {
+  font-family:starry!important;
+}
+
+.db-left h1 {
+  margin:0px;
+  padding:0px;
+  font-weight:300;
+  color:rgba(var(--main));
+  line-height:20px;
+  height:50px;
+  display:block;
+  width:100%;
+  font-size:20px;
+  padding:21px;
+  z-index:1;
+  text-shadow:-1px 0 rgba(var(--light), 0.25), 0 1px rgba(var(--light), 0.25), 1px 0 rgba(var(--light), 0.25), 0 -1px rgba(var(--light), 0.25);
+}
+
+.db-left b {
+  font-weight:500;
+  z-index:-1;
+  display:block;
+  line-height:20px;
+  position:relative;
+  top:-5px;
+  left:7.5px;
+  color:rgba(var(--light), 0.9);
+  text-shadow:-1px 0 rgba(var(--main), 0.25), 0 1px rgba(var(--main), 0.25), 1px 0 rgba(var(--main), 0.25), 0 -1px rgba(var(--main), 0.25);
+}
+
+.db-hov {
+  position:absolute;
+  bottom:0px;
+  left:0px;
+  width:250px;
+  height:400px;
+  background-color:rgba(var(--main), 0.35);
+  background-blend-mode:luminosity;
+  border-radius:30px 30px 0px 0px;
+}
+
+.db-text {
+  display:block;
+  position:absolute;
+  left:250px;
+  top:75px;
+  height:400px;
+  width:400px;
+  font-size:14px;
+  line-height:24px;
+  font-weight:400;
+}
+
+.db-about:first-letter {
+  font-size:25px;
+  text-transform:uppercase;
+  background:rgba(var(--main));
+  background:linear-gradient(to bottom right, rgba(var(--main), 0.75), rgba(var(--main), 0.35));
+  border-radius:15px;
+  padding:4px 15px;
+  line-height:40px;
+  display:block;
+  float:left;
+  margin:0px 5px 0px 0px;
+  color:rgba(var(--light));
+  text-shadow:-1px 0 rgba(var(--main), 0.75), 0 1px rgba(var(--main), 0.75), 1px 0 rgba(var(--main), 0.75), 0 -1px rgba(var(--main), 0.75);
+  font-weight:600;
+}
+
+.db-text a {
+  font-weight:600;
+  color:rgba(var(--font), 0.75);
+  border-bottom:2px solid rgba(var(--main), 0.25);
+}
+
+.db-text b {
+  font-weight:700;
+  color:rgba(var(--main), 0.9);
+  background: -webkit-linear-gradient(rgba(var(--main)), rgba(var(--main), 0.85));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.db-about {
+  height:250px;
+  margin:25px;
+  overflow:hidden;
+}
+
+.db-ideas {
+  height:67.5px;
+  width:350px;
+  padding:25px 25px 25px 50px;
+  position:absolute;
+  left:-25px;
+  bottom:0px;
+  background:rgba(var(--light), 0.5);
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px;
+  justify-content:flex-start;
+}
+
+.db-ideas span {
+  display:inline-flex; 
+  height:14px;
+  line-height:14px;
+  font-size:14px;
+  background:rgba(var(--main));
+  background:linear-gradient(to bottom right, rgba(var(--main), 0.75), rgba(var(--main), 0.35));
+  padding:7.5px;
+  border-radius:5px;
+  color:rgba(var(--light));
+  font-weight:600;
+  text-shadow:-1px 0 rgba(var(--main), 0.75), 0 1px rgba(var(--main), 0.75), 1px 0 rgba(var(--main), 0.75), 0 -1px rgba(var(--main), 0.75);
+}
+
+/* HOVERS */
+
+#pandora .db-hov { 
+  background-image:url('https://i.postimg.cc/02fGRWHP/01d.png');" 
+  }
+
+#aimee .db-hov { 
+  background-image:url('https://i.postimg.cc/Qd4vSk5W/15c.png');" 
+  }
+  
+#donny .db-hov { 
+  background-image:url('https://i.postimg.cc/kGycm37R/17.png');" 
+  }
+  
+#elowen .db-hov { 
+  background-image:url('https://i.postimg.cc/zfTF9rvW/01c.png');" 
+  }
+  
+#kit .db-hov { 
+  background-image:url('https://i.postimg.cc/44SXrB55/46b.png');" 
+  }
+  
+#mercie .db-hov { 
+  background-image:url('https://i.postimg.cc/rsTKwWYv/03b.png');" 
+  }
+  
+#olga .db-hov { 
+  background-image:url('https://i.postimg.cc/zD2HTNyP/09b.png');" 
+  }
+  
+#oxford .db-hov { 
+  background-image:url('https://i.postimg.cc/rsQpp4m7/11c.png');" 
+  }
+  
+#rory .db-hov { 
+  background-image:url('https://i.postimg.cc/FKxMVLSP/07b.png');" 
+  }
+  
+#tilly .db-hov { 
+  background-image:url('https://i.postimg.cc/266PR4hx/10b.png');" 
+  }
+  
+#wes .db-hov { 
+  background-image:url('https://i.postimg.cc/PxtQw799/06c.png');" 
+  }
+  
+#yseult .db-hov { 
+  background-image:url('https://i.postimg.cc/nLy4R3jm/04d.png');" 
+  }
