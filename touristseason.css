@@ -122,11 +122,15 @@
   font-weight:700;
   line-height:11px;
   padding:12px;
-  background:linear-gradient(to bottom right, rgba(var(--main), .75), rgba(var(--main), 0.35));
+  background:linear-gradient(to bottom right, rgba(var(--main), .6), rgba(var(--main), 0.25));
   color:rgba(var(--light));
   text-transform:uppercase;
   border-radius:7.5px;
   text-shadow:-1px 0 rgba(var(--main), 0.5), 0 1px rgba(var(--main), 0.5), 1px 0 rgba(var(--main), 0.5), 0 -1px rgba(var(--main), 0.5);
+}
+
+.ts-body span.dice-roll b {
+  text-shadow:none;
 }
 
 .ts-tag {
