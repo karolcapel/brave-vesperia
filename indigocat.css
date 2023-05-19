@@ -735,6 +735,10 @@
 
 /* IDS */
 
+#default .indigo-img {
+  background-image:url('https://i.postimg.cc/GmSbCd6V/default.png');
+}
+
 #elowen {
 --main:207,176,121!important;
 }
