@@ -30,6 +30,11 @@
  --unicode: '\e00a'; 
 }
 
+#elowen2 {
+--main:207,176,121;
+ --unicode: '\e00a'; 
+}
+
 #imogen {
  --main: 196, 162, 190;
  --unicode: '\e102'; 
