@@ -3,7 +3,7 @@
   width:650px;
   height:650px;
   background:rgba(var(--light));
-  margin:25px auto;
+  margin:0px auto;
   border:1px solid rgba(var(--dark), 0.75);
   overflow:hidden;
   font-family:quicksand;
