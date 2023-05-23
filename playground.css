@@ -10,7 +10,7 @@ font-family:quicksand;
 font-weight:500;
 font-size:15px;
 line-height:24px;
-color:rgba(var(--font));
+color:rgba(var(--font), 0.9);
 z-index:1;
 text-shadow:-1px 0 rgba(var(--light)), 0 1px rgba(var(--light)), 1px 0 rgba(var(--light)), 0 -1px rgba(var(--light));
 display:block;
