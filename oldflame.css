@@ -96,6 +96,11 @@
   z-index:-1;
 }
 
+#sonnet.of-icon:before {
+  content:var(--unicode);
+  font-family:starry!important;
+}
+
 .of-date {
   font-size:16px;
   color:rgba(var(--font), 0.5);
