@@ -76,10 +76,9 @@
  --unicode: '\e102'; 
 }
 
-#oxford {
- --main: 223,144,117;
- --accent: 229,166,144;
- --unicode: '\e005'; 
+#oxford { 
+ --main: 198,134,146;
+ --unicode: '\e006'; 
 }
 
 #rory { 
