@@ -1,0 +1,233 @@
+.lonely-eyes { 
+  width:450px;
+  background:#fbfbfb;
+  position:relative;
+  margin:30px auto;
+  border-radius:20px;
+  z-index:1;
+  color:rgba(68,68,68, 0.75);
+  font-size:15px;
+  line-height:24px;
+  font-family:quicksand;
+  font-weight:500;
+  box-shadow:-2px 2px rgba(68,68,68, .05);
+}
+
+.lonely-eyes a {
+  color:rgba(var(--main));
+}
+
+.lonely-eyes b {
+  font-weight:700;
+  color:rgba(var(--main), 0.85);
+}
+
+.lonely-eyes u {
+  text-decoration:none;
+  font-weight:600;
+  border-bottom:1px solid rgba(var(--main), 0.4);
+}
+
+.le-top {
+  height:90px;
+  padding-bottom:25px;
+}
+
+.le-top date {
+  opacity:0.65;
+  font-weight:400;
+  position:absolute;
+  right:50px;
+  top:75px;
+  height:15px;
+  line-height:15px;
+  text-transform:lowercase;
+  color:rgba(68,68,68, 0.5);
+}
+
+.le-top date b {
+  font-weight:500;
+  margin-right:3px;
+  font-size:18px;
+}
+
+.le-shape {
+  position:absolute;
+  z-index:2;
+  width:50px;
+  height:50px;
+  left:12.5px;
+  top:-5px;
+  line-height:50px;
+  color:#fbfbfb;
+  opacity:0.85;
+  text-shadow:-1px 0 rgba(var(--main)), 0 1px rgba(var(--main)), 1px 0 rgba(var(--main)), 0 -1px rgba(var(--main));
+}
+
+.le-shape:before {
+  content:var(--unicode);
+  font-family:pandora-box;
+  font-size:35px;
+  position:relative;
+  margin:10px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.le-icons {
+  position:absolute;
+  left:50px;
+  top:0px;
+  background:#efefef;
+  width:80px;
+  height:90px;
+  border-radius:0px 0px 25px 25px;
+  z-index:1;
+}
+
+.le-icons:before {
+content:'';
+background:rgba(0, 0, 0, 0);
+border-top-right-radius:30px;
+display:inline-block;
+padding:10px;
+position:absolute;
+  top:0px; left:-20px;
+box-shadow:5px -5px 0px 0px #efefef;
+}
+
+.le-icons:after {
+content:'';
+background:rgba(0, 0, 0, 0);
+border-top-left-radius:30px;
+display:inline-block;
+padding:10px;
+position:absolute;
+  top:0px; right:-20px;
+box-shadow:-5px -5px 0px 0px #efefef;
+}
+
+.le-fi {
+  border-radius:100%;
+  background:rgba(var(--main), 0.6);
+  width:60px;
+  height:60px;
+  margin:-10px auto;
+  z-index:1;
+}
+
+.le-fi:before {
+  content:'';
+  display:block;
+  position:relative;
+  border-radius:100%;
+  background:rgba(68,68,68, 0.75);
+  width:60px;
+  height:60px;
+  z-index:-1;
+  top:30px;
+}
+
+.le-fi:after {
+  content:'';
+  display:block;
+  position:absolute;
+  border-radius:100%;
+  background:#efefef;
+  width:60px;
+  height:60px;
+  z-index:-1;
+  top:-10px;
+}
+
+.le-body {
+  padding:25px 50px 50px 50px;
+}
+
+.le-body span.dice-roll {
+  background:rgba(68,68,68, 0.85);
+  padding:10px;
+  border-radius:10px;
+  color:rgba(var(--main));
+  text-transform:uppercase;
+  font-size:12px;
+  font-weight:600;
+}
+
+.le-body span.dice-roll b {
+  border-bottom:1px solid rgba(var(--main), 0.75);
+  color:#fbfbfb;
+  font-weight:700;
+}
+
+.le-bottom {
+  position:relative;
+  width:400px;
+  margin-left:0px;
+  padding:25px 0px 25px 50px;
+  min-height:25px;
+  border-radius:0px 0px 20px 20px;
+  background:rgba(68,68,68, 0.85);
+  color:#fbfbfb;
+  font-size:13px;
+}
+
+.le-bottom note {
+  display:block;
+  margin-right:50px;
+  margin-top:7.5px;
+  margin-bottom:7.5px;
+  line-height:18px;
+}
+
+.le-tag {
+  position:relative;
+  float:right;
+  display:block;
+  background:#efefef;
+  min-height:50px;
+  padding:0px 15px;
+  border-radius:20px 0px 0px 20px;
+  margin:-50px 0px;
+  max-width:83%;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  align-content:center;
+}
+
+.le-tag a.user-tagged {
+  background:rgba(var(--main), 0.75);
+  padding:2.5px 7.5px;
+  height:20px;
+  line-height:20px;
+  border-radius:10px;
+  color:#fbfbfb;
+  font-weight:700;
+  text-transform:lowercase;
+  font-size:13px;
+  box-shadow:2.5px 2.5px rgba(68,68,68, 0.15);
+}
+
+.le-tag:before {
+content:'';
+background:rgba(0, 0, 0, 0);
+border-top-right-radius:30px;
+display:inline-block;
+padding:10px;
+position:absolute;
+  top:-18px; right:-1px;
+box-shadow:5px -5px 0px 0px #efefef;
+transform:rotate(93deg);
+}
+
+.le-tag:after {
+content:'';
+background:rgba(0, 0, 0, 0);
+border-top-left-radius:30px;
+display:inline-block;
+padding:10px;
+position:absolute;
+  bottom:-18px; right:-1px;
+box-shadow:-5px -5px 0px 0px #efefef;
+transform:rotate(93deg);
+}
