@@ -73,6 +73,11 @@
   -webkit-font-smoothing: antialiased;
 }
 
+#sonnet.le-shape:before {
+  content:var(--unicode);
+  font-family:starry;
+}
+
 .le-icons {
   position:absolute;
   left:50px;
@@ -109,6 +114,7 @@ box-shadow:-5px -5px 0px 0px #efefef;
 .le-fi {
   border-radius:100%;
   background:rgba(var(--main), 0.6);
+  background:linear-gradient(to bottom right, rgba(var(--main), 0.9), rgba(var(--main), 0.65));
   width:60px;
   height:60px;
   margin:-10px auto;
@@ -197,6 +203,7 @@ box-shadow:-5px -5px 0px 0px #efefef;
 
 .le-tag a.user-tagged {
   background:rgba(var(--main), 0.75);
+  background:linear-gradient(to bottom right, rgba(var(--main), 0.9), rgba(var(--main), 0.65));
   padding:2.5px 7.5px;
   height:20px;
   line-height:20px;
