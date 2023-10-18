@@ -18,6 +18,11 @@
  --unicode: '\e00e'; 
 }
 
+#bird { 
+ --main: 161,147,178;
+ --unicode: '\e001'; 
+}
+
 #donny { 
   --main:  151, 171, 177;
   --accent: 122, 147, 155;
