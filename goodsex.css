@@ -1,6 +1,6 @@
 .good-sex {
   background:#fbfbfb;
-  background:linear-gradient(to bottom, #fbfbfb, #fbfbfb, rgba(var(--main), 0.1));
+  background:linear-gradient(to bottom, #fbfbfb, #fbfbfb, rgba(var(--main), 0.05));
   border:1px solid #dfdfdf;
   position:relative;
   margin:25px auto;
