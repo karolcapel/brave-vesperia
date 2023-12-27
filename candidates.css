@@ -1,9 +1,6 @@
 .mom-cd {
   width:100%;
   font-family:quicksand;
-  font-weight:500;
-  font-size:15px;
-  line-height:22px;
   position:relative;
   display:block;
 }
@@ -13,16 +10,16 @@
   background:rgba(var(--clr));
   background:linear-gradient(to right, rgba(var(--clr)), #efefef);
   color:rgba(var(--white));
-  color:#ededed;
   border-radius:15px;
-  overflow:hidden;
 }
 
 .cd-top:before {
   content:'';
+  font-family:playfair display;
   position:absolute;
   left:25px;
   background-color:rgba(var(--clr));
+  background-image:url('https://cdn.discordapp.com/attachments/998235126511177850/1187892834645323806/h.png');
   background-blend-mode:luminosity;
   width:100px;
   height:100px;
@@ -46,29 +43,29 @@
 }
 
 .cd-body {
-  padding:25px;
+  padding:25px 0px;
 }
 
 .cd-body slogan {
   font-family:playfair display;
+  font-weight:700;
   font-style:italic;
   font-size:22px;
   margin-left:25px;
   position:relative;
   display:block;
-  padding:25px;
-  color:rgba(var(--black), 0.75);
+  padding-bottom:25px;
+  color:rgba(var(--black), 0.65);
 }
 
 .cd-body slogan:before {
   content:'“';
-  font-family:playfair display;
   font-size:75px;
   float:left;
   display:inline-block;
   position:absolute;
-  left:-20px;
-  top:30px;
+  left:-45px;
+  top:5px;
   color:rgba(var(--clr));
 }
 
@@ -77,6 +74,9 @@
 .cd-body b { 
   color:rgba(var(--clr));
   font-weight: 700;
+  background:none;
+  text-shadow:none;
+  padding:0px;
 }
 
 .cd-body u {
