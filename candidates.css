@@ -1,0 +1,113 @@
+.mom-cd {
+  width:100%;
+  font-family:quicksand;
+  font-weight:500;
+  font-size:15px;
+  line-height:22px;
+  position:relative;
+  display:block;
+}
+
+.cd-top {
+  height:100px;
+  background:rgba(var(--clr));
+  background:linear-gradient(to right, rgba(var(--clr)), #efefef);
+  color:rgba(var(--white));
+  color:#ededed;
+  border-radius:15px;
+  overflow:hidden;
+}
+
+.cd-top:before {
+  content:'';
+  position:absolute;
+  left:25px;
+  background-color:rgba(var(--clr));
+  background-blend-mode:luminosity;
+  width:100px;
+  height:100px;
+  opacity:0.75;
+}
+
+.cd-name {
+  font-family:playfair display;
+  font-weight:400;
+  font-size:25px;
+  display:block;
+  position:relative;
+  top:25px;
+  padding-left:150px;
+  text-transform:uppercase;
+}
+
+.cd-name span {
+  font-weight:700;
+  display:block;
+}
+
+.cd-body {
+  padding:25px;
+}
+
+.cd-body slogan {
+  font-family:playfair display;
+  font-style:italic;
+  font-size:22px;
+  margin-left:25px;
+  position:relative;
+  display:block;
+  padding:25px;
+  color:rgba(var(--black), 0.75);
+}
+
+.cd-body slogan:before {
+  content:'“';
+  font-family:playfair display;
+  font-size:75px;
+  float:left;
+  display:inline-block;
+  position:absolute;
+  left:-20px;
+  top:30px;
+  color:rgba(var(--clr));
+}
+
+.cd-body a { color:rgba(var(--clr), 0.75); font-weight:600; }
+
+.cd-body b { 
+  color:rgba(var(--clr));
+  font-weight: 700;
+}
+
+.cd-body u {
+  text-decoration:none;
+  border-bottom:2px solid rgba(var(--clr), 0.5);
+}
+
+.cd-stats {
+  display:flex;
+  gap:7.5px;
+  padding-top:25px;
+  flex-wrap:wrap;
+  justify-content:right;
+}
+
+.cd-stats stat {
+  background:rgba(var(--clr), 0.85);
+  background:linear-gradient(to right, rgba(var(--clr)), rgba(var(--clr), 0.75));
+  color:rgba(var(--white));
+  color:white;
+  padding:8px;
+  border-radius:7.5px;
+  text-transform:uppercase;
+  font-size:12px;
+  font-weight:600;
+  line-height:12px;
+}
+
+#imogen { --clr: 179,141,207; }
+#imogen .cd-top:before { background-image:url('https://cdn.discordapp.com/attachments/998235126511177850/1187892834645323806/h.png'); }
+#glen { --clr:214,169,81; }
+#glen .cd-top:before { background-image:url('https://cdn.discordapp.com/attachments/998235126511177850/1187893565708324894/10.png'); }
+#ethel { --clr:151,164,88; } 
+#ethel .cd-top:before { background-image:url('https://cdn.discordapp.com/attachments/998235126511177850/1187893679193604187/a006b.png'); }
