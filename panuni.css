@@ -208,3 +208,8 @@
  --accent: 172,112,79;
  --unicode: '\a72'; 
 }
+
+#violette {
+--main: 148,198,178;
+--unicode: '\e90b'; 
+}
