@@ -11,6 +11,7 @@
   font-size:14.5px;
   line-height:24px;
   color:#4f4f4f;
+  z-index:1;
 }
 
 .pink-socks:before {
@@ -108,9 +109,10 @@
   position:absolute;
   color:#dfdfdf;
   top:43px;
-  left:-10px;
+  left:-10.5px;
   font-size:22px;
   text-shadow:1px 1px rgba(var(--main), 0.75);
+  line-height:22px;
 }
 
 .ps-icon {
