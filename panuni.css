@@ -18,6 +18,12 @@
  --unicode: '\e00e'; 
 }
 
+  #aimee-g {
+ --main: 200,154,200;
+ --accent: 165,196,204;
+ --unicode: '\e00e'; 
+}
+
 #bird { 
  --main: 161,147,178;
  --unicode: '\e001'; 
