@@ -282,7 +282,7 @@
   content:'\e920';
   font-family:starry;
   display:inline-block;
-  margin-right:1px;
+  margin-right:3px;
   font-size:12px;
   background: -webkit-linear-gradient(rgba(var(--accent)) 20%, rgba(var(--accent), 0.25));
   -webkit-background-clip: text;
