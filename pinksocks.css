@@ -42,12 +42,12 @@
   content:'';
   display:block;
   height:25px;
-  width:35px;
+  width:30px;
   background:#fbfbfb;
   position:absolute;
   z-index:1;
   top:5px;
-  right:30px;
+  right:35px;
 }
 
 .ps-keychain:after {
