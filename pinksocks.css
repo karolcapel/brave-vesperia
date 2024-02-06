@@ -232,6 +232,10 @@
 .ps-tag {
   background:rgba(var(--main), 0.125);
   padding:35px 50px;
+  padding-left:35px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:0px 7.5px;
   margin:50px -50px -50px;
   border-radius:0px 0px 25px 25px;
   position:relative;
@@ -271,6 +275,20 @@
   background: -webkit-linear-gradient(rgba(var(--main)) 20%, rgba(var(--accent), 0.85));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  align-content:left;
+}
+
+.ps-tag a.user-tagged:before {
+  content:'\e920';
+  font-family:starry;
+  display:inline-block;
+  margin-right:1px;
+  font-size:12px;
+  background: -webkit-linear-gradient(rgba(var(--accent)) 20%, rgba(var(--accent), 0.25));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position:relative;
+  top:-3;
 }
 
 .ps-tag note {
@@ -278,5 +296,6 @@
   color:#8f8f8f;
   text-shadow:none;
   font-weight:500;
-  line-height:14px;
+  padding-left:15px;
+  line-height:16px;
 }
