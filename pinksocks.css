@@ -258,7 +258,7 @@
   height:12.5px;
   text-transform:uppercase;
   font-weight:300;
-  color:#8f8f8f;
+  color:rgba(var(--main), 0.75);
   border-radius:7.5px 7.5px 0px 0px;
 }
 
