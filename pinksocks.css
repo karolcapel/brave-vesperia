@@ -10,7 +10,7 @@
   font-weight:400;
   font-size:14.5px;
   line-height:24px;
-  color:#4f4f4f;
+  color:#6f6f6f;
   z-index:1;
 }
 
@@ -166,7 +166,7 @@
   display:inline-block;
   color:rgba(79,79,79, 0.5);
   margin-top:-12.5px;
-  text-align:right;
+  text-align:left;
 }
 
 .ps-date b { 
