@@ -29,9 +29,21 @@
  --unicode: '\e001'; 
 }
 
+#bird-g { 
+ --main: 178,186,204;
+ --accent:210,207,186; 
+ --unicode: '\e001'; 
+}
+
 #donny { 
   --main:  151, 171, 177;
   --accent: 122, 147, 155;
+  --unicode: '\e900'; 
+}
+
+#donny-g { 
+  --main:  174,190,194;
+  --accent: 202,172,184;
   --unicode: '\e900'; 
 }
 
@@ -69,15 +81,33 @@
  --unicode: '\e103'; 
 }
 
+#kit-g {
+ --main: 157,200,208;
+ --accent: 131,139,154;
+ --unicode: '\e103'; 
+}
+
 #mercie {
  --main: 147,97,111;
  --accent: 147,97,111;
  --unicode: '\e104'; 
 }
 
+#mercie-g {
+ --main: 197,156,171;
+ --accent: 155,165,192;
+ --unicode: '\e104'; 
+}
+
 #olga {
  --main: 212, 146, 152;
  --accent: 212, 147, 153;
+ --unicode: '\e009'; 
+}
+
+#olga-g {
+ --main: 225,181,184;
+ --accent: 182,213,193;
  --unicode: '\e009'; 
 }
 
@@ -92,9 +122,21 @@
  --unicode: '\e006'; 
 }
 
+#oxford-g { 
+ --main: 200,154,165;
+ --accent: 157,132,131;
+ --unicode: '\e006'; 
+}
+
 #rory { 
  --main: 147,156,185;
  --accent: 132,142,175;
+ --unicode: '\e00b'; 
+}
+
+#rory-g { 
+ --main: 165,172,190;
+ --accent: 195,196,200;
  --unicode: '\e00b'; 
 }
 
@@ -116,9 +158,21 @@
  --unicode: '\e901'; 
 }
 
+#wes-g {
+ --main: 170,191,206;
+ --accent: 215,198,186;
+ --unicode: '\e901'; 
+}
+
 #yseult {
   --main: 178, 145, 161; 
   --accent: 174, 141, 157;
+ --unicode: '\e00d'; 
+}
+
+#yseult-g {
+  --main: 210,177,187; 
+  --accent: 194,212,221;
  --unicode: '\e00d'; 
 }
 
