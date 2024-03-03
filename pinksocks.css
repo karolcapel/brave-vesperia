@@ -290,6 +290,11 @@
   top:-3;
 }
 
+.ps-tag a {
+  text-decoration: none;
+  color:rgba(var(--accent)); 
+}
+
 .ps-tag note {
   display:block;
   color:#8f8f8f;
