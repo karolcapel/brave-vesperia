@@ -280,8 +280,8 @@ border:1px solid rgba(var(--dark), 0.75);
 
 .bh-about b {
   font-weight:700;
-  color:rgba(var(--main), 0.9);
-  background: -webkit-linear-gradient(rgba(var(--main)), rgba(var(--main), 0.85));
+  color:rgba(var(--main));
+  background: -webkit-linear-gradient(rgba(var(--main)), rgba(var(--main), 0.95));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
