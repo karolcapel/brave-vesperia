@@ -158,6 +158,25 @@
   -webkit-text-fill-color: transparent;
 }
 
+#sonnet.ps-icon:after {
+  content:var(--unicode);
+  font-family:starry; 
+  position:absolute;
+  font-size:30px;
+  width:30px;
+  height:30px;
+  padding:5px;
+  line-height:30px;
+  top:45px;
+  left:-21px;
+  -webkit-font-smoothing: antialiased;
+  font-weight:400;
+  display:block;
+  background: -webkit-linear-gradient(rgba(var(--main)) 20%, rgba(var(--accent), 0.85));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .ps-date {
   text-transform:uppercase;
   font-weight:200;
