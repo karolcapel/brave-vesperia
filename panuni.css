@@ -279,3 +279,57 @@
 --main: 148,198,178;
 --unicode: '\e90b'; 
 }
+
+#connie-g {
+--main:  155,155,176;
+--accent: 190,146,134;
+--unicode: '\a80';
+}
+
+#darcy-g {
+--main:  197,132,119;
+--accent: 181,156,143;
+--unicode: '\a54';
+}
+
+#fern-g {
+--main:  171,151,155;
+--accent: 148, 153, 190;
+--unicode: '\e917';
+}
+
+#joel-g {
+--main:  154,176,188;
+--accent: 179,154,140;
+--unicode: '\a13';
+}
+
+#lune-g {
+--main:  172,185,227;
+--accent: 209,183,192;
+--unicode: '\a46';
+}
+
+#milou-g {
+--main:  203,165,147;
+--accent: 178,170,131;
+--unicode: '\e900';
+}
+
+#perdita-g {
+--main:  157,146,170;
+--accent: 139,138,149;
+--unicode: '\e908';
+}
+
+#rome-g {
+--main: 169,130,134;
+--accent: 150,138,124;
+--unicode: '\e902';
+}
+
+#violette-g {
+--main: 159,206,193;
+--accent: 213,201,197;
+--unicode: '\e90b';
+}
