@@ -1,0 +1,195 @@
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+        <link href="//christieclee.github.io/highalo/starry/starry.css" rel="stylesheet">
+
+          <body>
+            <div class="bg-body"></div>
+
+<div id="wrapper">
+  <div id="nejo-banner">
+    <div class="nejo-circ"></div>
+    <div class="nejo-circ2"></div>
+    <div class="fuck-jkr">f<span class="s s-sparkle2" style="display:inline-block; position:relative; top:2px; color:#c99e63; margin:0px 1px;"></span>ck jkr.</div>
+  </div>
+  <div class="nejo-btext"><span style="">Alo</span><br>hom<br>ora<est>a non-canon hp rp | <b>est.</b></b> 2017</est></div>
+  
+</div>
+
+          </body>
+    
+ 
+ <style>
+/****************************************
+  NEW JOURNALISM
+  a skin by pandora
+  
+  Notes: 
+  use "nejo" to create unique class names
+*****************************************/
+
+@font-face { font-family: 'magic retro'; src: url('https://files.jcink.net/uploads2/alohoskin22/Magic_Retro.ttf'); }
+
+body { 
+  background:#cdcdcd;
+  font-family:poppins;
+  font-weight:500;
+  font-size:14px;
+  line-height:22px;
+  color:#3b3b3b;
+  }
+
+.bg-body { 
+  position:absolute;
+  top:0px!important;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  height:100%;
+  width:100%;
+  background-size: 30px 30px;
+  background-image: linear-gradient(to right, #ddd 1px, transparent 1px),
+  linear-gradient(to bottom, #ddd 1px, transparent 1px);
+}
+
+.bg-body:before {
+  content:'';
+  display:block;
+  background:#ddd;
+  background:linear-gradient(to bottom, #ddd, transparent); /* rgba code has to be 0.0 */
+  position:absolute;
+  width:100%;
+  height:100%;
+}
+
+/****************************************
+   Board Width
+*****************************************/
+
+#wrapper {
+  position:relative;
+  margin:50px auto;
+  min-width:1050px;
+  max-width:1200px;
+  z-index:0;
+}
+
+#innerwrapper {
+  
+}
+
+/****************************************
+   Banner
+*****************************************/
+
+#nejo-banner {
+  position:relative;
+  margin:auto auto;
+  background-color:#c99e63;
+  background-image:url('https://i.postimg.cc/63bdrGS0/Banner-1-Test.png');
+  width:550px;
+  height:550px;
+  border-radius:100%;
+  background-blend-mode:hard-light;
+}
+
+#nejo-banner:before {
+  content:'';
+  position:absolute;
+  background:url('https://i.postimg.cc/kJsw-M2jD/Banner-1-Test-B.png');
+  width:750px;
+  height:850px;
+  top:-100px;
+  left:-100px;
+  z-index:2;
+}
+
+.nejo-circ {
+  position:absolute;
+  display:block;
+  width:550px;
+  height:550px;
+  border-left:#c99e63 1px solid;
+  border-right:#c99e63 1px solid;
+  border-top:transparent 1px solid;
+  border-bottom:transparent 1px solid;
+  padding:50px;
+  left:-50px;
+  top:-50px;
+  border-radius:100%;
+  z-index:1;
+  opacity:0.25;
+ -webkit-animation:spin 30s linear infinite;
+  -moz-animation:spin 30s linear infinite;
+  animation:spin 30s linear infinite;
+}
+
+ @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+ @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+ @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+  
+
+.nejo-btext {
+  position:absolute;
+  top:200px;
+  width:100%;
+  left:15%;
+  font-size:175px;
+  line-height:115px;
+  font-family:magic retro;
+  text-shadow:-1px 0 #ddd, 0 1px #ddd, 1px 0 #ddd, 0 -1px #ddd;
+  z-index:3;
+}
+
+.nejo-btext:before {
+  content:'\a136';
+  font-family:starry;
+  position:absolute;
+  left:285px;
+  bottom:5px;
+  display:block;
+  transform:rotate(70deg);
+  color:#c99e63;
+}
+
+.nejo-btext est {
+  display:block;
+  font-family:poppins;
+  font-size:20px;
+  font-weight:300;
+  position:absolute;
+  text-transform:uppercase;
+  margin-top:-36px;
+}
+
+.nejo-btext est b {
+  color:#c99e63;
+  font-weight:500;
+}
+
+.fuck-jkr {
+  background:#ededed;
+  position:absolute;
+  right:25px;
+  top:25px;
+  padding:15px;
+  border-radius:15px;
+  font-weight:600;
+  font-size:18px;
+  line-height:18px;
+  text-transform:uppercase;
+  z-index: 3;
+}
+
+.fuck-jkr:after {
+    content:'';
+    position: absolute;
+    top: 40px;
+    left:0px;
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    border-right: 14px solid #ededed;
+    border-bottom-right-radius: 50px;
+    z-index: 3;
+}
+
+</style>
