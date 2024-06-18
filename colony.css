@@ -1,0 +1,7 @@
+#clny-ql label:before {
+  --unicode:'\e66c';
+}
+
+#clny-ql input:checked+label:before {
+  --unicode:'\e66a';
+}
