@@ -5,3 +5,11 @@
 #clny-ql input:checked+label:before {
   --unicode:'\e66a';
 }
+
+#clny-cal event:before {
+  --unicode:'\e3fe';
+}
+
+#clny-cal end:before {
+  --unicode:'\e1c8';
+}
