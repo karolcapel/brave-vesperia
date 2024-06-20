@@ -1,0 +1,1654 @@
+<head>
+
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css"
+/>
+
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css"
+/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script> 
+
+window.onload = function () {
+
+/* JS BY JARONART FOR ELYSIUM ONLY! */ 
+
+const cal = document.getElementById("clny-cal"); // selects calendar div to fill in
+
+var calOutput = ""; // var to store calendar HTML
+calOutput = fillCalendar();
+
+function fillCalendar() {
+  
+  let date = new Date(new Date().toLocaleString("en-US", {timeZone: "America/New_York"})); // timezone ex: Asia/Jerusalem gets today's date
+  // date = new Date("August 5, 2023"); // can set to a specific date
+  let year = date.getFullYear(); // gets the current year
+  let month = date.getMonth(); // gets the current month
+  let day = date.getDay(); // gets today
+  let numDays = new Date(year, month+1, 0).getDate(); // gets number of days in month
+  let startingDay = new Date((year) + "-" + (month+1) + "-01").getDay(); // starting day of the month
+
+
+  /** EVENTS **/
+  /**
+  * Put events in here
+  * format is date #,"Type of event","hover desc" 
+  * ensure that the day number is NOT in quotation marks
+  **/
+  const events = [
+    [1,"spec","log starts"],
+    [7,"end","ic endeavor"],
+    [15,"spec","log ends"],
+    [20,"event","ic event"],
+    [30,"spec","inactive accounts cleared"]
+  ];
+
+
+  let eventCounter = 0; // counts how many events have been put in
+  let output = ""; // stores output
+  output += "<top>ooc calendar</top>"; // add calendar title to top
+  
+  for (let i = 0; i < 42; i++) {
+    if (i < startingDay) {
+      output += '<blnk></blnk>';
+    } else {
+      // are we within the month
+      if (i < numDays + startingDay) {
+        // check do we have remaining events
+        if (eventCounter < events.length) {
+          // is today an event day
+          if (events[eventCounter][0]-1+startingDay == i) {
+            // take event variables and add to output to create special divs
+            output += '<' + events[eventCounter][1] + ' title="' +  events[eventCounter][2] + '">';
+            // if event is spec, we want to have the numbers appear still if it's the 1st, 15th or last day of the month
+            if(events[eventCounter][1] == 'spec' && 
+               (i+1-startingDay == 1 || i+1-startingDay == 15 || i+1-startingDay == numDays)
+              ) {
+              output += i+1-startingDay;
+            }
+            output += '</' + events[eventCounter][1] + '>'; // add closing tag
+            eventCounter += 1;
+          }  else {
+            // else the day is not an event day, use num div
+            output += '<num>';
+            if(i+1-startingDay == 1 || i+1-startingDay == 15 || i+1-startingDay == numDays) {
+              output += i+1-startingDay; // add number if it's 1st, 15th or last day
+            }
+            output += '</num>';
+          }
+        } else {
+          // have remaining days and no more events
+          output += '<num>';
+          if(i+1-startingDay == 1 || i+1-startingDay == 15 || i+1-startingDay == numDays) {
+            output += i+1-startingDay; // add number if it's 1st, 15th or last day
+          }
+          output += '</num>';
+        }
+      } else {
+        output += '<blnk></blnk>'; // leftover days
+      }
+    }
+  }
+  return output;
+}
+
+cal.innerHTML = calOutput;
+
+}
+</script>
+
+</head>
+
+          <div id="clny-tran">
+
+<div id="clny-ql">
+  <div class="glimmer"></div>
+  <input type="checkbox" id="clny-ql-label">
+  <label for="clny-ql-label"></label>
+  
+<div class="ql-stuff">
+  <div class="clny-welc">welcome</div>
+  <div class="clny-qs">quick view <i class="ph-thin ph-arrow-fat-lines-down"></i></div>
+  
+  <div class="clny-welcinfo">
+
+Welcome to <b>Elysium.</b> We are an original, <u>18+</u> sci-fi RP set in the fictional year <b>300 ee.</b> <b>The S.S. Elysium</b> is one of a hundred space ships launched after the destruction of Earth, and it has evolved into a <b>small city</b> of its own. This site explores the daily lives of its <b>space-born</b> residents as they pilot a demanding, but proud, existence.
+
+  </div>
+  
+  <div class="clny-cal">
+
+  </div>
+
+<div class="clny-staff">
+  <i class="ph-thin ph-arrow-elbow-left"></i>
+  
+  <div id="max"><a href="" title="pm max"></a></div>
+  <div id="pan"><a href="" title="pm pandora"></a></div>
+  <div id="stark"><a href="" title="pm stark"></a></div>
+  <div id="ven"><a href="" title="pm ven"></a></div>
+</div>
+
+</div>
+  
+  <div class="clny-banner">
+
+<div class="clny-title">elysium</div>
+<div class="clny-line"></div>
+  
+  </div>
+
+      </div>
+
+<div id="wrapper">
+
+      <div id="clny-essentials">
+        <div class="clny-tri"></div>
+        <div class="clny-char"></div>
+        <div class="glint"></div>
+        <div class="glint2"></div>
+
+<div class="clny-guide">
+  <a href="" class="cguide-title">starter guide</a>
+  <div class="cguide-spark"><i class="ph-fill ph-sparkle"></i></div>
+  <div class="cguide-desc">
+
+Our <b>starter guide</b> will prep you for roleplay! It covers our site rules and preferences, customs, setting, rules for mechanics, and more. You can use the <b>links</b> below for easy access to important pages and character creation tools, or to join our <b>discord!</b>
+
+  </div>
+  <div class="cguide-linx">
+
+<a href="">rules</a>
+<a href="">lore</a>
+<a href="">character classes</a>
+<a href="">memberlist</a>
+<a href="">application</a>
+<a href="">claims</a>
+<a href="">templates</a>
+<a href="">store</a>
+
+  </div>
+  <a href="" title="join our discord!" class="cguide-dis"></a>
+
+</div>
+<div class="clny-updates">
+  <a href="BOARD" class="clny-uptle">sitewide bulletin</a>
+  <a href="THREAD" class="uplink">00. grand opening</a>
+</div>
+<div class="clny-event">
+  <a href="" class="cevent-title">sitewide events</a>
+  <div class="cevent-desc">
+<span>All events, endeavors, and commissions are posted here. You can earn plots, credits, and achievements by participating!</span>
+  </div>
+  <a href="INFO" class="cevent-info"><item>post a commission</item></a>
+  <div class="cevent-lp">
+<a href="" class="cevent-tle">[ event ] space jamboree</a>
+<a href="" class="cevent-pst">kit jiang</a>
+  </div>
+  <div class="cevent-date">date posted</div>
+</div>
+<div class="clny-log">
+  <a href="BOARD" class="clog-title">activity checks</a>
+  <a href="THREAD" class="clog-link">activity check 001</a>
+  <div class="clog-desc">
+<span>We post checks on the <u>1st</u> of every month; they end on the <u>21st.</u> View the rules before posting!</span>
+    
+     </div>
+</div>
+<div class="clny-service">
+  <a href="BOARD" class="cserv-title">member services</a>
+  <div class="cserv-toppost">
+    <top>moderation & credits</top><pstr id="group">kit jiang</pstr>
+  </div>
+  <div class="cserv-desc"><span>
+This board serves all of your needs as a <b>member.</b> You may request to archive topics, claim credits and achievements, and submit your own lore suggestions!
+    </span></div>
+  <div class="cserv-linx">
+    <div class="cserv-l" id="mc"><a href="">mod & credits</a></div>
+    <div class="cserv-l" id="aw"><a href="">achievements</a></div>
+    <div class="cserv-l" id="ls"><a href="">lore submit</a></div>
+  </div>
+</div>
+  
+      </div>
+
+</div>
+
+          </div>
+
+<style>
+/****************************************
+ "COLONY"
+ SKIN BY PANDORA FOR USE ON ELYSIUM ONLY
+ 
+ Notes:
+ - Use "clny" to create unique class names.
+*****************************************/
+
+@font-face { font-family: 'varelmo'; src: url('https://files.jcink.net/uploads2/elysiumship/fonts/Varelmo.ttf'); }
+@font-face { font-family: 'hybrid'; src: url('https://files.jcink.net/uploads2/elysiumship/fonts/Hybrid_b.ttf'); }
+
+@font-face { font-family: 'proxima nova thin'; src: url('https://files.jcink.net/uploads2/elysiumship/fonts/proxima_nova_thin.ttf'); }
+@font-face { font-family: 'proxima nova light'; src: url('https://files.jcink.net/uploads2/elysiumship/fonts/Proxima_Nova_Light.ttf'); }
+@font-face { font-family: 'proxima nova reg'; src: url('https://files.jcink.net/uploads2/elysiumship/fonts/Proxima_Nova_Reg.ttf'); }
+@font-face { font-family: 'proxima nova semi bold'; src: url('https://files.jcink.net/uploads2/elysiumship/fonts/proxima_nova_semibold.ttf'); }
+@font-face { font-family: 'proxima nova bold'; src: url('https://files.jcink.net/uploads2/elysiumship/fonts/Proxima_Nova_Bold.ttf'); }
+
+@font-face {
+  font-family: "Phosphor-Thin";
+  src:
+    url("./Phosphor-Thin.woff2") format("woff2"),
+    url("./Phosphor-Thin.woff") format("woff"),
+    url("./Phosphor-Thin.ttf") format("truetype"),
+    url("./Phosphor-Thin.svg#Phosphor-Thin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.ph-thin {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "Phosphor-Thin" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body { background:rgba(var(--dgray));
+font-family:proxima nova reg;
+font-size:13.5px;
+line-height:18px;
+color:rgba(var(--black));
+
+--black:50,50,50;
+--lgray:200,200,200;
+--dgray:66,66,66;
+--white:226,226,226;
+}
+
+/****************************************
+ COLONY COLORS
+*****************************************/
+
+#clny-def {
+  --clr:236,90,117;
+  --acc:236,90,190;
+}
+
+#clny-arch {
+  --clr:162,126,210;
+  --acc:126,132,210;
+}
+
+#clny-auth {
+  --clr:214,105,57;
+  --acc:214,57,87;
+}
+
+#clny-cult {
+  --clr:45,194,143;
+  --acc:45,194,69;
+}
+
+#clny-sav {
+  --clr:215,172,65;
+  --acc:183,215,65;
+}
+
+#clny-tran {
+  --clr:93,171,215;
+  --acc:93,110,215;
+}
+
+/****************************************
+ BANNER
+*****************************************/
+
+#clny-ql .clny-banner {
+  position:relative;
+  width:1050px;
+  height:625px;
+  background:linear-gradient(to bottom, rgba(var(--dgray)) 25%, rgba(var(--clr), 0.35));
+}
+
+#clny-ql .clny-banner:before {
+  content:'';
+  display:block;
+  width:1050px;
+  height:625px;
+  background-image:url('https://i.postimg.cc/25mDvJpZ/Banner-Default-01.png');
+  background-repeat:no-repeat;
+  background-position:top center;
+  position:absolute;
+  z-index:1;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+#clny-arch .clny-banner:before {
+  background-image:url('https://i.postimg.cc/j5SY37Sq/Banner-Architect-01.png');
+}
+
+#clny-auth .clny-banner:before {
+  background-image:url('https://i.postimg.cc/Dw1hShNh/Banner-Authority-01.png');
+}
+
+#clny-cult .clny-banner:before {
+  background-image:url('https://i.postimg.cc/JhqWQqmd/Banner-Cultivator-01.png');
+}
+
+#clny-sav .clny-banner:before {
+  background-image:url('https://i.postimg.cc/qRDVPvNs/Banner-Savant-01.png');
+}
+
+#clny-tran .clny-banner:before {
+  background-image:url('https://i.postimg.cc/9045CH9v/Banner-Transgressor-01.png');
+}
+
+.clny-line {
+  height:1px;
+  background:linear-gradient(to right, rgba(var(--white), 0.75), rgba(var(--acc), 0.75));
+  position:absolute;
+  left:0px;
+  width:86%;
+  top:375px;
+  z-index:0;
+}
+
+.clny-line:after {
+  content:'';
+  display:block;
+  height:1px;
+  background:rgba(var(--acc), 0.75);
+  width:35px;
+  position:absolute;
+  top:10px;
+  right:-31px;
+  transform:rotate(35deg);
+}
+
+.clny-title {
+  font-family:'varelmo';
+  font-size:125px;
+  line-height:125px;
+  display:block;
+  text-align:center;
+  position:relative;
+  top:250px;
+  text-shadow:-1px 0 rgba(var(--acc), 0.85), 0 1px rgba(var(--clr), 0.85), 1px 0 rgba(var(--clr), 0.85), 0 -1px rgba(var(--clr), 0.85);
+  z-index:2;
+}
+
+.clny-title:after {
+  content:'elysium';
+  display:block;
+  line-height:50px;
+  font-size:25px;
+  font-family:hybrid;
+  color:rgba(var(--white));
+  letter-spacing:100px;
+  margin-left:100px;
+}
+
+/****************************************
+ BANNER TOGGLE
+*****************************************/
+
+#clny-ql {
+  width:1050px;
+  height:625px;
+  overflow:hidden;
+  margin:25px auto 0px;
+  position:relative;
+}
+
+#clny-ql .ql-stuff {
+  width:422px;
+  height:625px;
+  position:absolute;
+  top:0px;
+  left:-423px;
+  background:rgba(var(--clr), 0.4);
+  background:linear-gradient(180deg, rgba(var(--clr), 0.4), rgba(var(--acc), 0.4));
+  border-right:1px solid rgba(var(--acc), 0.25);
+  transition-timing-function: ease-in-out;
+  transition-duration:.4s;
+  z-index:3;
+}
+
+#clny-ql input {
+  display:none;
+}
+
+#clny-ql label {
+  display:block;
+  position:absolute;
+  top:50px;
+  left:50px;
+  width:60px;
+  height:60px;
+  display:block;
+  border:1px solid rgba(var(--white));
+  transform:rotate(-45deg);
+  text-align:center;
+  z-index:10;
+  transition-timing-function: ease-in-out;
+  transition-duration:.4s;
+}
+
+#clny-ql label:before {
+ content:'\e66c';
+ font-family: "Phosphor-Thin";
+ display:block;
+ transform:rotate(45deg);
+ width:60px;
+ height:60px;
+ line-height:60px;
+ color:rgba(var(--white));
+ font-size:40px;
+}
+
+#clny-ql input:checked+label {
+  border:1px solid rgba(var(--acc), 0.75);
+  background:rgba(var(--dgray), 0.5);
+  background:linear-gradient(to bottom left, rgba(var(--dgray)), rgba(var(--black)));
+  transition-timing-function: ease-in-out;
+  transition-duration:.4s;
+}
+
+#clny-ql input:checked+label:before {
+  content:'\e66a';
+  font-family: "Phosphor-Thin";
+  color:rgba(var(--acc), 0.75);
+  transition-timing-function: ease-in-out;
+  transition-duration:.4s;
+}
+
+#clny-ql input:checked+label~.ql-stuff {
+  left:0px;
+  transition-timing-function: ease-in-out;
+  transition-duration:.4s;
+}
+
+#clny-ql input:checked+label~.clny-banner:before {
+  filter:grayscale(100%);
+  -webkit-transform:scale(1.1);
+  transform:scale(1.1);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+#clny-ql .glimmer {
+  position:absolute;
+  top:50px;
+  left:50px;
+  height:60px;
+  width:60px;
+  z-index:1;
+  display:block;
+  transform:rotate(-45deg);
+  overflow:hidden;
+}
+
+#clny-ql .glimmer:before {
+  content:'';
+  position:absolute;
+  top:-5px;
+  display:block;
+  height:35px;
+  width:100px;
+  z-index:1;
+}
+
+#clny-ql:hover .glimmer:before {
+  background:linear-gradient(to top, rgba(var(--dgray), 0), rgba(var(--clr), 0.15), rgba(var(--acc), 0.25), rgba(var(--dgray), 0));
+  animation:gleam 1.65s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes gleam {
+  0%   {top: -35px;}
+  100%  {top:160px;}
+}
+
+.clny-qs {
+  background:rgba(var(--black));
+  position:absolute;
+  position:absolute;
+  right:50px;
+  top:81px;
+  height:45px;
+  line-height:45px;
+  font-family:Rajdhani;
+  font-weight:500;
+  text-transform:uppercase;
+  font-size:16px;
+  width:195px;
+  padding-left:30px;
+  text-align:left;
+  border-radius:15px 15px 15px 0px;
+  box-shadow:1px -1px rgba(var(--acc), 0.5);
+  opacity:0.9;
+  letter-spacing:5px;
+  color:rgba(var(--white));
+}
+
+.clny-qs:after {
+  content:'';
+  display:block;
+  position:absolute;
+  top:2px;
+  left:-36px;
+  border-right:43px solid rgba(var(--black));
+  border-left:43px solid transparent rgba(var(--white), 0);
+  border-top:43px solid rgba(var(--white), 0);
+  z-index:3;
+}
+
+.clny-qs i {
+  position:absolute;
+  display:block;
+  right:10px;
+  top:0px;
+  line-height:45px;
+  height:45px;
+  width:30px;
+  font-size:30px;
+  background: -webkit-linear-gradient(rgba(var(--clr)), rgba(var(--acc)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.clny-welc {
+  font-family:'proxima nova semi bold';
+  text-transform:uppercase;
+  font-size:40px;
+  color:rgba(var(--white), 0.85);
+  text-shadow:-1px 0 rgba(var(--acc), 0.5), 0 1px rgba(var(--clr), 0.5), 1px 0 rgba(var(--clr), 0.5), 0 -1px rgba(var(--clr), 0.5);
+  position:absolute;
+  right:55px;
+  top:50px;
+}
+
+.clny-welcinfo {
+  background:rgba(var(--white));
+  margin:50px;
+  position:relative;
+  top:100px;
+  padding: 25px;
+  border-radius:15px 15px 0px;
+  height:162.5px;
+  font-size:14px;
+  line-height:19px;
+  opacity:0.9;
+}
+
+.clny-welcinfo:before {
+  content:'';
+  display:block;
+  width:100px;
+  height:25px;
+  background:rgba(var(--white));
+  position:absolute;
+  right:0px;
+  bottom:-25px;
+  border-radius:0px 0px 15px 15px;
+}
+
+.clny-welcinfo:after {
+  content:'';
+  display:block;
+  position:absolute;
+  bottom:-24px;
+  right:92px;
+  border-right:26px solid rgba(var(--white));
+  border-left:26px solid rgba(var(--white),0);
+  border-bottom:26px solid rgba(var(--white), 0);
+  z-index:3;
+  transform:rotate(-1deg);
+}
+
+.clny-welcinfo b, .cguide-desc b {
+  background:rgba(var(--clr));
+  background:linear-gradient(120deg, rgba(var(--clr), 0.9), rgba(var(--acc), 0.75));
+  border-radius:5px;
+  padding:2px 4px;
+  font-size:11px;
+  text-transform:uppercase;
+  font-family:proxima nova bold;
+}
+
+.clny-welcinfo u {
+  text-decoration:none;
+  border-bottom:1px solid rgba(var(--acc), 0.75);
+  font-family:proxima nova semi bold;
+  line-height:13px;
+  display:inline-block;
+}
+
+.clny-cal {
+  position:absolute;
+  bottom:50px;
+  left:50px;
+  height:200px;
+  width:200px;
+  background:rgba(var(--clr), 0.5);
+  background:linear-gradient(140deg, rgba(var(--clr), 0.5), rgba(var(--acc), 0.5));
+  border-radius:15px;
+  overflow:hidden;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+}
+
+.clny-cal top {
+  height:27px;
+  background:rgba(var(--black), 0.9);
+  color:rgba(var(--white));
+  font-family:Rajdhani;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:3px;
+  font-weight:400;
+  line-height:27px;
+  text-align:center;
+  width:200px;
+  display:block;
+}
+
+.clny-cal blnk, .clny-cal num, .clny-cal spec, .clny-cal event, .clny-cal end {
+  width:27.5px;
+  height:27.75px;
+  background:rgba(var(--lgray));
+  display:inline-block;
+  text-align:center;
+  line-height:27px;
+  font-size:14px;
+  font-family:proxima nova light;
+}
+
+.clny-cal num {
+  background:rgba(var(--white));
+}
+
+.clny-cal spec {
+  background:rgba(var(--clr));
+  background:linear-gradient(140deg, rgba(var(--white), 0.5), rgba(var(--acc), 0.5));
+}
+
+.clny-cal event {
+  background:linear-gradient(140deg, rgba(var(--black), 35%), rgba(var(--acc), 0.5));
+  color:rgba(var(--white));
+}
+
+.clny-cal event:before {
+  content:'\e3fe';
+  font-family: "Phosphor-Thin";
+  font-size:20px;
+  line-height:28px;
+}
+
+.clny-cal end {
+  background:linear-gradient(140deg, rgba(var(--black), 35%), rgba(var(--clr), 0.5));
+  color:rgba(var(--white));
+}
+
+.clny-cal end:before {
+  content:'\e1c8';
+  font-family: "Phosphor-Thin";
+  font-size:20px;
+  line-height:28px;
+}
+
+.clny-staff {
+  position:absolute;
+  bottom:50px;
+  right:50px;
+  height:175px;
+  width:100px;
+}
+
+.clny-staff i {
+  position:absolute;
+  top:-22.5px;
+  right:-12.5px;
+  color:rgba(var(--acc));
+  font-size:50px;
+  height:50px;
+  line-height:50px;
+  width:50px;
+  display:block;
+  transform:rotate(-87deg);
+  background: -webkit-linear-gradient(rgba(var(--clr)), rgba(var(--acc)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.clny-staff:before {
+  content:'staff';
+  display:block;
+  position:absolute;
+  font-family:varelmo;
+  width:95px;
+  right:-12.5px;
+  top:-40px;
+  font-size:15px;
+  text-shadow:-1px 0 rgba(var(--acc), 0.5), 0 1px rgba(var(--clr), 0.5), 1px 0 rgba(var(--clr), 0.5), 0 -1px rgba(var(--clr), 0.5);
+}
+
+.clny-staff a {
+  border:1px solid rgba(var(--white));
+  display:block;
+  height:37.5px;
+  width:37.5px;
+  transform:rotate(-45deg);
+  position:relative;
+  background-color:rgba(var(--clr), 0.5);
+  overflow:hidden;
+}
+
+.clny-staff a:before {
+  content:'';
+  display:block;
+  width:55px;
+  height:55px;
+  filter:grayscale(100%);
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+  transform:rotate(45deg);
+  position:absolute;
+  left:-10px;
+  top:-10px;
+}
+
+.clny-staff #max a {
+  position:relative;
+  top:10px;
+  left:10px;
+}
+
+.clny-staff #max a:before {
+  background-image:url('https://i.postimg.cc/T1Kkd9kw/MA1.png');
+}
+
+.clny-staff #pan a {
+  position:relative;
+  top:10px;
+  left:50px;
+}
+
+.clny-staff #pan a:before {
+  background-image:url('https://i.postimg.cc/tT6WyrFh/a001c.png');
+}
+
+.clny-staff #stark a {
+  position:relative;
+  top:10px;
+  left:10px;
+}
+
+.clny-staff #stark a:before {
+  background-image:url('https://i.postimg.cc/brLyxZ62/5.png');
+}
+
+.clny-staff #ven a {
+  position:relative;
+  top:10px;
+  left:50px;
+}
+
+.clny-staff #ven a:before {
+  background-image:url('https://i.postimg.cc/Fzz6fmKh/staff.png');
+}
+
+/****************************************
+ WRAPPER
+*****************************************/
+
+#wrapper {
+  width:1050px;
+  background:rgba(var(--white));
+  position:relative;
+  margin:0px auto 25px;
+}
+
+#innerwrapper {
+  padding:25px;
+}
+
+/****************************************
+ COLONY HOMEPAGE
+*****************************************/
+
+#clny-essentials {
+  position:relative;
+  background:rgba(var(--white));
+  height:500px;
+}
+
+#clny-essentials:before {
+  content:'';
+  display:block;
+  height:30px;
+  width:400px;
+  position:absolute;
+  top:-30px;
+  background:rgba(var(--white));
+  border-radius:20px 20px 0px 0px;
+  z-index:3;
+}
+
+#clny-essentials:after {
+  content:'';
+  display:block;
+  position:absolute;
+  top:-30px;
+  left:390px;
+  border-right:35px solid rgba(var(--white), 0);
+  border-left:35px solid transparent rgba(var(--white), 0);
+  border-bottom:35px solid rgba(var(--white));
+  transform:rotate(-5deg);
+  z-index:3;
+}
+
+.clny-guide {
+  position:absolute;
+  left:50px;
+  top:25px;
+  background:rgba(var(--dgray));
+  background:linear-gradient(45deg, rgba(var(--dgray)), rgba(var(--black)));
+  width:300px;
+  height:350px;
+  border-radius:15px 15px 0px 0px;
+}
+
+.clny-guide:before {
+  content:'';
+  display:block;
+  position:absolute;
+  bottom:0px;
+  right:0px;
+  border-right:25px solid rgba(var(--white));
+  border-left:25px solid transparent rgba(var(--white), 0);
+  border-top:25px solid rgba(var(--white), 0);
+  z-index:3;
+}
+
+.cguide-title {
+  display:block;
+  padding:25px 25px 0px;
+  font-size:35px;
+  line-height:35px;
+  font-family:varelmo;
+  background: -webkit-linear-gradient(45deg, rgba(var(--clr)) 35%, rgba(var(--acc)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cguide-title:after {
+  content:'starter guide';
+  display:block;
+  font-family:hybrid;
+  font-size:15px;
+  letter-spacing:7.5px;
+  background: -webkit-linear-gradient(45deg, rgba(var(--white), 0), rgba(var(--white)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height:15px;
+}
+
+.cguide-desc {
+  padding:10px 25px 10px;
+  color:rgba(var(--white));
+}
+
+.cguide-linx {
+  margin:0px 75px 0px 25px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:4px;
+}
+
+.cguide-linx a {
+  background:rgba(var(--black), 0.9);
+  color:rgba(var(--white));
+  font-size:11px;
+  font-family:rajdhani;
+  font-weight:500;
+  display:inline-block;
+  padding:2px 5px 3px;
+  border-radius:4px;
+  height:12px;
+  line-height:15px;
+  text-decoration:none;
+  text-transform:uppercase;
+  position:relative;
+  border:1px solid rgba(var(--black));
+}
+
+.cguide-dis {
+  height:35px;
+  width:35px;
+  border:1px solid rgba(var(--white));
+  position:absolute;
+  right:15px;
+  bottom:15px;
+  transform:rotate(-45deg);
+  display:block;
+  color:rgba(var(--white), 0.9);
+  transition-duration:.65s;
+}
+
+.cguide-dis:before {
+  content:'\e61a';
+  font-family:"Phosphor-Thin";
+  display:block;
+  transform:rotate(45deg);
+  width:35px;
+  height:35px;
+  position:absolute;
+  top:0px;
+  left:0px;
+  text-align:center;
+  line-height:35px;
+  font-size:25px;
+}
+
+.cguide-dis:hover {
+  border:1px solid rgba(var(--clr), 0.75);
+  background:linear-gradient(to bottom, rgba(var(--dgray)), rgba(var(--black)));
+  color:rgba(var(--acc), 0.75);
+}
+
+.cguide-spark {
+  position:absolute;
+  height:35px;
+  width:35px;
+  font-size:35px;
+  line-height:35px;
+  top:-19px;
+  left:-15px;
+  display:block;
+  background: -webkit-linear-gradient(45deg, rgba(var(--clr)) 25%, rgba(var(--acc)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cguide-spark:before {
+  content:'';
+  position:absolute;
+  display:block;
+  height:9px;
+  width:9px;
+  background:rgba(var(--white), 0.75);
+  right:6px;
+  top:1px;
+}
+
+.cguide-spark:after {
+  content:'';
+  position:absolute;
+  display:block;
+  height:7px;
+  width:7px;
+  background:rgba(var(--white), 0.75);
+  right:0px;
+  top:8px;
+  opacity:0;
+}
+
+#clny-essentials:hover .cguide-spark:before {
+  animation: twinkle 1.75s linear infinite;
+}
+
+#clny-essentials:hover .cguide-spark:after {
+  animation: twankle 1.75s linear infinite;
+}
+
+@keyframes twinkle {
+  25% { opacity:0; }
+  50% { opacity:0.5; }
+  100% { opacity:1; }
+}
+
+@keyframes twankle {
+  25% { opacity:1; }
+  50% { opacity:0.5; }
+  100% { opacity:0; }
+}
+
+.clny-updates {
+  position:absolute;
+  bottom:50px;
+  left:50px;
+  width:275px;
+  height:65px;
+  border-radius:0px 0px 15px 15px;
+  transform:rotate(2deg);
+  display:block;
+}
+
+.clny-updates:before {
+  content:'\e278';
+  position:absolute;
+  display:block;
+  font-family:'Phosphor-Thin';
+  font-size:35px;
+  top:-12px;
+  left:0px;
+  color:rgba(var(--dgray));
+}
+
+.clny-updates:after {
+  content:'\e280';
+  position:absolute;
+  display:block;
+  font-family:'Phosphor-Thin';
+  font-size:35px;
+  top:-14px;
+  right:15px;
+  color:rgba(var(--dgray));
+  transform:rotate(-15deg);
+}
+
+.clny-uptle {
+  font-family:proxima nova bold;
+  padding:12px 0px 0px 15px;
+  text-transform:uppercase;
+  font-size:22px;
+  color:rgba(var(--white));
+  text-shadow:-1px 0 rgba(var(--clr), 0.85), 0 1px rgba(var(--clr), 0.85), 1px 0 rgba(var(--clr), 0.85), 0 -1px rgba(var(--clr), 0.85);
+  display:block;
+  transform:rotate(-2deg);
+  text-decoration:none;
+  position:relative;
+  z-index:6;
+}
+
+.uplink {
+  background:rgba(var(--black), 0.9);
+  margin-left:25px;
+  color:rgba(var(--white));
+  font-size:11px;
+  font-family:rajdhani;
+  font-weight:500;
+  display:inline-block;
+  transform:rotate(-2deg);
+  padding:2px 5px 3px;
+  border-radius:4px;
+  height:12px;
+  line-height:15px;
+  text-decoration:none;
+  text-transform:uppercase;
+  position:relative;
+}
+
+#clny-essentials .glint, #clny-essentials .glint2 {
+  position:absolute;
+  bottom:50px;
+  left:50px;
+  height:65px;
+  width:275px;
+  display:block;
+  overflow:hidden;
+  border-radius:0px 0px 15px 15px;
+  transform:rotate(2deg);
+  background:rgba(var(--clr));
+  background:linear-gradient(140deg, rgba(var(--clr)) 20%, rgba(var(--acc), 0.75));
+}
+
+#clny-essentials .glint2 {
+  position:absolute;
+  background:rgba(var(--clr));
+  background:linear-gradient(140deg, rgba(var(--acc), 0.75) 20%, rgba(var(--clr)));
+  width:150px;
+  height:175px;
+  transform:rotate(0deg);
+  bottom:275px;
+  left:425px;
+  border-radius:15px;
+}
+
+#clny-essentials .glint:before, #clny-essentials .glint2:before {
+  content:'';
+  position:absolute;
+  left:0px;
+  top:-15px;
+  display:block;
+  height:125px;
+  width:35px;
+  transform:rotate(25deg);
+}
+
+#clny-essentials .glint2:before {
+  height:225px;
+}
+
+#clny-essentials:hover .glint:before, #clny-essentials:hover .glint2:before {
+  background:linear-gradient(to right, rgba(var(--dgray), 0), rgba(var(--white), 0.1), rgba(var(--acc), 0.2), rgba(var(--acc), 0));
+  animation:glint 0.85s;
+  animation-fill-mode: forwards;
+}
+
+#clny-essentials:hover .glint2:before {
+  background:linear-gradient(to right, rgba(var(--dgray), 0), rgba(var(--white), 0.075), rgba(var(--clr), 0.2), rgba(var(--acc), 0));
+  animation:glint2 0.85s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes glint {
+  0%   {left:0%;}
+  100%  {left:105%;}
+}
+
+@keyframes glint2 {
+  0%   {left:0%;}
+  100%  {left:120%;}
+}
+
+.clny-tri {
+  position:absolute;
+  z-index:4;
+  left:330px;
+  bottom:125px;
+  display:block;
+  border-right:20px solid rgba(var(--clr));
+  border-left:20px solid transparent rgba(var(--clr), 0);
+  border-top:20px solid rgba(var(--clr), 0);
+}
+
+.clny-tri:before {
+  content:'';
+  position:absolute;
+  display:block;
+  height:1;
+  width:35px;
+  top:8px;
+  left:10px;
+  background:rgba(var(--clr));
+  transform:rotate(45deg);
+}
+
+.clny-tri:after {
+  content:'';
+  position:absolute;
+  display:block;
+  height:1;
+  width:50px;
+  top:20px;
+  left:40px;
+  background:rgba(var(--clr));
+  background:linear-gradient(140deg, rgba(var(--clr)), rgba(var(--clr), 0.75));
+}
+
+.clny-char {
+  width:350px;
+  height:350px;
+  position:absolute;
+  right:0px;
+  bottom:0px;
+  background-image:url('https://i.postimg.cc/jjYphJt8/Accent-Guidelines-03.png');
+  filter:grayscale(100%);
+  background-size:100%;
+  z-index:2;
+}
+
+.clny-service {
+  border:1px solid rgba(var(--clr), 0.75);
+  background-color:rgba(var(--white), 0.3);
+  display:block;
+  position:absolute;
+  bottom:50px;
+  right:228px;
+  height:200px;
+  width:400px;
+  border-radius:15px;
+  z-index:3;
+}
+
+.cserv-title {
+  font-family: rajdhani;
+  font-weight:500;
+  text-transform:uppercase;
+  text-decoration:none;
+  display:block;
+  border-bottom:1px solid rgba(var(--clr));
+  padding:15px;
+  font-size:25px;
+  color:rgba(var(--clr));
+  letter-spacing:5px;
+}
+
+.cserv-toppost {
+  position:absolute;
+  height:25px;
+  width:370px;
+  left:15px;
+  top:36px;
+}
+
+.cserv-toppost:before {
+  content:'';
+  position:absolute;
+  top:8px;
+  left:-5px;
+  display:block;
+  border-right:10px solid rgba(var(--black));
+  border-left:10px solid transparent rgba(var(--black), 0);
+  border-top:10px solid rgba(var(--black), 0);
+  transform:rotate(-45deg);
+}
+
+.cserv-toppost top {
+  display:inline-block;
+  background:rgba(var(--black), 0.9);
+  color:rgba(var(--white));
+  font-size:11px;
+  font-family:rajdhani;
+  font-weight:500;
+  display:inline-block;
+  padding:2px 5px 3px;
+  border-radius:4px;
+  height:12px;
+  line-height:15px;
+  text-decoration:none;
+  text-transform:uppercase;
+  position:relative;
+  top:4.5px;
+  margin-left:12.5px;
+}
+
+.cserv-toppost pstr {
+  display:inline-block;
+  color:rgba(var(--black));
+  background:linear-gradient(140deg, rgba(var(--clr)), rgba(var(--acc), 0.75));
+  font-size:11px;
+  font-family:rajdhani;
+  font-weight:700;
+  display:inline-block;
+  padding:2px 5px 3px;
+  border-radius:4px;
+  height:12px;
+  line-height:15px;
+  text-decoration:none;
+  text-transform:uppercase;
+  position:relative;
+  top:4.5px;
+  margin-left:7.5px;
+}
+
+.cserv-desc {
+  font-size:12px;
+  letter-spacing:1px;
+  line-height:20px;
+  margin:20px 15px;
+  height:65px;
+  font-family:rajdhani;
+  font-weight:500;
+}
+
+.cserv-desc span {
+  background:rgba(var(--lgray), 0.75);
+  padding:0px 2px;
+}
+
+.cserv-desc b {
+  background:rgba(var(--clr));
+  background:linear-gradient(140deg, rgba(var(--clr)), rgba(var(--acc), 0.75));
+  padding:1px 4px;
+  border-radius:5px;
+  text-transform:uppercase;
+  font-size:11px;
+  font-family:proxima nova bold;
+  letter-spacing:0px;
+}
+
+.cserv-linx {
+  position:absolute;
+  left:0px;
+  bottom:0px;
+  width:385px;
+  height:53px;
+  display:flex;
+  justify-content:flex-end;
+  gap:10px;
+  padding-right:15px;
+}
+
+.cserv-l {
+  display:inline-block;
+  font-family:rajdhani;
+  font-weight:600;
+  font-size:9px;
+  text-transform:uppercase;
+  position:relative;
+  text-decoration:none;
+  top:5px;
+}
+
+.cserv-linx a {
+  position:relative;
+  z-index:1;
+  background:rgba(var(--black), 0.9);
+  color:rgba(var(--white));
+  border-radius:3px;
+  padding:2px 4px;
+  line-height:11px;
+  top:25px;
+  text-decoration:none;
+}
+
+#mc.cserv-l:before, #aw.cserv-l:before, #ls.cserv-l:before {
+  content:'\e66c';
+  font-family:'Phosphor-Thin';
+  font-size:40px;
+  line-height:22px;
+  font-weight:300;
+  position:absolute;
+  top:0px;
+  color:rgba(var(--clr));
+  width:100%;
+  text-align:center;
+  text-shadow:-1px 0 rgba(var(--white), 0.85), 0 1px rgba(var(--white), 0.85), 1px 0 rgba(var(--white), 0.85), 0 -1px rgba(var(--white), 0.85);
+}
+
+#mc.cserv-l:before {
+  content:'\ea04';
+  font-family:'Phosphor-Thin';
+}
+
+#aw.cserv-l:before {
+  content:'\e67e';
+  font-family:'Phosphor-Thin';
+}
+
+#ls.cserv-l:before {
+  content:'\e8f2';
+  font-family:'Phosphor-Thin';
+}
+
+.clny-event {
+  background:rgba(var(--lgray));
+  position:absolute;
+  right:50px;
+  width:400px;
+  top:50px;
+  height:150px;
+  border-radius:15px 15px 15px 0px;
+  z-index:1;
+}
+
+.clny-event:before {
+  content:'';
+  background:rgba(var(--lgray));
+  display:block;
+  width:100px;
+  height:25px;
+  position:absolute;
+  bottom:-25px;
+  border-radius:0px 0px 15px 15px;
+}
+
+.clny-event:after {
+  content:'';
+  position:absolute;
+  z-index:4;
+  display:block;
+  bottom:-24px;
+  left:90px;
+  border-right:25px solid rgba(var(--lgray), 0);
+  border-left:25px solid rgba(var(--lgray));
+  border-bottom:25px solid rgba(var(--lgray), 0);
+  transform:rotate(-3deg);
+}
+
+.cevent-title {
+  font-family:proxima nova bold;
+  text-transform:uppercase;
+  text-decoration:none;
+  display:block;
+  padding:15px 15px 5px 15px;
+  font-size:20px;
+  color:rgba(var(--black));
+  text-shadow:-1px 0 rgba(var(--acc), 0.5), 0 1px rgba(var(--clr), 0.5), 1px 0 rgba(var(--clr), 0.5), 0 -1px rgba(var(--clr), 0.5);
+}
+
+.cevent-desc {
+  padding:0px 15px;
+  width:275px;
+  font-size:12px;
+  letter-spacing:1px;
+  line-height:20px;
+  height:64px;
+  font-family:rajdhani;
+  font-weight:500;
+}
+
+.cevent-desc span {
+  background:rgba(var(--white), 0.75);
+  padding:0px 2px;
+}
+
+.cevent-info {
+  position:absolute;
+  top:25px;
+  right:15px;
+  background:rgba(var(--dgray));
+  width:75px;
+  height:75px;
+  text-align:center;
+  font-family:rajdhani;
+  font-weight:500;
+  color:rgba(var(--white));
+  font-size:10px;
+  line-height:10px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  display:flex;
+  align-items:center;
+  transform:rotate(4deg);
+  text-decoration:none;
+}
+
+.cevent-info item {
+  line-height:11px;
+  display:block;
+  transform:rotate(-4deg);
+  position:relative;
+  z-index:1;
+  text-shadow:-1px 0 rgba(var(--black), 0.5), 0 1px rgba(var(--black), 0.5), 1px 0 rgba(var(--black), 0.5), 0 -1px rgba(var(--black), 0.5);
+}
+
+.cevent-info:before {
+  content:'';
+  display:block;
+  width:75px;
+  height:75px;
+  position:absolute;
+  left:-5px;
+  top:-10px;
+  background:rgba(var(--dgray), 0.25);
+  transform:rotate(-4deg);
+}
+
+.cevent-info:after {
+  content:'\e282';
+  font-family:'Phosphor-Thin';
+  display:block;
+  position:absolute;
+  top:-9px;
+  font-size:22px;
+  height:19px;
+  width:25px;
+  overflow:hidden;
+  color:rgba(var(--dgray));
+  transform:rotate(-4deg);
+}
+
+.cevent-info item:before {
+  content:'\e168';
+  font-family:'Phosphor-Thin';
+  font-size:40px;
+  position:absolute;
+  z-index:-1;
+  color:rgba(var(--acc));
+  width:75px;
+  height:75px;
+  line-height:75px;
+  text-align:center;
+  background:#333;
+  top:-25px;
+  left:0px;
+  background: -webkit-linear-gradient(45deg, rgba(var(--clr)) 35%, rgba(var(--acc)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow:none;
+}
+
+.cevent-lp {
+  padding-left:15px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:4px;
+  width:185px;
+  height:40px;
+  line-height:11px;
+  align-items:center;
+  position:relative;
+}
+
+.cevent-tle {
+  background:rgba(var(--black), 0.9);
+  color:rgba(var(--white));
+  font-size:11px;
+  font-family:rajdhani;
+  font-weight:500;
+  padding:2px 5px 3px;
+  border-radius:4px;
+  height:12px;
+  line-height:15px;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+
+.cevent-pst {
+  color:rgba(var(--black));
+  background:linear-gradient(140deg, rgba(var(--clr)), rgba(var(--acc), 0.75));
+  font-size:11px;
+  font-family:rajdhani;
+  font-weight:700;
+  display:inline-block;
+  padding:2px 5px 3px;
+  border-radius:4px;
+  height:12px;
+  line-height:15px;
+  text-decoration:none;
+  text-transform:uppercase;
+  position:relative;
+}
+
+.cevent-date {
+  position:absolute;
+  bottom:-25px;
+  left:115px;
+  font-family:rajdhani;
+  text-transform:uppercase;
+  font-size:10px;
+  font-weight:500;
+  color:rgba(var(--black), 0.65);
+}
+
+.clny-log {
+  height:175px;
+  width:120px;
+  padding:15px;
+  position:absolute;
+  left:425px;
+  top:50px;
+  border-radius:15px;
+  z-index:2;
+}
+
+.clog-title {
+  font-family:proxima nova bold;
+  text-transform:uppercase;
+  font-size:22px;
+  line-height:20px;
+  color:rgba(var(--white));
+  text-shadow:-1px 0 rgba(var(--clr), 0.85), 0 1px rgba(var(--clr), 0.85), 1px 0 rgba(var(--clr), 0.85), 0 -1px rgba(var(--clr), 0.85);
+  display:block;
+  text-decoration:none;
+  position:relative;
+  padding-bottom:5px;
+}
+
+.clog-link {
+  background:rgba(var(--black), 0.9);
+  color:rgba(var(--white));
+  font-size:11px;
+  font-family:rajdhani;
+  font-weight:500;
+  display:inline-block;
+  padding:2px 5px 3px;
+  border-radius:4px;
+  height:12px;
+  line-height:15px;
+  text-decoration:none;
+  text-transform:uppercase;
+  position:relative;
+  margin-bottom:5px;
+}
+
+.clog-desc {
+  font-family:rajdhani;
+  font-weight:600;
+  font-size:11px;
+  display:block;
+  line-height:16px;
+  letter-spacing:0.5px;
+}
+
+.clog-desc span {
+  background:rgba(var(--white), 0.3);
+  padding:0px 2px;
+}
+
+.clog-desc u {
+  background:rgba(var(--white));
+  background:linear-gradient(140deg, rgba(var(--white)), rgba(var(--lgray), 0.75));
+  padding:1px 3px;
+  border-radius:3px;
+  text-transform:uppercase;
+  font-size:10px;
+  font-family:proxima nova bold;
+  letter-spacing:0px;
+  text-decoration:none;
+}
+</style>
