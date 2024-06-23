@@ -128,7 +128,7 @@
   gap:5px;
 }
 
-.rl-tag:before {
+.rl-tag:before, #sonny.rl-tag:before {
   content:var(--unicode);
   font-family:'pandora-box';
   -webkit-font-smoothing: antialiased;
@@ -146,6 +146,10 @@
   font-size:30px;
   color:#fbfbfb;
   text-shadow:-1px 0 rgba(var(--main), 0.85), 0 1px rgba(var(--main), 0.85), 1px 0 rgba(var(--main), 0.85), 0 -1px rgba(var(--main), 0.85);
+}
+
+#sonny.rl-tag:before {
+  font-family:starry;
 }
 
 .rl-tag a.user-tagged {
