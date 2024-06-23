@@ -6,8 +6,8 @@
   position:relative;
   width:475px;
   font-family:proxima nova reg;
-  font-size:14.25px;
-  line-height:21px;
+  font-size:15px;
+  line-height:22px;
   background:#fbfbfb;
   color:#5b5b5b;
   margin:25px auto;
@@ -73,7 +73,7 @@
 
 .rl-body i { 
   font-family:merriweather;
-  font-size:12px;
+  font-size:13px;
   opacity:0.85;
   font-weight:400;
 }
@@ -81,7 +81,7 @@
 .rl-body a {
   font-family:merriweather;
   color:rgba(var(--main));
-  font-size:12px;
+  font-size:13px;
   font-weight:700;
 }
 
