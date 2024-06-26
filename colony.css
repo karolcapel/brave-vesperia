@@ -13,3 +13,11 @@
 #clny-cal end:before {
   --unicode:'\e1c8';
 }
+
+.clny-affs:before {
+  --unicode: '\e278';
+}
+
+.clny-affs:after {
+  --unicode: '\e280';
+}
