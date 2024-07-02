@@ -60,11 +60,20 @@
   display:block;
   text-shadow:none!important;
   cursor:crosshair;
+  transition-timing-function: ease-in-out;
+  transition-duration:.5s;
 }
 
 #mbd-toggle label:before {
   content:'view threads.';
 }
+
+#mbd-toggle input:checked+label {
+  border:1px solid rgba(var(--main), 0);
+  transition-timing-function: ease-in-out;
+  transition-duration:.5s;
+}
+
 #mbd-toggle input:checked+label:before {
   content:'return home.';
 }
