@@ -739,7 +739,7 @@ gap:2.5px;
   text-transform:lowercase;
   font-weight:900;
   font-size:15px;
-  line-height:15px;
+  line-height:20px;
   background: -webkit-linear-gradient(180deg, rgba(var(--main)) 35%, rgba(var(--accent)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
