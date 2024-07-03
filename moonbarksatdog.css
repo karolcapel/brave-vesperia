@@ -33,7 +33,7 @@
   left:0px;
   width:650px;
   height:675px;
-  background:#fdfdfd;
+  background:#fbfbfb;
 }
 
 #mbd-toggle input { display:none; }
@@ -435,7 +435,7 @@ gap:2.5px;
   top:137px;
   width:150px;
   height:400px;
-  background-color:#fdfdfd;
+  background-color:#fbfbfb;
   background-position:center;
   background-repeat:no-repeat;
   border-radius:150px;
@@ -448,7 +448,7 @@ gap:2.5px;
   display:block;
   width:150px;
   height:400px;
-  background-color:#fdfdfd;
+  background-color:#fbfbfb;
   filter:grayscale(100%);
   background-position:center;
   background-repeat:no-repeat;
