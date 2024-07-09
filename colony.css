@@ -29,3 +29,7 @@
 .estls-content strong:before, .cbas-content strong:before {
   --unicode:'\e70a';
 }
+
+.clny-tag:before {
+    --unicode:'\e58e';
+}
