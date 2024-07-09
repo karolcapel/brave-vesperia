@@ -22,6 +22,10 @@
   --unicode: '\e280';
 }
 
-.estls-content ul li:before {
+.estls-content ul li:before, .cbas-content ul li:before {
   --unicode: '/e46a';
+}
+
+.estls-content strong:before, .cbas-content strong:before {
+  --unicode:'/e70a';
 }
