@@ -21,3 +21,7 @@
 .clny-affs:after {
   --unicode: '\e280';
 }
+
+.estls-content ul li:before {
+  --unicode: '/e46a';
+}
