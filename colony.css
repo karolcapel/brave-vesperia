@@ -34,30 +34,30 @@
     --unicode:'\e240';
 }
 
-#g-4 .clny-tag:after {
+#g-4 .clny-tag:before {
 content:'\e58e';
 }
 
-#g-3 .clny-tag:after {
+#g-3 .clny-tag:before {
 content:'\e7d4';
 }
 
-#g-6 .clny-tag:after {
+#g-6 .clny-tag:before {
 content:'\e750';
 }
 
-#g-7 .clny-tag:after {
+#g-7 .clny-tag:before {
 content:'\ec22';
 }
 
-#g-8 .clny-tag:after {
+#g-8 .clny-tag:before {
 content:'\ecfa';
 }
 
-#g-9 .clny-tag:after {
+#g-9 .clny-tag:before {
 content:'\ed60';
 }
 
-#g-1 .clny-tag:after, #g-10 .clny-tag:after{
+#g-1 .clny-tag:before, #g-10 .clny-tag:before {
 content:'\e240';
 }
