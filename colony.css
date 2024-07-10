@@ -61,3 +61,71 @@ content:'\ed60';
 #g-1 .clny-tag:before, #g-10 .clny-tag:before {
 content:'\e240';
 }
+
+#age.clinfo:before {
+  content:'\e2f6';
+}
+
+#bday.clinfo:before {
+  content:'\e780';
+}
+
+#gen.clinfo:before {
+  content:'\e94e';
+}
+
+#job.clinfo:before {
+  content:'\e102';
+}
+
+#sex.clinfo:before {
+  content:'\e810';
+}
+
+#stat.clinfo:before {
+  content:'\e4d6';
+}
+
+#pro.clinfo:before {
+  content:'\e610';
+}
+
+#hgt.clinfo:before {
+  content:'\e6b8';
+}
+
+#ship.clinfo:before {
+  content:'\e78a';
+}
+
+#architect .clapp-gicon:before {
+  content:'\e7d4';
+}
+
+#authority .clapp-gicon:before {
+  content:'\e750';
+}
+
+#cultivator .clapp-gicon:before {
+  content:'\ec22';
+}
+
+#savant .clapp-gicon:before {
+  content:'\ecfa';
+}
+
+#transgressor .clapp-gicon:before {
+  content:'\ed60';
+}
+
+#default .clapp-gicon:before {
+  content:'\e240';
+}
+
+.clapp-key ul li:before {
+  content:'\e46a';
+}
+
+.clapp-biotext ul li:before {
+  content:'\e46a';
+}
