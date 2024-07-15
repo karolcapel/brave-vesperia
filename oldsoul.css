@@ -44,6 +44,7 @@
 .os-body:after {
   content:var(--unicode);
   font-family:'pandora-box';
+  -webkit-font-smoothing: antialiased;
   position:absolute;
   font-size:40px;
   line-height:40px;
