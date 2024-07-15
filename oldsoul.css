@@ -3,7 +3,7 @@
 @font-face { font-family: 'proxima nova bold'; src: url('https://files.jcink.net/uploads2/elysiumship/fonts/Proxima_Nova_Bold.ttf'); }
 
 .old-soul {
-  width:425px;
+  width:450px;
   position:relative;
   margin:15px auto;
   border:1px solid rgba(var(--lgray), 0.85);
