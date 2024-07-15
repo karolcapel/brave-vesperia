@@ -129,7 +129,7 @@
 }
 
 .os-tag {
-  padding:45px;
+  padding:40px 45px;
   background:rgba(var(--main));
   background:linear-gradient(225deg, rgba(var(--main)) 35%, rgba(var(--accent)));
   position:relative;
