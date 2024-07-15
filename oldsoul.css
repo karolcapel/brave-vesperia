@@ -13,6 +13,7 @@
   line-height:20px;
   color:rgba(var(--dgray));
   overflow:hidden;
+  background:rgba(var(--white));
   
 --black:50,50,50;
 --lgray:200,200,200;
