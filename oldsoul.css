@@ -137,6 +137,9 @@
     text-shadow: -1px 0 rgba(var(--main), 0.85), 0 1px rgba(var(--main), 0.85), 1px 0 rgba(var(--main), 0.85), 0 -1px rgba(var(--main), 0.85);
   font-size:12.5px;
   line-height:15px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px;
 }
 
 .os-tag:before {
@@ -168,6 +171,16 @@
   text-transform:uppercase;
   font-family:proxima nova bold;
   font-size:11px;
+  display:inline-block;
+  border:1px solid rgba(var(--main), 0.75);
+  border-radius:5px;
+  padding:5px 7.5px;
+  line-height:11px;
+}
+
+.os-tag note {
+  display:block;
+  width:100%;
 }
 
 .os-tag a {
