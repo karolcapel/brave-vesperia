@@ -210,6 +210,12 @@
  --unicode: '\a127'; 
 }
 
+  #eden-g {
+--main: 130,150,120;
+--accent: 188,144,102;
+ --unicode: '\a127'; 
+}
+
 #fern {
 --main:85,85,102;
  --unicode: '\e917'; 
