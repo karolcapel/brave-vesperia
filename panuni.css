@@ -87,6 +87,12 @@
  --unicode: '\e103'; 
 }
 
+#lux-g {
+ --main: 145,147,188;
+ --accent: 165,145,188;
+ --unicode: '\e102'; 
+}
+
 #mercie {
  --main: 147,97,111;
  --accent: 147,97,111;
