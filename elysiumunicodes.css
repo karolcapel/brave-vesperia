@@ -7,9 +7,11 @@
 #kit-e {
   --main:127,145,176;
   --accent:134,127,176;
+  --unicode: '\e103'; 
 }
 
 #olga-e {
   --main:219,138,153;
   --accent:219,138,194;
+  --unicode: '\e009'; 
 }
