@@ -44,6 +44,7 @@
 .fajita-body date i {
   font-family:proxima nova reg;
   opacity:0.75;
+  color:rgba(var(--main));
 }
 
 .fajita-body a {
