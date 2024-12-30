@@ -1,0 +1,146 @@
+@font-face { font-family: 'proxima nova reg'; src: url('https://files.jcink.net/uploads2/elysiumship/fonts/Proxima_Nova_Reg.ttf'); }
+@font-face { font-family: 'proxima nova semi bold'; src: url('https://files.jcink.net/uploads2/elysiumship/fonts/proxima_nova_semibold.ttf'); }
+@font-face { font-family: 'proxima nova bold'; src: url('https://files.jcink.net/uploads2/elysiumship/fonts/Proxima_Nova_Bold.ttf'); }
+
+.fajita { 
+  position:relative;
+  width:475px;
+  background:rgba(var(--wt));
+  margin:25px auto;
+  border-radius:15px;
+  font-family:proxima nova reg;
+  font-size:15px;
+  line-height:22px;
+  border-left:50px solid rgba(var(--black));
+  color:rgba(var(--black));
+  
+--black:50,50,50;
+--lgray:200,200,200;
+--dgray:66,66,66;
+--white:226,226,226;
+--wt:242,242,242;
+}
+
+.fajita-body {
+ border-left:1px solid rgba(var(--lgray), 0.75);
+  margin-left:50px;
+  padding:50px 50px 25px 50px;
+}
+
+.fajita-body date {
+  display:block;
+  position:absolute;
+  width:150px;
+  height:50px;
+  line-height:50px;
+  font-size:15px;
+  font-family:proxima nova bold;
+  text-transform:uppercase;
+  transform:rotate(90deg);
+  margin-top:25px;
+  left:-50px;
+}
+
+.fajita-body date i {
+  font-family:proxima nova reg;
+  opacity:0.75;
+}
+
+.fajita-body a {
+  color:rgba(var(--main));
+  border-bottom:2px solid rgba(var(--lgray), 0.75);
+}
+
+.fajita-body b {
+  color:rgba(var(--main));
+  font-family:proxima nova bold;
+}
+
+.fajita-body i {
+  opacity:0.75;
+}
+
+.fajita-body u {
+  text-decoration:none;
+  font-family:proxima nova semi bold;
+  border-bottom:2px solid rgba(var(--main), 0.5);
+}
+
+.fajita-body hr {
+  height:1px;
+  margin:25px 125px;
+  border:none;
+  background:rgba(var(--lgray), 0.75);
+}
+
+.fajita-body span.dice-roll {
+  display:block;
+}
+
+.fajita-body span.dice-roll b {
+  background:rgba(var(--main));
+  color:rgba(var(--black));
+  padding:10px 12.5px;
+  border-radius:10px;
+  text-transform:uppercase;
+  font-size:12px;
+  line-height:12px;
+}
+
+.fajita-icon {
+  position:absolute;
+  left:-25px;
+  bottom:25px;
+  width:50px;
+  height:50px;
+  text-align:center;
+  color:rgba(var(--main));
+}
+
+.fajita-icon:before {
+  content:var(--unicode);
+  font-family:pandora-box;
+  font-size:40px;
+  line-height:40px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.fajita-icon:after {
+  content:'';
+  display:block;
+  width:50px;
+  height:12.5px;
+  background:rgba(var(--main), 0.5);
+  border-radius:100%;
+}
+
+.fajita-tag {
+  display:flex;
+  text-align:right;
+  justify-content:right;
+  gap:10px;
+  flex-wrap:wrap;
+  padding-top:50px;
+}
+
+.fajita-tag a.user-tagged {
+  background:rgba(var(--black));
+  color:rgba(var(--main));
+  padding:10px 12.5px;
+  border-radius:10px;
+  text-transform:uppercase;
+  font-size:12px;
+  line-height:12px;
+  font-family:proxima nova bold;
+  border-bottom:none!important;
+}
+
+.fajita-tag note {
+  display:block;
+  width:100%;
+  font-size:13.5px;
+  line-height:15px;
+  margin-top:-5px;
+  font-style:italic;
+  opacity:0.75;
+}
