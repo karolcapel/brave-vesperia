@@ -24,6 +24,21 @@
 /* SONNET */
 
 #eden {
- --main:102,143,119;
- --unicode: '\ea8a';
+--main:102,143,119;
+--unicode: '\e2a6';
 }
+
+#lune {
+--main:163,178,224;
+--unicode: '\e6cc';
+}
+
+#milou {
+--main:220,165,79;
+--unicode: '\e53e';
+}
+
+#violette {
+--main:156,206,198;
+--unicode: '\ea6e';
+} 
