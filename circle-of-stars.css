@@ -1,5 +1,13 @@
-/********** LANDING PAGE **********/
+/********** BANNER AREA **********/
 
 #costar-1.cos-circle1:after {
+  --unicode: '\e90a';
+}
+
+#costar-2.cos-circle2:before {
+  --unicode: '\e90a';
+}
+
+#costar-2.cos-circle2:after {
   --unicode: '\e90a';
 }
