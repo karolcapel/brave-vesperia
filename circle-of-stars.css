@@ -37,4 +37,7 @@
 .mlb-line:before, .mlb-line2:before, .mlb-line3:before {
   --unicode: '\e900';
 }
- {
+
+.cos-guidebox:before {
+  --unicode: '\e90d';
+}
