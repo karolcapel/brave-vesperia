@@ -12,6 +12,22 @@
   --unicode: '\e900';
 }
 
+#gfox.rep-lead:before, #gfox.rep-back:before {
+    --unicode: '\e921';
+}
+#lfrog.rep-lead:before, #lfrog.rep-back:before  {
+    --unicode: '\e90d';
+}
+#tbird.rep-lead:before, #tbird.rep-back:before {
+    --unicode: '\e91f';
+}
+#sbeetle.rep-lead:before, #sbeetle.rep-back:before {
+    --unicode: '\e91e';
+}
+#wdeer.rep-lead:before, #wdeer.rep-back:before {
+    --unicode: '\e920';
+}
+
 /********** ABOUT AREA **********/
 
 .cos-about:after {
@@ -21,3 +37,4 @@
 .mlb-line:before, .mlb-line2:before, .mlb-line3:before {
   --unicode: '\e900';
 }
+ {
