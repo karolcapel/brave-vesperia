@@ -11,3 +11,9 @@
 #costar-2.cos-circle2:after {
   --unicode: '\e900';
 }
+
+/********** ABOUT AREA **********/
+
+.cos-about:after {
+  --unicode: '\e900';
+}
