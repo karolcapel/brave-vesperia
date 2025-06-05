@@ -17,3 +17,7 @@
 .cos-about:after {
   --unicode: '\e900';
 }
+
+.mlb-line:before, .mlb-line2:before, .mlb-line3:before {
+  --unicode: '\e900';
+}
