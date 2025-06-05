@@ -16,7 +16,7 @@
     --unicode: '\e921';
 }
 #lfrog.rep-lead:before, #lfrog.rep-back:before  {
-    --unicode: '\e90d';
+    --unicode: '\e922';
 }
 #tbird.rep-lead:before, #tbird.rep-back:before {
     --unicode: '\e91f';
