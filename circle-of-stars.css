@@ -41,3 +41,7 @@
 .cos-guidebox:before {
   --unicode: '\e90d';
 }
+
+.cos-updates:before {
+  --unicode: '\e91d';
+}
