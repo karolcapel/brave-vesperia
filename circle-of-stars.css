@@ -45,3 +45,7 @@
 .cos-updates:before {
   --unicode: '\e91d';
 }
+
+.cos-updates:after {
+  --unicode: '\e900';
+}
