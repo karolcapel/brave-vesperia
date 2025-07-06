@@ -49,3 +49,6 @@
 .cos-upcirc:after {
   --unicode: '\e900';
 }
+
+.cos-infowrap ul li:before {
+  content:'\e900'; }
