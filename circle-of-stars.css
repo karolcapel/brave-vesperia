@@ -56,3 +56,49 @@
 .topic-desc:before {
   content:'\e900';
 }
+
+/********** APPLICATION **********/
+
+.oaw-apptl ul li:before {
+  content:'\e900';
+}
+
+.oaw-appbio text hr:before {
+    content:'\e900';
+}
+
+#validating .oaw-apptop:before {
+  content:'\e92b';
+}
+
+#grayfox .oaw-apptop:before {
+  content:'\e923';
+}
+
+#leaffrog .oaw-apptop:before {
+  content:'\e924';
+}
+
+#stagbeetle .oaw-apptop:before {
+  content:'\e925';
+}
+
+#tailorbird .oaw-apptop:before {
+  content:'\e92c';
+}
+
+#whitetaildeer .oaw-apptop:before {
+  content:'\e913';
+}
+
+#faculty .oaw-apptop:before {
+  content:'\e927';
+}
+
+#ortensia .oaw-apptop:before {
+  content:'\e928';
+}
+
+#civilian .oaw-apptop:before {
+  content:'\e926';
+}
