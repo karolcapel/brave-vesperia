@@ -102,3 +102,30 @@
 #civilian .oaw-apptop:before {
   content:'\e926';
 }
+
+/********** TRACKER FONT ICONS **********/
+
+.cozt-track #se:before {
+  content:'\e917'!important;
+}
+.cozt-track #me:before {
+  content:'\e916'!important;
+}
+.cozt-scroll span:before {
+  content:'\e900';
+}
+.cozt-scroll #fm:before { /* family */
+  content:'\a54'!important;
+}
+.cozt-scroll #fr:before { /* friend */
+  content:'\a39'!important;
+}
+.cozt-scroll #rm:before { /* romantic */
+  content:'\a94'!important;
+}
+.cozt-scroll #en:before { /* enemy */
+  content:'\a11'!important;
+}
+.cozt-track .status.myturn:before {
+  content:'\e901'!important;
+}
