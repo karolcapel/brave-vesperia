@@ -201,10 +201,45 @@
   -webkit-font-smoothing: antialiased;
 }
 
+#sonnet.ht-icon {
+  background:rgba(var(--g1));
+  background:linear-gradient(to top left, rgba(var(--g1)), rgba(var(--g2)));
+  width:60px;
+  height:60px;
+  border-radius:15px;
+  display:block;
+  transform:rotate(45deg);
+  position:absolute;
+  right:20px;
+  top:-30px;
+  z-index:3;
+}
+
+#sonnet.ht-icon:before {
+  content:var(--unicode);
+  font-family:starry;
+  display:block;
+  transform:rotate(-45deg);
+  font-size:30px;
+  line-height:60px;
+  width:60px;
+  height:60px;
+  text-align:center;
+  color:rgba(var(--bg));
+    text-shadow: -1px 0 rgba(var(--g1)), 0 1px rgba(var(--g1)), 1px 0 rgba(var(--g1)), 0 -1px rgba(var(--g1));
+  -webkit-font-smoothing: antialiased;
+}
+
 /************* COLORS & ICONS *************/
 
 #donny {
   --g1:202,171,104;
   --g2:170,135,60;
   --unicode:'\e900';
+}
+
+  /* SONNET */
+
+#violet {
+  --unicode:'\a131';
 }
