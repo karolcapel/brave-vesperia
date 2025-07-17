@@ -53,6 +53,9 @@
 .cos-infowrap ul li:before {
   content:'\e900'; }
 
+.oaw-appbio ul li:before {
+  content:'\e900'; }
+
 .topic-desc:before {
   content:'\e900';
 }
