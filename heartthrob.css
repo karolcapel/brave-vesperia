@@ -252,6 +252,10 @@
 
   /* SONNET */
 
+#lune {
+  --unicode:'\a46';
+}
+
 #violet {
   --unicode:'\a131';
 }
