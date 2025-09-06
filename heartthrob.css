@@ -256,6 +256,10 @@
   --unicode:'\a46';
 }
 
+#milou {
+  --unicode:'\e900';
+}
+
 #violet {
   --unicode:'\a131';
 }
