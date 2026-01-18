@@ -281,6 +281,10 @@
   --unicode:'\e900';
 }
 
+#rome {
+  --unicode:'\a27';
+}
+
 #violet {
   --unicode:'\a131';
 }
