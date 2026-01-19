@@ -1,0 +1,263 @@
+/*************************************
+PINK FREAK is a custom jcink template created by MEADOW for NONO's use only. 
+It can be edited by the user. Do not remove this credit.
+
+Starry Icons can only be used on ON A WHIM and must be replaced if used elsewhere.
+*************************************/
+
+.pinkfreak {
+  margin:75px auto 25px;
+  position:relative;
+  background:rgba(var(--white));
+  padding:50px 25px 25px;
+  width:400px;
+  border-radius:25px;
+  line-height:24px;
+  font-size:16px;
+  color:rgba(var(--black));
+  box-shadow:5px 5px 10px rgba(var(--c2), 0.25);
+  font-family:urbanist;
+  font-weight:400;
+  border:1px solid rgba(var(--c2), 0.5);
+  z-index:1;
+    
+  --white:243,243,243;
+  --gray:218,218,218;
+  --black:72,72,72;
+}
+
+.pinkfreak:before {
+  content:'';
+  position:relative;
+  margin:-100px auto 25px;
+  display:block;
+  background:rgba(var(--c1));
+  width:100px; 
+  height:100px;
+  border-radius:100%;
+  border:1px solid rgba(var(--c2), 0.5);
+}
+
+.pf-card {
+  position:absolute;
+  top:-51px;
+  background:rgba(var(--c1));
+  height:50px;
+  width:398px;
+  border-radius:25px 25px 0px 0px;
+  border:1px solid rgba(var(--c2), 0.5);
+  border-bottom:0px;
+}
+
+.pf-icon {
+  display:block;
+  font-family:starry;
+  position:relative;
+  width:100%;
+  font-size:50px;
+  line-height:50px;
+  margin-top:25px;
+  text-align:center;
+  color:rgba(var(--white));
+  text-shadow: -1px 0 rgba(var(--c2)), 0 1px rgba(var(--c2)), 1px 0 rgba(var(--c2)), 0 -1px rgba(var(--c2));
+}
+
+.pf-keyhold {
+  position:absolute;
+  top:12.5px;
+  right:12.5px;
+  width:25px;
+  height:25px;
+  border-radius:100%;
+  background:rgba(var(--c2), 0.5);
+  box-shadow:2.5px -2.5px inset rgba(var(--c2));
+  border:1px solid rgba(var(--c2), 0.5);
+}
+
+.pf-keyhold:before {
+  content:'\a12';
+  font-family:starry;
+  display:block;
+  position:absolute;
+  font-size:125px;
+  top:69px;
+  left:-27px;
+  transform:rotate(25deg);
+  color:rgba(var(--gray));
+  text-shadow:2.5px 2.5px rgba(var(--black), 0.35);
+}
+
+.pf-keyhold:after {
+  content:'';
+  background:rgba(var(--c2), 0);
+  display:block;
+  position:absolute;
+  transform:rotate(-23deg);
+  width:32px;
+  height:30px;
+  top:4px;
+  right:-14px;
+  border-radius:90%;
+  box-shadow:-10px -10px inset rgba(var(--c1));
+}
+
+.pf-date {
+  text-align:left;
+  display:block;
+  font-family:unna;
+  font-style:italic;
+  color:rgba(var(--black), 0.85);
+  font-size:18px;
+  padding-bottom:30px;
+}
+
+.pf-date mon {
+  font-style:normal;
+  background: -webkit-linear-gradient(bottom left, rgba(var(--c1)), rgba(var(--c2)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  font-weight:700;
+  font-size:25px;
+  margin-right:2.5px;
+}
+
+.pf-body {
+  position:relative;
+  padding:25px 25px 0px 25px;
+  border:1px solid rgba(var(--c2), 0.5);
+  border-radius:25px;
+  margin-top:-50px;
+  z-index:-1;
+}
+
+.pf-body:before {
+  content:'';
+  display:block;
+  position:absolute;
+  top:-5px;
+  width:150px;
+  height:10px;
+  left:123px;
+  background:rgba(var(--white));
+}
+
+.pf-body b {
+  font-family:unna;
+  font-weight:700;
+  font-size:17px;
+  color: rgba(var(--c1));
+    background: -webkit-linear-gradient(bottom left, rgba(var(--c1)), rgba(var(--c2)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pf-body b i {
+  opacity:1;
+  font-weight:700!important;
+}
+
+.pf-body i {
+  opacity:0.85;
+  font-family:unna;
+  font-weight:400;
+  font-size:17px;
+}
+
+.pf-body u {
+  text-decoration:none;
+  font-family:unna;
+  font-size:17px;
+  font-weight:700;
+  color:rgba(var(--black), 0.85);
+  border-bottom:2px solid rgba(var(--c2), 0.5);
+}
+
+.pf-body hr {
+  border:none;
+  background:rgba(var(--c1));
+  height:10px;
+  width:10px;
+  border-radius:100%;
+  margin:25px auto;
+}
+
+.pf-body hr:before {
+  content:'';
+  display:block;
+  background:rgba(var(--c2));
+  width:10px;
+  height:10px;
+  margin-top:5px;
+  border-radius:100%;
+}
+
+.pf-body span.dice-roll {
+  font-family:unna;
+  text-transform:lowercase;
+  font-size:14.5px;
+}
+
+.pf-body a {
+  background:linear-gradient(to bottom right, rgba(var(--c1)), rgba(var(--c2)));
+  display:inline-block;
+  padding:1.5px 7.5px;
+  border-radius:7.5px;
+  color:rgba(var(--white));
+  font-family:unna;
+  text-transform:uppercase;
+  font-weight:700;
+  font-size:13.5px;
+  text-shadow: -1px 0 rgba(var(--c2)), 0 1px rgba(var(--c2)), 1px 0 rgba(var(--c2)), 0 -1px rgba(var(--c2));
+}
+
+.pf-tag {
+  overflow:hidden;
+  display:block;
+  text-align:left;
+  padding:20px;
+  left:-25px;
+  width:calc(100% + 11px);
+  margin-top:25px;
+  position:relative;
+  background:rgba(var(--gray), 0.5);
+  border-radius:0px 0px 25px 25px;
+  border-top:1px solid rgba(var(--gray));
+}
+
+.pf-tag a.user-tagged {
+  font-style:italic;
+  text-align:left;
+  background:none;
+  text-shadow:none;
+  color:rgba(var(--c1));
+    background: -webkit-linear-gradient(bottom left, rgba(var(--c1)), rgba(var(--c2)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  font-size:20px;
+  font-weight:700;
+  text-transform:lowercase;
+  line-height:30px;
+  padding:0px;
+}
+
+.pf-body note {
+  display:block;
+  font-family:unna;
+  font-size:17px;
+  font-weight:700;
+  color:rgba(var(--black), 0.6);
+  text-align:right;
+}
+
+/********************************
+COLOR CUSTOMIZATION
+
+Give each character a new ID name, i.e. wendy, wanyu, etc. and choose RGBA versions of their colors; I like finding them on color-hex.com.
+
+At the top of the template, next to "div class=pinkfreak," you'll see "id=default." Change "default" to the character name to change colors.
+********************************/
+
+#default {
+  --c1:213,177,189;
+  --c2:186,128,147;
+}
