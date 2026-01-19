@@ -109,6 +109,7 @@ Starry Icons can only be used on ON A WHIM and must be replaced if used elsewher
   color:rgba(var(--black), 0.85);
   font-size:18px;
   padding-bottom:30px;
+  text-transform:lowercase;
 }
 
 .pf-date mon {
