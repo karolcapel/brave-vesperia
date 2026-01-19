@@ -129,6 +129,7 @@ Starry Icons can only be used on ON A WHIM and must be replaced if used elsewher
   border-radius:25px;
   margin-top:-50px;
   z-index:-1;
+  text-align:justify;
 }
 
 .pf-body:before {
