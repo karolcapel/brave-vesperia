@@ -114,6 +114,8 @@
   margin-left:4px;
 }
 
+.ht-body b a { opacity:1; }
+
 .ht-body hr {
   height:1px;
   border:none;
