@@ -177,11 +177,11 @@
 
 .bb-tag a.user-tagged {
   text-transform:uppercase;
-  font-weight:600;
+  font-weight:700;
   letter-spacing:.5px;
   font-size:11.5px;
   color:rgba(var(--white), 0.9);
-  text-shadow:-1px 0 rgba(var(--g1)), 0 1px rgba(var(--g1)), 1px 0 rgba(var(--g1)), 0 -1px rgba(var(--g1));
+  text-shadow:-1px 0 rgba(var(--black)), 0 1px rgba(var(--black)), 1px 0 rgba(var(--black)), 0 -1px rgba(var(--black));
   margin:0px;
   opacity:1;
   transition:ease-in-out;
@@ -238,7 +238,7 @@
 
 .bb-tag a {
   color:rgba(var(--white), 0.9)!important;
-  text-shadow:-1px 0 rgba(var(--g1)), 0 1px rgba(var(--g1)), 1px 0 rgba(var(--g1)), 0 -1px rgba(var(--g1));
+  text-shadow:-1px 0 rgba(var(--black)), 0 1px rgba(var(--black)), 1px 0 rgba(var(--black)), 0 -1px rgba(var(--black));
   letter-spacing:0.5px;
   font-weight:600;
   font-size:11.5px;
