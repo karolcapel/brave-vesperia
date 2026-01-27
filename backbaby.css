@@ -159,6 +159,7 @@
 
 .bb-tag notes {
   font-size:13.5px;
+  margin-top:-1px;
   color:rgba(var(--white), 0.9);
 }
 
