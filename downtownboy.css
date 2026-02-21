@@ -54,7 +54,7 @@
   padding:100px 50px 50px;
   position:relative;
   z-index:2;
-  box-shadow:-12.5px -12.5px 0px rgba(var(--g2), 0.25);
+  box-shadow:-12.5px -11.5px 0px rgba(var(--g2), 0.25);
 }
 
 .dtb-date {
