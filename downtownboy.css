@@ -89,16 +89,16 @@
 
 .dtb-icon {
   position:absolute;
-  top:-11.5px;
-  right:-12.5px;
+  top:-12px;
+  right:-12px;
   width:50px;
   height:50px;
   display:block;
   background:rgba(var(--g1), .5);
   background:linear-gradient(to bottom, rgba(var(--g1), 0.5), rgba(var(--g2), 0.25));
   border-radius:100%;
-  padding:12.5px;
-  border:12.5px solid rgba(var(--white));
+  padding:12px;
+  border:12px solid rgba(var(--white));
 }
 
 .dtb-icon:before {
