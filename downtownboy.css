@@ -87,7 +87,7 @@
   font-family:starry;
   position:absolute;
   left:-8px;
-  bottom:-20px;
+  bottom:-21px;
   font-size:10px;
   color:rgba(var(--g2), 0.75);  
 }
@@ -250,7 +250,7 @@
   font-family:starry;
   position:absolute;
   right:-9px;
-  bottom:-13px;
+  bottom:-14px;
   font-size:10px;
   color:rgba(var(--g2), 0.75);
 }
