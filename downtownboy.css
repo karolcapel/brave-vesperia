@@ -62,7 +62,7 @@
   top:35px;
   left:50px;
   font-size:25px;
-  line-height:37.5px;
+  line-height:37px;
   display:inline-block;
   font-weight:200;
   color:rgba(var(--black), 0.5);
@@ -87,7 +87,7 @@
   font-family:starry;
   position:absolute;
   left:-8px;
-  bottom:-21px;
+  bottom:-20px;
   font-size:10px;
   color:rgba(var(--g2), 0.75);  
 }
