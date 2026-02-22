@@ -82,6 +82,16 @@
   color:rgba(var(--g2), 0.75);  
 }
 
+#star.dtb-date:before {
+  content:'\e920';
+  font-family:starry;
+  position:absolute;
+  left:-8px;
+  bottom:-20px;
+  font-size:10px;
+  color:rgba(var(--g2), 0.75);  
+}
+
 .dtb-date mon {
   font-weight:400;
   color:rgba(var(--g2), 0.75);
@@ -233,6 +243,16 @@
   transition:ease-in-out;
   transition-duration:0.5s;
   color:rgba(var(--black), 0.6);
+}
+
+#star.dtb-tag a.user-tagged:before {
+  content:'\e920';
+  font-family:starry;
+  position:absolute;
+  right:-9px;
+  bottom:-13px;
+  font-size:10px;
+  color:rgba(var(--g2), 0.75);
 }
 
 .dtb-tag a.user-tagged:hover {
