@@ -32,6 +32,7 @@
   padding:0px;
   margin:0px;
   position:relative;
+  top:-1px;
   display:inline-block;
   font-size:11px;
   tex-transform:lowercase;
