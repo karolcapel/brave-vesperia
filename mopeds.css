@@ -1,0 +1,167 @@
+.moped-wrap {
+  position:relative;
+  padding:50px 50px 0px 50px;
+  width:575px;
+  margin:0px auto;
+  overflow:hidden;
+  font-famiy:urbanist;
+  font-weight:500;
+  font-size:14.5px;
+  line-height:23px;
+  color:rgba(var(--black));
+  font-family:urbanist;
+  text-align:left;
+  
+  --white: 243,243,243;
+  --gray: 201,201,201;
+  --black:69,69,69; 
+}
+
+.moped-oc {
+  position:relative;
+  margin-bottom:50px;
+}
+
+.moped-icon {
+  position:absolute;
+  left:-5px;
+  top:0px;
+  width:30px;
+  height:30px;
+  padding:10px;
+  font-size:25px;
+  background:rgba(var(--g1));
+  background:linear-gradient(to bottom right, rgba(var(--g1)), rgba(var(--g2)));
+  border-radius:100%;
+  text-align:center;
+  line-height:35px!important;
+  color:rgba(var(--white));
+  text-shadow: -1px 0 rgba(var(--g2)), 0 1px rgba(var(--g2)), 1px 0 rgba(var(--g2)), 0 -1px rgba(var(--g2));
+}
+
+.moped-icon:before {
+  content:'';
+  display:block;
+  position:absolute;
+  width:25px;
+  height:50px;
+  right:-31px;
+  top:25px;
+  border-top:1px solid rgba(var(--gray));
+  border-right:1px solid rgba(var(--gray));
+  border-radius:0px 12px 0px 0px;
+}
+
+.moped-body {
+  position:relative;
+  border-left:1px solid rgba(var(--gray));
+  border-bottom:1px solid rgba(var(--gray));
+  border-radius:0px 0px 0px 12px;
+  top:37px;
+  margin-left:75px;
+  padding:0px 0px 25px 25px;
+}
+
+.moped-body h1 {
+  padding:0px;
+  margin:0px;
+  font-size:32px;
+  line-height:32px;
+  text-transform:lowercase;
+  font-weight:800;
+  letter-spacing:1px;
+  color:rgba(var(--white), 0.75);
+  text-shadow: -1px 0 rgba(var(--g1)), 0 1px rgba(var(--g1)), 1px 0 rgba(var(--g1)), 0 -1px rgba(var(--g1));
+  margin-bottom:7px;
+}
+
+.moped-body b {
+  font-weight:700;
+  color: rgba(var(--g1));
+  background: -webkit-linear-gradient(bottom left, rgba(var(--g1)), rgba(var(--g2)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.moped-body b i {
+  opacity:1;
+}
+
+.moped-body i {
+  opacity:0.75;
+}
+
+.moped-body u {
+  text-decoration:none;
+  border-bottom:1px solid rgba(var(--g1), 0.5);
+  font-weight:600;
+}
+
+.moped-body a {
+  color:rgba(var(--g2));
+  font-weight:600;
+  opacity:0.9;
+  transition:ease-in-out;
+  transition-duration:0.5s;
+}
+
+.moped-body a:hover {
+  opacity:1;
+  cursor:crosshair;
+}
+
+.moped-body a:before {
+  content:'[';
+  color:rgba(var(--black));
+  margin-right:3px;
+}
+
+.moped-body a:after {
+  content:']';
+  color:rgba(var(--black));
+  margin-left:3px;
+}
+
+/******* COLORS & UNICODES - MEADOW *******/
+
+#aimee {
+  --g1:200,154,200;
+  --g2:177,154,200;
+  --unicode:'\e00e';
+}
+
+#donny {
+  --g1:202,171,104;
+  --g2:170,135,60;
+  --unicode:'\e900';
+}
+
+#edison {
+  --g1:152,120,133;
+  --g2:97,86,105;
+  --unicode:'\e901';
+}
+
+#kit {
+  --g1:121,157,125;
+  --g2:93,132,128;
+  --unicode:'\e103';
+}
+
+#lux {
+  --g1:202,135,153;
+  --g2:179,110,107;
+  --unicode:'\e902';
+}
+
+#mazie {
+  --g1:240,181,145;
+  --g2:237,148,128;
+  --unicode:'\e005';
+}
+
+#oli {
+  --g1:195,151,172;
+  --g2:190,111,153;
+  --unicode:'\e00d';
+}
