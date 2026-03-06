@@ -17,6 +17,33 @@
   --black:69,69,69; 
 }
 
+.moprompt {
+  background:rgba(var(--gray), 0.5);
+  background:linear-gradient(to left, rgba(var(--gray), 0.75), rgba(var(--gray), 0));
+  padding:25px;
+  border-radius:15px;
+  margin-bottom:25px;
+  font-weight:600;
+  color:rgba(var(--black), 0.75);
+  line-height:20px;
+}
+
+.moprompt h1 {
+  padding:0px;
+  margin:0px;
+  position:relative;
+  display:inline-block;
+  font-size:11px;
+  tex-transform:lowercase;
+  font-weight:700;
+  background:rgba(var(--black));
+  background:linear-gradient(to bottom right, rgba(var(--black)), rgba(var(--black), 0.75));
+  padding:3px 7px;
+  line-height:11px;
+  border-radius:5px;
+  color:rgba(var(--white));
+}
+
 .moped-oc {
   position:relative;
   margin-bottom:50px;
