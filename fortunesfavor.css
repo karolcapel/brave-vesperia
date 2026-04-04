@@ -37,13 +37,13 @@
 .ff-oaw ffblock a {
   font-weight:600;
   display:inline-block;
-  color:rgba(var(--black));
+  color:rgba(var(--black))!important;
 }
 
 .ff-oaw ffblock a:before {
   content:'\e902';
   font-family:starry;
-  color:rgba(var(--g1));
+  color:rgba(var(--g1))!important;
   display:inline-block;
   font-weight:400;
   margin-right:3px;
