@@ -37,6 +37,7 @@
 .ff-oaw ffblock a {
   font-weight:600;
   display:inline-block;
+  color:rgba(var(--black));
 }
 
 .ff-oaw ffblock a:before {
