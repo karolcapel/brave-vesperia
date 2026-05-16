@@ -370,6 +370,10 @@
   --unicode:'\e900';
 }
 
+#nellie {
+  --unicode:'\e925';
+}
+
 #rome {
   --unicode:'\a27';
 }
