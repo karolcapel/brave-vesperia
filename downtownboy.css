@@ -356,6 +356,12 @@
   --unicode:'\e00d';
 }
 
+#vesper {
+  --g1:212,141,97;
+  --g2:192,102,71;
+  --unicode:'\e00a';
+}
+
 /******* UNICODES - SONNET *******/
 
 #egypt {
