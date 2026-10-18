@@ -150,6 +150,7 @@ Relations
   padding:2px 5px;
   position:relative;
     background:radial-gradient(ellipse at bottom left, rgba(var(--g1), 0.15), rgba(var(--gray),0));
+  line-height:12px;
 }
 
 .pabl-rel rel:before, .pabl-rkey rel:before {
@@ -158,9 +159,10 @@ Relations
   font-size:10px;
   display:inline-block;
   position:relative;
-  top:2px;
   margin-right:3px;
   color:rgba(var(--g1));
+  line-height:12px;
+  top:0px;
 }
 
 .pabl-rel rel:before {
@@ -188,6 +190,7 @@ Relations
   right:19px;
   bottom:-6.5px;
   font-size:12px;
+  line-height:12px;
   text-transform:uppercase;
   color:rgba(var(--black),0.75);
   display:block;
@@ -307,7 +310,6 @@ Threads
   font-size:50px;
   line-height:50px;
   color:rgba(var(--g1),0.1);
-  z-index:-1;
 }
 
 #event.pabl-active:before {
@@ -336,6 +338,7 @@ Threads
   position:absolute;
   right:12.5px;
   bottom:25px;
+  z-index:1;
 }
 
 .pabl-active tag, .pabl-closed tag {
@@ -345,8 +348,10 @@ Threads
   width:calc(100% - 25px);
   display:block;
   font-size:12px;
+  line-height:12px;
   text-transform:uppercase;
   color:rgba(var(--g2));
+  z-index:1;
 }
 
 .pabl-closed tag {
