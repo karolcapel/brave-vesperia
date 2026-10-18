@@ -52,7 +52,7 @@ Coded by Meadow for OAW only.
   width:100px;
   height:100px;
   text-align:center;
-  text-shadow:-1px 0 rgba(var(--g2)), 0 1px rgba(var(--g2)), 1px 0 rgba(var(--g2)), 0 -1px rgba(var(--g2));
+  text-shadow:-1px 0 rgba(var(--g2),0.5), 0 1px rgba(var(--g2),0.5), 1px 0 rgba(var(--g2),0.5), 0 -1px rgba(var(--g2),0.5);
 }
 
 .clhr-date {
