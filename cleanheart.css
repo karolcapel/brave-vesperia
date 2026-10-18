@@ -44,6 +44,7 @@ Coded by Meadow for OAW only.
 
 .clhr-icon:before {
   content:var(--unicode);
+  -webkit-font-smoothing: antialiased;
   display:block;
   font-family:pandora-box;
   line-height:100px;
