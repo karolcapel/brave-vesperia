@@ -1,0 +1,464 @@
+/*********************************
+PALE BLUE
+Coded by Meadow for OAW only.
+*********************************/
+
+/*******************************
+Wrapper
+********************************/
+
+.pale-blue {
+  width:675px;
+  height:750px;
+  margin:50px auto 25px;
+  position:relative;
+  font-family:cutive mono;
+  font-weight:400;
+
+  --black:72,72,72;
+  --white:243,243,243;
+  --gray:231,231,231;
+  --dgray:184,184,184;
+}
+
+/*******************************
+Top Bar
+********************************/
+
+.pabl-intro {
+  height:200px;
+  width:675px;
+  border:1px dashed rgba(var(--g1), 0.5);
+  border-right:0px;
+  border-bottom:0px;
+  position:relative;
+  z-index:2;
+  background:radial-gradient(ellipse at top left, rgba(var(--g1), 0.2), rgba(var(--gray),0));
+}
+
+.pabl-image {
+  position:absolute;
+  top:-25px;
+  left:25px;
+  width:250px;
+  height:250px;
+  border-radius:100%;
+  background-color:rgba(var(--black));
+  background-blend-mode:luminosity;
+  background-position:center;
+}
+
+.pabl-image:before {
+  content:'';
+  position:absolute;
+  display:block;
+  border-radius:100%;
+  width:250px;
+  height:250px;
+  border-radius:100%;
+  background-color:rgba(var(--g2), 0.125);
+}
+
+.pabl-name, .pabl-date {
+  position:relative;
+  display:block;
+  text-align:right;
+  padding-right:25px;
+  padding-top:25px;
+  text-transform:uppercase;
+  color:rgba(var(--g2));
+  font-size:20px;
+  line-height:20px;
+}
+
+.pabl-date {
+  font-size:15px;
+  line-height:15px;
+  color:rgba(var(--black), 0.75);
+  padding-top:0px;
+}
+
+.pabl-thco {
+  display:block;
+  position:absolute;
+  right:0px;
+  bottom:0px;
+  padding:0px 25px 25px 0px;
+  color:rgba(var(--black), 0.75);
+  text-transform:uppercase;
+  font-size:15px;
+}
+
+.pabl-thco b, .pabl-date b {
+  font-weight:400!important;
+  margin:0px 3px;
+  color:rgba(var(--g1));
+}
+
+/*******************************
+Sub Bar
+********************************/
+
+.pabl-sub {
+  position:relative;
+  z-index:2;
+  background:rgba(var(--gray));
+  border:1px dashed rgba(var(--g1), 0.5);
+  border-left:0px;
+  width:625px;
+  height:100px;
+  padding:25px 25px 25px 25px;
+  display:flex;
+  flex-wrap:no-wrap;
+  gap:25px;
+}
+
+/*******************************
+Relations
+********************************/
+
+.pabl-note {
+  display:flex;
+  flex-wrap:wrap;
+  width:30%;
+  gap:9px;
+  align-content:flex-start;
+}
+
+.pabl-rel {
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  width:70%;
+  align-content:flex-start;
+}
+
+.pabl-note span, .pabl-rel span {
+  display:block;
+  width:100%;
+  text-transform:uppercase;
+  color:rgba(var(--g2));
+  font-size:15px;
+  line-height:15px;
+  text-align:left;
+}
+
+.pabl-rel rel, .pabl-note note {
+  border:1px dashed rgba(var(--g1), 0.5);
+  text-transform:uppercase;
+  font-size:12px;
+  padding:2px 5px;
+  position:relative;
+    background:radial-gradient(ellipse at bottom left, rgba(var(--g1), 0.15), rgba(var(--gray),0));
+}
+
+.pabl-rel rel:before, .pabl-rkey rel:before {
+  content:'';
+  font-family:starry;
+  font-size:10px;
+  display:inline-block;
+  position:relative;
+  top:2px;
+  margin-right:3px;
+  color:rgba(var(--g1));
+}
+
+.pabl-rel rel:before {
+  float:left;
+}
+
+.pabl-rel #fr:before, .pabl-rkey #fr:before {
+  content:'\e920'!important;
+}
+
+.pabl-rel #fam:before, .pabl-rkey #fam:before {
+  content:'\e955'!important;
+}
+
+.pabl-rel #neg:before, .pabl-rkey #neg:before {
+  content:'\e908'!important;
+}
+
+.pabl-rel #rom:before, .pabl-rkey #rom:before {
+  content:'\a99'!important;
+}
+
+.pabl-rkey {
+  position:absolute;
+  right:19px;
+  bottom:-6.5px;
+  font-size:12px;
+  text-transform:uppercase;
+  color:rgba(var(--black),0.75);
+  display:block;
+  text-align:right;
+  background:rgba(var(--gray));
+  padding:0px 6px;
+}
+
+.pabl-rkey rel:before {
+  margin-left:7.5px;
+  margin-right:2px;
+  top:1px;
+  color:rgba(var(--g1),0.75);
+}
+
+/*******************************
+Threads
+********************************/
+
+.pabl-threadwrap {
+  position:relative;
+  border:1px dashed rgba(var(--g1), 0.5);
+  border-right:0px;
+  border-top:0px;
+  height:350px;
+  padding:25px 0px 0px 25px;
+}
+
+.pabltw-flex {
+  display:flex;
+  flex-wrap:wrap;
+  align-content:flex-start;
+  gap:12.5px;
+  border-bottom:25px solid rgba(var(--gray));
+  padding-right:20px;
+  height:325px;
+  overflow:auto;
+}
+
+.pabltw-flex::-webkit-scrollbar {
+  width: 4px;
+}
+ 
+.pabltw-flex::-webkit-scrollbar-track {
+  background: rgba(var(--gray));
+}
+ 
+.pabltw-flex::-webkit-scrollbar-thumb {
+  background: rgba(var(--dgray), 0.25);
+  border:1px solid rgba(var(--gray));
+  border-radius:5px;
+}
+
+/* MONTHS */
+
+.pabl-month {
+  display:block;
+  width:100%;
+  height:50px;
+  background:rgba(var(--gray));
+  text-transform:uppercase;
+  font-size:20px;
+  color:rgba(var(--g2));
+  line-height:50px;
+  text-align:left;
+  position:sticky;
+  top:0px;
+  z-index:3;
+  overflow:hidden;
+}
+
+/*
+#sum.pabl-month:before, #fall.pabl-month:before, #win.pabl-month:before, #spr.pabl-month:before {
+  content:'\a71';
+  font-family:starry;
+  display:inline-block;
+  line-height:45px;
+  position:relative;
+  top:2.5px;
+  right:7.5px;
+  font-size:20px;
+  color:rgba(var(--dgray));
+}
+
+#fall.pabl-month:before {
+  content:'\a44';
+}
+
+#win.pabl-month:before {
+  content:'\a73';
+}
+
+#spr.pabl-month:before {
+  content:'\e92a';
+}
+*/
+
+/* THREADS */
+
+.pabl-active, .pabl-closed, .pabl-event {
+  position:relative;
+  padding:12.5px;
+  display:inline-block;
+  background:radial-gradient(ellipse at top right, rgba(var(--g1), 0.15), rgba(var(--gray),0));
+  height:75px;
+  flex-grow:2;
+  width:calc(50% - 57.5px);
+  overflow:hidden;
+}
+
+.pabl-active:before, .pabl-closed:before {
+  content:'\e93e';
+  font-family:starry;
+  position:absolute;
+  left:-2.5px;
+  bottom:-2.5px;
+  font-size:50px;
+  line-height:50px;
+  color:rgba(var(--g1),0.1);
+  z-index:-1;
+}
+
+#event.pabl-active:before {
+  content:'\e94e';
+  font-family:starry;
+}
+
+.pabl-closed:before {
+  content:'\e93d';
+  font-family:starry;
+  color:rgba(var(--dgray),0.2);
+}
+
+#event.pabl-closed:before {
+  content:'\e94e';
+  font-family:starry;
+  color:rgba(var(--dgray),0.2);
+}
+
+.pabl-active locale, .pabl-closed locale, .pabl-event locale {
+  display:block;
+  text-transform:uppercase;
+  font-size:12px;
+  color:rgba(var(--dgray));
+  line-height:20px;
+  position:absolute;
+  right:12.5px;
+  bottom:25px;
+}
+
+.pabl-active tag, .pabl-closed tag {
+  position:absolute;
+  bottom:12.5px;
+  text-align:right;
+  width:calc(100% - 25px);
+  display:block;
+  font-size:12px;
+  text-transform:uppercase;
+  color:rgba(var(--g2));
+}
+
+.pabl-closed tag {
+    color:rgba(var(--black), 0.55);
+}
+
+.pabl-active tag:before, .pabl-closed tag:before {
+  content:'\e95e';
+  font-family:starry;
+  display:inline-block;
+  position:relative;
+  top:1px;
+  margin-right:4px;
+  color:rgba(var(--g1), 0.75);
+}
+
+#event.pabl-active tag:before {
+  content:'\e95d';  
+}
+
+.pabl-closed tag:before {
+  content:'\e960';
+  color:rgba(var(--dgray), 0.75);
+}
+
+.pabl-event tag:before {
+  content:'\e95d';
+  color:rgba(var(--dgray), 0.75);
+}
+
+.pabl-closed {
+  background:radial-gradient(ellipse at top right, rgba(var(--dgray), 0.15), rgba(var(--gray),0));  
+}
+
+.pabl-active a, .pabl-closed a, .pabl-event a {
+  text-decoration:none;
+  color:rgba(var(--g2));
+  font-size:15px;
+  line-height:15px;
+  border:1px dashed rgba(var(--g1),0.5);
+  padding:5px 7.5px;
+  display:inline-block;
+  max-width:calc(100% - 15px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition-timing-function: ease-in-out;
+  transition-duration: .25s;
+}
+
+.pabl-closed a {
+  color:rgba(var(--black), 0.55);
+  border:1px dashed rgba(var(--dgray),0.5);
+}
+
+.pabl-active a:hover, .pabl-closed a:hover, .pabl-event a:hover {
+  background:rgba(var(--g1), 0.2);
+  cursor:crosshair;
+}
+
+.pabl-closed a:hover {
+  background:rgba(var(--dgray), 0.2);
+}
+
+/*******************************
+Characters
+********************************/
+
+#donny {
+  --g1:202,171,104;
+  --g2:170,135,60;
+  --unicode:'\e900';
+}
+
+#edison {
+  --g1:152,120,133;
+  --g2:97,86,105;
+  --unicode:'\e904';
+}
+
+#kit {
+  --g1:121,157,125;
+  --g2:93,132,128;
+  --unicode:'\e103';
+}
+
+#leonato {
+  --g1:148,172,184;
+  --g2:123,146,159;
+  --unicode:'\e903';
+}
+
+#lux {
+  --g1:202,135,153;
+  --g2:179,110,107;
+  --unicode:'\e902';
+}
+
+#olga {
+  --g1:188,181,207;
+  --g2:178,160,190;
+  --unicode:'\e009';
+}
+
+#oli {
+  --g1:195,151,172;
+  --g2:190,111,153;
+  --unicode:'\e00d';
+}
+
+#vesper {
+  --g1:205,153,86;
+  --g2:206,141,83;
+  --unicode:'\e00b';
+}
