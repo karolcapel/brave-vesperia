@@ -11,7 +11,7 @@ Coded by Meadow for OAW only.
   font-weight:300;
   font-size:15.5px;
   line-height:25px;
-  color:rgba(var(--black));
+  color:rgba(var(--black),0.95);
 
   --black:72,72,72;
   --white:243,243,243;
