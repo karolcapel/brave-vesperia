@@ -149,7 +149,7 @@ Coded by Meadow for OAW only.
   padding:12.5px 12.5px 8.5px 12.5px;
   display:flex;
   flex-wrap:wrap;
-  flex-direction:row-reverse;
+  justify-content:flex-end;
   text-align:right;
   gap:7.5px;
 }
