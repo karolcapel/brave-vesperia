@@ -23,11 +23,11 @@ Coded by Meadow for OAW only.
 
 .clhr-top {
   position:relative;
-  border:1px dashed rgba(var(--g1), 0.5);
+  border:1px dashed rgba(var(--g1), 0.75);
   height:75px;
   border-left:0px;
   border-bottom:0px;
-  background:radial-gradient(ellipse at top left, rgba(var(--g1),0.25), rgba(var(--gray),0));
+  background:radial-gradient(ellipse at top right, rgba(var(--g1),0.25), rgba(var(--gray),0));
 }
 
 .clhr-icon {
@@ -83,7 +83,7 @@ Coded by Meadow for OAW only.
 
 .clhr-body {
   position:relative;
-  border:1px dashed rgba(var(--g1), 0.5);
+  border:1px dashed rgba(var(--g1), 0.75);
   border-right:0px;
   padding:50px;
   background:rgba(var(--gray));
@@ -100,7 +100,7 @@ Coded by Meadow for OAW only.
 
 .clhr-body u {
   text-decoration: none;
-  border-bottom:1px dashed rgba(var(--g2), 0.5);
+  border-bottom:1px dashed rgba(var(--g2), 0.75);
   font-weight:500;
 }
 
@@ -143,7 +143,7 @@ Coded by Meadow for OAW only.
 
 .clhr-tag {
   position:relative;
-  border:1px dashed rgba(var(--g1),0.5);
+  border:1px dashed rgba(var(--g1),0.75);
   border-top:0px;
   border-left:0px;
   padding:12.5px 12.5px 8.5px 12.5px;
