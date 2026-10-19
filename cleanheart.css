@@ -258,3 +258,12 @@ Characters
   --g2:206,141,83;
   --unicode:'\e00b';
 }
+
+/* SONNY */
+#milou {
+  --unicode:'\e900';
+}
+
+#violet {
+  --unicode:'\a131';
+}
