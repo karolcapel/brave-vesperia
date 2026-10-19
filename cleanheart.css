@@ -260,8 +260,13 @@ Characters
 }
 
 /* SONNY */
+
 #milou {
   --unicode:'\e900';
+}
+
+#nellie {
+  --unicode:'\e925';
 }
 
 #violet {
