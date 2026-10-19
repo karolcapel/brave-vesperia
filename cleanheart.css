@@ -42,9 +42,8 @@ Coded by Meadow for OAW only.
   border-radius:100%;
 }
 
-.clhr-icon:before {
+.clhr-icon:before, #sonnet.clhr-icon:before {
   content:var(--unicode);
-  -webkit-font-smoothing: antialiased;
   display:block;
   font-family:pandora-box;
   line-height:100px;
@@ -53,7 +52,12 @@ Coded by Meadow for OAW only.
   width:100px;
   height:100px;
   text-align:center;
-  text-shadow:-1px 0 rgba(var(--g2),0.5), 0 1px rgba(var(--g2),0.5), 1px 0 rgba(var(--g2),0.5), 0 -1px rgba(var(--g2),0.5);
+  text-shadow:-1px 0 rgba(var(--g2),0.5), 0 1px rgba(var(--g2),0.5), 1px 0 rgba(var(--g2),0.5), 0 -1px rgba(var(--g2),0.5)!important;
+  -webkit-font-smoothing: antialiased;
+}
+
+#sonnet.clhr-icon:before {
+  font-family:starry;
 }
 
 .clhr-date {
