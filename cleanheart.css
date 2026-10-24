@@ -126,7 +126,7 @@ Coded by Meadow for OAW only.
   font-size:12px;
   line-height:12px;
   border:1px dashed rgba(var(--g1))!important;
-  padding:5px 7.5px;
+  padding:7.5px;
   background:radial-gradient(ellipse at bottom right, rgba(var(--g1),0.25), rgba(var(--gray),0));
 }
 
